@@ -1304,7 +1304,7 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@nestjs/cli@^6.14.2":
+"@nestjs/cli@6.14.2":
   version "6.14.2"
   resolved "https://registry.yarnpkg.com/@nestjs/cli/-/cli-6.14.2.tgz#673b2ba3a5cf8f96bfeb27bab078e95e471beaf4"
   integrity sha512-Bv6ZoziyuXrCmeWMf4rcEjN84O4RmZtQugscFm0k2nOWVfW79eltqMJlpj6h9IutLLC52Je/SOw0XTiDGOukyg==
@@ -1361,7 +1361,7 @@
     express "4.17.1"
     multer "1.4.2"
 
-"@nestjs/schematics@^6.8.2", "@nestjs/schematics@^6.9.4":
+"@nestjs/schematics@6.9.4", "@nestjs/schematics@^6.8.2":
   version "6.9.4"
   resolved "https://registry.yarnpkg.com/@nestjs/schematics/-/schematics-6.9.4.tgz#4624c35da771fbb9a346cbd77aebd747d9348fd9"
   integrity sha512-tZoLDboqXQT+DcWUFTJyDsOIg9Qt6ilXYWWbrbbEPCP2+UKjfsqZPsEnG31DOj0IbovFS5g+Mbn3IanVsEcIsQ==
