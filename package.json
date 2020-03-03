@@ -12,7 +12,7 @@
     "lint:pkg": "lerna run lint --parallel",
     "lint:ptr": "prettier --check './packages/**/*.{js,jsx,ts,tsx}'",
     "release": "lerna exec --no-bail -- 'can-npm-publish && npm publish --registry=\"https://npm.pkg.github.com/\"'",
-    "test": "lerna run test --stream"
+    "test": "jest"
   },
   "dependencies": {
     "lerna": "3.20.2",
@@ -33,12 +33,25 @@
     "prettier-plugin-package": "0.3.1",
     "secretlint": "0.7.3",
     "textlint": "11.6.3",
-    "ts-jest": "25.2.1"
+    "ts-jest": "25.2.1",
+    "ts-node": "^8.6.2"
   },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "collectCoverage": true,
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "testEnvironment": "node"
   },
   "lint-staged": {
     "*": [

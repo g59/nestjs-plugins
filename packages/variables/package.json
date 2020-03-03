@@ -6,20 +6,7 @@
   "scripts": {
     "build": "yarn clean && tsc -p .",
     "clean": "rimraf lib",
-    "lint": "tsc -p . --noEmit",
-    "test": "jest"
-  },
-  "jest": {
-    "globals": {
-      "ts-jest": {
-        "tsConfig": "tsconfig.json"
-      }
-    },
-    "transform": {
-      "^.+\\.(t|j)s$": "ts-jest"
-    },
-    "collectCoverage": true,
-    "testEnvironment": "node"
+    "lint": "tsc -p . --noEmit"
   },
   "typings": "lib/index.d.ts"
 }
