@@ -13,7 +13,3 @@ mergeable:
         no_empty:
           enabled: true
           message: must include specs
-      - do: label
-        must_include:
-          regex: ^Type
-          message: must include types
