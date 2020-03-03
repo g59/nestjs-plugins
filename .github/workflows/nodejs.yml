@@ -1,0 +1,34 @@
+name: Node CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: npm install, build, and test
+      run: |
+        yarn install --production
+        yarn build
+        yarn
+        yarn lint
+        npx lerna run test -- -w 1
+      env:
+        CI: true
+    - uses: codecov/codecov-action@v1.0.3
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        file: ./packages/coverage/*
+        flags: variables
+        name: variables

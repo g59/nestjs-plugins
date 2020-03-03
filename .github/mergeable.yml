@@ -1,0 +1,19 @@
+version: 2
+mergeable:
+  - when: pull_request.*, pull_request_review.*
+    validate:
+      - do: title
+        must_exclude:
+          regex: ^\[WIP\]
+          message: This is work in progress. Do not merge yet.
+      - do: description
+        must_exclude:
+          regex: TBA
+          message: This is default templates yet.
+        no_empty:
+          enabled: true
+          message: must include specs
+      - do: label
+        must_include:
+          regex: ^Type
+          message: must include types

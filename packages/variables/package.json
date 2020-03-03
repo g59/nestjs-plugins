@@ -1,0 +1,25 @@
+{
+  "name": "@app/variables",
+  "version": "0.0.1",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "yarn clean && tsc -p .",
+    "clean": "rimraf lib",
+    "lint": "tsc -p . --noEmit",
+    "test": "jest"
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverage": true,
+    "testEnvironment": "node"
+  },
+  "typings": "lib/index.d.ts"
+}

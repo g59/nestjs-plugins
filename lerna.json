@@ -1,0 +1,19 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "changelog": {
+    "labels": {
+      "enhancement": ":rocket: Enhancement",
+      "bug": ":bug: Bug Fix",
+      "Type: Documentation ": ":memo: Documentation",
+      "Type: Feature": ":rocket: Type: Feature",
+      "Type: Bug": ":bug: Type: Bug",
+      "Type: Breaking Change": ":boom: Type: Breaking Change"
+    },
+    "cacheDir": ".changelog"
+  },
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "version": "0.0.1"
+}
