@@ -1,7 +1,7 @@
 {
-  "name": "@app/app",
+  "name": "nestjs-plugins",
   "private": true,
-  "author": "github.com/9renpoto",
+  "author": "piic",
   "scripts": {
     "build": "lerna run build --include-dependents",
     "bump": "lerna version --no-git-tag-version --no-push && lerna-changelog",
