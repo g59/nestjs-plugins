@@ -24,6 +24,7 @@
     "@nestjs/platform-express": "^6.11.11",
     "@nestjs/schematics": "^6.9.4",
     "@nestjs/typeorm": "^6.3.3",
+    "apollo-server-express": "^2.11.0",
     "reflect-metadata": "0.1.13",
     "rxjs": "^6.5.4",
     "typeorm": "0.2.24"

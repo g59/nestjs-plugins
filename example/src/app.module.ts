@@ -1,3 +1,4 @@
+import { join } from 'path';
 import { Module } from "@nestjs/common";
 import { TypeOrmModule } from "@nestjs/typeorm";
 import { GraphQLModule } from "@nestjs/graphql";
@@ -13,12 +14,12 @@ const isProduction = process.env.NODE_ENV === "production";
     TypeOrmModule.forRoot({
       type: "sqlite",
       database: "nestjs-plugins-test",
-      entities: ["./recipes/models/recipe.[t|j]s"],
+      entities: [join(__dirname, "./recipes/models/recipe.[t|j]s")],
       synchronize: true
     }),
     GraphQLModule.forRoot({
       installSubscriptionHandlers: true,
-      autoSchemaFile: isProduction ? true : `./src/schema.gql`,
+      autoSchemaFile: isProduction ? true : `./schema.gql`,
       playground: true
     }),
     NodeModule,
