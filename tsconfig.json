@@ -6,7 +6,6 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "incremental": true,
     "module": "commonjs",
     "moduleResolution": "node",
     "noEmit": true,

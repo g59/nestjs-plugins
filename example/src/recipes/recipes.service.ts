@@ -11,6 +11,10 @@ export class RecipesService {
     private readonly recipes: Repository<Recipe>
   ) {}
 
+  async findById(id: string) {
+    return this.recipes.findOneOrFail(id);
+  }
+
   async find(
     where: FindManyOptions<Recipe>["where"],
     order: FindManyOptions<Recipe>["order"],
