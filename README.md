@@ -12,9 +12,9 @@
 
 This repository is managed as monorepo.
 
-| Package | Description |
-| :------ | :---------- |
-| TBA     | TBA         |
+| Package                                     | Description |
+| :------------------------------------------ | :---------- |
+| **[nestjs-relay](./packages/nestjs-relay)** | TBA         |
 
 ## Usage
 
