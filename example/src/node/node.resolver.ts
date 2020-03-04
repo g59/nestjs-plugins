@@ -3,6 +3,7 @@ import { fromGlobalId } from "graphql-relay";
 import { ID } from "type-graphql";
 import { isUUID } from "@nestjs/common/utils/is-uuid";
 import { RecipesService } from "../recipes/recipes.service";
+import { Node } from "../node/node";
 
 @Resolver()
 export class NodeResolver {

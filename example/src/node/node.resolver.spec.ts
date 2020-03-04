@@ -1,4 +1,7 @@
 import { Test, TestingModule } from "@nestjs/testing";
+import { RecipesService } from "../recipes/recipes.service";
+import { createMockRepository } from "../testing/entity";
+import { Recipe } from "../recipes/models/recipe";
 import { NodeResolver } from "./node.resolver";
 
 describe("NodeResolver", () => {
@@ -6,7 +9,7 @@ describe("NodeResolver", () => {
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      providers: [NodeResolver]
+      providers: [NodeResolver, RecipesService, createMockRepository(Recipe)]
     }).compile();
 
     resolver = module.get<NodeResolver>(NodeResolver);

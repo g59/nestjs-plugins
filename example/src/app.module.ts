@@ -1,4 +1,4 @@
-import { join } from 'path';
+import { join } from "path";
 import { Module } from "@nestjs/common";
 import { TypeOrmModule } from "@nestjs/typeorm";
 import { GraphQLModule } from "@nestjs/graphql";
@@ -19,7 +19,7 @@ const isProduction = process.env.NODE_ENV === "production";
     }),
     GraphQLModule.forRoot({
       installSubscriptionHandlers: true,
-      autoSchemaFile: isProduction ? true : `./schema.gql`,
+      autoSchemaFile: isProduction ? true : join(__dirname, `./schema.gql`),
       playground: true
     }),
     NodeModule,
