@@ -1,6 +1,6 @@
 # nestjs-relay
 
-Nest.js + typeorm + graphql-relay
+Nest.js + typeorm + graphql-relay inspered [nestjs-graphql-relay](https://github.com/kazekyo/nestjs-graphql-relay)
 
 ## Install
 
@@ -9,10 +9,6 @@ npm i nestjs-relay
 ```
 
 ## Usage
-
-```
-TBA
-```
 
 ## Contributing
 
