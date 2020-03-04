@@ -18,9 +18,11 @@ This repository is managed as monorepo.
 
 ## Usage
 
-```
-> TBA
-```
+    yarn workspace example start:dev
+
+use [@nestjs/cli](https://docs.nestjs.com/cli/usages)
+
+    yarn workspace example nest generate module cats
 
 ## Contributing
 
