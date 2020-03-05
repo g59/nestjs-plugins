@@ -4,7 +4,7 @@
   "description": "Nest.js + graphql-relay + type-graphql + typeorm",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/piicl/nestjs-plugins.git"
+    "url": "git+ssh://git@github.com/piic/nestjs-plugins.git"
   },
   "bugs": {
     "url": "https://github.com/piic/nestjs-plugins/issues"
