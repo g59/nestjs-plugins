@@ -1,8 +1,7 @@
 {
   "name": "nestjs-relay",
   "version": "0.0.1",
-  "private": true,
-  "description": "Nest.js with graphql-relay + type-graphql + typeorm",
+  "description": "Nest.js + graphql-relay + type-graphql + typeorm",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/piicl/nestjs-plugins.git"
