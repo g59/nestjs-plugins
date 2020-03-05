@@ -49,6 +49,9 @@
       }
     },
     "collectCoverage": true,
+    "collectCoverageFrom": [
+      "packages/*/src/*.ts"
+    ],
     "transform": {
       "^.+\\.(t|j)s$": "ts-jest"
     },

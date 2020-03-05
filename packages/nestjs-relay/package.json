@@ -1,0 +1,32 @@
+{
+  "name": "nestjs-relay",
+  "version": "0.0.1",
+  "private": true,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "description": "TBA",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/piicl/nestjs-plugins.git"
+  },
+  "bugs": {
+    "url": "https://github.com/piic/nestjs-plugins/issues"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "yarn clean && tsc -p .",
+    "clean": "rimraf lib",
+    "lint": "tsc -p . --noEmit"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@types/graphql": "^14.5.0",
+    "@types/graphql-relay": "0.4.11",
+    "graphql": "^14.6.0",
+    "graphql-relay": "0.6.0",
+    "sqlite3": "4.1.1",
+    "type-graphql": "^0.17.6"
+  },
+  "types": "lib/index.d.ts"
+}
