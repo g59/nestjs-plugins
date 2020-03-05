@@ -11,7 +11,7 @@
     "lint:md": "textlint README.md packages/**/*.md",
     "lint:pkg": "lerna run lint --parallel",
     "lint:ptr": "prettier --check './packages/**/*.{js,jsx,ts,tsx}'",
-    "release": "lerna exec --no-bail -- 'can-npm-publish && npm publish --registry=\"https://npm.pkg.github.com/\"'",
+    "release": "lerna exec --no-bail -- 'can-npm-publish && npm publish --registry=\"https://registry.npmjs.org/\"'",
     "test": "jest"
   },
   "dependencies": {
