@@ -17,12 +17,12 @@ class Example {
   readonly name: string;
 }
 
-describe("nestjs-relay", () => {
+describe("app", () => {
   let connection: Connection;
   beforeAll(async () => {
     connection = await createConnection({
       type: "sqlite",
-      database: "nestjs-relay-test",
+      database: "nestjs-plugins",
       synchronize: true,
       entities: [Example]
     });

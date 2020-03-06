@@ -1,5 +1,5 @@
 import { ArgsType, Field, InputType } from "type-graphql";
-import { ConnectionArgs, OrderByInput } from "nestjs-relay";
+import { ConnectionArgs, OrderByInput } from "nestjs-graphql-relay";
 import { Recipe } from "../models/recipe";
 
 @InputType()
