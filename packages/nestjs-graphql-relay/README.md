@@ -1,11 +1,11 @@
-# nestjs-relay
+# nestjs-graphql-relay
 
 Nest.js + typeorm + graphql-relay inspired [nestjs-graphql-relay](https://github.com/kazekyo/nestjs-graphql-relay)
 
 ## Install
 
 ```
-npm i nestjs-relay
+npm install nestjs-graphql-relay
 ```
 
 ## Usage

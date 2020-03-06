@@ -12,9 +12,9 @@
 
 This repository is managed as monorepo.
 
-| Package                                     | Description                                      |
-| :------------------------------------------ | :----------------------------------------------- |
-| **[nestjs-relay](./packages/nestjs-relay)** | Nest.js + graphql-relay + type-graphql + typeorm |
+| Package                                                     | Description                                      |
+| :---------------------------------------------------------- | :----------------------------------------------- |
+| **[nestjs-graphql-relay](./packages/nestjs-graphql-relay)** | Nest.js + graphql-relay + type-graphql + typeorm |
 
 ## Usage
 
