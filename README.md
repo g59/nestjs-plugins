@@ -12,9 +12,9 @@
 
 This repository is managed as monorepo.
 
-| Package                                                     | Description                                      |
-| :---------------------------------------------------------- | :----------------------------------------------- |
-| **[nestjs-graphql-relay](./packages/nestjs-graphql-relay)** | Nest.js + graphql-relay + type-graphql + typeorm |
+| Package                                                     | Version                                                                                                            |
+| :---------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
+| **[nestjs-graphql-relay](./packages/nestjs-graphql-relay)** | [![npm version](https://badge.fury.io/js/nestjs-graphql-relay.svg)](https://badge.fury.io/js/nestjs-graphql-relay) |
 
 ## Usage
 
