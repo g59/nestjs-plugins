@@ -1626,20 +1626,20 @@
     "@secretlint/types" "^0.7.0"
     ajv "^6.11.0"
 
-"@secretlint/core@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@secretlint/core/-/core-0.7.0.tgz#9c71b3c859d7d0abe8b06e54925a75c18f5c3b65"
-  integrity sha512-6R7bUGwiGWOHNrjnM27BSfIDPuXtBdj6IFPGQ+FXwVNknvUg6JsgGKg+PEXxNZxYrLiljTPhpDi+8hvZJqH6mA==
+"@secretlint/core@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@secretlint/core/-/core-0.8.0.tgz#a1035f0be80fb5aece177a8a9d2713ae56cf99a1"
+  integrity sha512-zVthLgRHu1UaIZBcJpY/qVZD2zm1N+vrr9YVBbCj5JqwGuThS6g1Vnc8A/1vt2qwBZISZG1gZl8Rg9dT5xQnKw==
   dependencies:
     "@secretlint/profiler" "^0.7.0"
     "@secretlint/types" "^0.7.0"
     escape-string-regexp "^2.0.0"
     structured-source "^3.0.2"
 
-"@secretlint/formatter@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@secretlint/formatter/-/formatter-0.7.0.tgz#ba07b9dda668d14de273872899a77c7c5c228290"
-  integrity sha512-ZOjGNahwkVLYK/wIOKYdR6WrD9gJ4Ni2+17t8NU1B/+kxV++irE4iJSLdXaDOXF3Kt4El54gHRT4a2BAFNMksA==
+"@secretlint/formatter@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@secretlint/formatter/-/formatter-0.8.0.tgz#5c51b3b683319d16237e21688f592677fab0edf1"
+  integrity sha512-GmC2f0Xs1jsROLGKOm1eGBWzjUub4iWVNyuzyEk8V1lJX/Xp/bnUeM5OwAL7OEvQGR/nriZH/1QSCS8lgrqL2Q==
   dependencies:
     "@secretlint/types" "^0.7.0"
     "@textlint/linter-formatter" "^3.1.12"
@@ -1647,14 +1647,14 @@
     debug "^4.1.1"
     terminal-link "^2.1.1"
 
-"@secretlint/node@^0.7.3":
-  version "0.7.3"
-  resolved "https://registry.yarnpkg.com/@secretlint/node/-/node-0.7.3.tgz#82d729e2d2738561fdad68f31151b4591eeb4aaa"
-  integrity sha512-TKUxiNtEKMl5sB+ZB1nkECsA6mWT97QxAO9seZEL295GqdsqsHFM9xSuFqY01rPPfD9FVDWkPrugzv7phwblPg==
+"@secretlint/node@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@secretlint/node/-/node-0.8.0.tgz#9af89e874dd40b16a28a679d533dd14ce04b55b7"
+  integrity sha512-61ucKeG9qUcus7AgIaHGP5c4ZNHaGHYKHx00ruhCoi576iQcEYqRbb+7sejRUGTNH+c0oJYry7w9ZBcdBzf1gA==
   dependencies:
     "@secretlint/config-loader" "^0.7.0"
-    "@secretlint/core" "^0.7.0"
-    "@secretlint/formatter" "^0.7.0"
+    "@secretlint/core" "^0.8.0"
+    "@secretlint/formatter" "^0.8.0"
     "@secretlint/profiler" "^0.7.0"
     "@secretlint/source-creator" "^0.7.0"
     debug "^4.1.1"
@@ -10387,14 +10387,14 @@ schema-utils@^1.0.0:
     ajv-errors "^1.0.0"
     ajv-keywords "^3.1.0"
 
-secretlint@0.7.3:
-  version "0.7.3"
-  resolved "https://registry.yarnpkg.com/secretlint/-/secretlint-0.7.3.tgz#9bbbd73744bcc10c44ad5a798ed4ec76fd76f794"
-  integrity sha512-CHtyw/9vt05c4PiAgpoHYtc3xlX33yD4DI4vUf8ip88RXl9wLFGob/NC2Uo3EeQmSrgHb6HjrjsxhGrGmE23yw==
+secretlint@0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/secretlint/-/secretlint-0.8.0.tgz#5c514735cee528c15b3652be3eca5b8351273ac5"
+  integrity sha512-IzL0h8MEsXrCy4z4sSiCWsOiBkS3WhFiFlXapsqBZjdHh4D3Dy1WR8HDabMbmZ8IOcvrKSkf9uyoiRivz1AWSg==
   dependencies:
     "@secretlint/config-creator" "^0.7.0"
-    "@secretlint/formatter" "^0.7.0"
-    "@secretlint/node" "^0.7.3"
+    "@secretlint/formatter" "^0.8.0"
+    "@secretlint/node" "^0.8.0"
     "@secretlint/profiler" "^0.7.0"
     debug "^4.1.1"
     globby "^11.0.0"
