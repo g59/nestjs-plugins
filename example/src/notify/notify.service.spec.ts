@@ -1,13 +1,13 @@
 import { Test, TestingModule } from "@nestjs/testing";
+import { createSlackServiceMock } from "../testing/slack";
 import { NotifyService } from "./notify.service";
-import { createSlackServiceMock } from '../testing/slack';
 
 describe("NotifyService", () => {
   let service: NotifyService;
   let slack: ReturnType<typeof createSlackServiceMock>;
 
   beforeEach(async () => {
-    slack = createSlackServiceMock()
+    slack = createSlackServiceMock();
     const module: TestingModule = await Test.createTestingModule({
       providers: [NotifyService, slack]
     }).compile();

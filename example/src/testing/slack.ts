@@ -1,6 +1,6 @@
-import { SLACK_TOKEN } from 'nestjs-slack/lib/slackConstants'
-import { Provider } from '@nestjs/common'
-import { IncomingWebhook } from '@slack/webhook'
+import { SLACK_TOKEN } from "nestjs-slack/lib/slackConstants";
+import { Provider } from "@nestjs/common";
+import { IncomingWebhook } from "@slack/webhook";
 
 export function createSlackServiceMock(): Provider<Partial<IncomingWebhook>> {
   return {
@@ -8,5 +8,5 @@ export function createSlackServiceMock(): Provider<Partial<IncomingWebhook>> {
     useValue: {
       send: jest.fn()
     }
-  }
+  };
 }
