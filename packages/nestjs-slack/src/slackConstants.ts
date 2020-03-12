@@ -1,5 +1,3 @@
-export class SlackConstants {
-  public static readonly SLACK_MODULE = "slackModule";
+export const SLACK_MODULE = "SlackModule";
 
-  public static readonly SLACK_TOKEN = "SLACK_TOKEN";
-}
+export const SLACK_TOKEN = "SLACK_TOKEN";

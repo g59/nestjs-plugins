@@ -1,6 +1,6 @@
 import { Inject } from "@nestjs/common";
-import { SlackConstants } from "./slackConstants";
+import { SLACK_TOKEN } from "./slackConstants";
 
 export function InjectSlack() {
-  return Inject(SlackConstants.SLACK_TOKEN);
+  return Inject(SLACK_TOKEN);
 }

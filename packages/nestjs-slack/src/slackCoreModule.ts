@@ -1,6 +1,7 @@
 import { DynamicModule, Global, Module, Provider } from "@nestjs/common";
 import { ClassProvider } from "@nestjs/common/interfaces";
-import { SlackConstants } from "./slackConstants";
+import { IncomingWebhook } from "@slack/webhook";
+import { SLACK_MODULE, SLACK_TOKEN } from "./slackConstants";
 import { getSlackClient } from "./getSlackClient";
 import { createSlackProvider } from "./createSlackProvider";
 import {
@@ -23,9 +24,9 @@ export class SlackCoreModule {
   }
 
   static forRootAsync(options: SlackAsyncOptions): DynamicModule {
-    const slackProvider: Provider = {
-      inject: [SlackConstants.SLACK_MODULE],
-      provide: SlackConstants.SLACK_TOKEN,
+    const slackProvider: Provider<IncomingWebhook> = {
+      inject: [SLACK_MODULE],
+      provide: SLACK_TOKEN,
       useFactory: (slackOptions: SlackOptions) => getSlackClient(slackOptions)
     };
 
@@ -57,13 +58,13 @@ export class SlackCoreModule {
     if (options.useFactory) {
       return {
         inject: options.inject ?? [],
-        provide: SlackConstants.SLACK_MODULE,
+        provide: SLACK_MODULE,
         useFactory: options.useFactory
       };
     }
     return {
       inject: options.useClass ? [options.useClass] : [],
-      provide: SlackConstants.SLACK_MODULE,
+      provide: SLACK_MODULE,
       useFactory: (optionsFactory: SlackOptionsFactory) =>
         optionsFactory.createSlackOptions()
     };
