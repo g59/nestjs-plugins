@@ -1,20 +1,20 @@
 import { join } from "path";
 import { SlackModule } from "nestjs-slack";
 import { Module } from "@nestjs/common";
+import { ConfigModule, ConfigService } from "@nestjs/config";
 import { TypeOrmModule } from "@nestjs/typeorm";
 import { GraphQLModule } from "@nestjs/graphql";
 import { AppController } from "./app.controller";
 import { AppService } from "./app.service";
 import { NodeModule } from "./node/node.module";
 import { RecipesModule } from "./recipes/recipes.module";
-import { ConfigModule } from "./config/config.module";
-import { ConfigService } from "./config/config.service";
 import { NotifyModule } from "./notify/notify.module";
 
 const isProduction = process.env.NODE_ENV === "production";
 
 @Module({
   imports: [
+    ConfigModule.forRoot(),
     TypeOrmModule.forRoot({
       type: "sqlite",
       database: "nestjs-plugins-test",
@@ -26,11 +26,12 @@ const isProduction = process.env.NODE_ENV === "production";
       autoSchemaFile: isProduction ? true : join(__dirname, `./schema.gql`),
       playground: true
     }),
-    ConfigModule,
     SlackModule.forRootAsync({
+      imports: [ConfigModule],
       inject: [ConfigService],
-      useFactory: (configService: ConfigService) =>
-        configService.getSlackConfig()
+      useFactory: (config: ConfigService) => ({
+        url: config.get<string>("SLACK_WEBHOOK_URL") ?? "SLACK_WEBHOOK_URL"
+      })
     }),
     NodeModule,
     RecipesModule,
