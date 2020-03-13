@@ -63,7 +63,11 @@ export class SlackCoreModule {
       };
     }
     return {
-      inject: options.useClass ? [options.useClass] : [],
+      inject: options.useExisting
+        ? [options.useExisting]
+        : options.useClass
+        ? [options.useClass]
+        : [],
       provide: SLACK_MODULE,
       useFactory: (optionsFactory: SlackOptionsFactory) =>
         optionsFactory.createSlackOptions()
