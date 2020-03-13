@@ -1417,10 +1417,10 @@
     "@angular-devkit/schematics" "9.0.6"
     fs-extra "8.1.0"
 
-"@nestjs/testing@7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-7.0.0.tgz#b81610a4220b5a8c3f58089696640688d8664da6"
-  integrity sha512-Mk2dMJNC8zGTM/BIK9dE7yrDoB8ZLLLquMT1XqjhYC0hZ4SgC/3myAX8truag8xDAd6lJHOQug9ySbsyE7oxTQ==
+"@nestjs/testing@7.0.1":
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-7.0.1.tgz#07832d45f42636821232d693750dc400e304b046"
+  integrity sha512-I0an8kHUtDiaUmuA3aeMutz8g9b2Nhm8t5YYKIEPszRaLTU6CMhvR850RLX5gd9cb+RcforA6LjGtyeYPh7xgw==
   dependencies:
     optional "0.1.4"
     tslib "1.11.1"
