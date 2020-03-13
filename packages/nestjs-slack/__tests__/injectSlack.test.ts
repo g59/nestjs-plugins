@@ -1,12 +1,12 @@
-import { Injectable } from '@nestjs/common';
-import { Test, TestingModule } from '@nestjs/testing';
-import { IncomingWebhook } from '@slack/webhook'
-import { SlackModule } from './../src/slackModule'
-import { InjectSlack } from './../src/injectSlack'
+import { Injectable } from "@nestjs/common";
+import { Test, TestingModule } from "@nestjs/testing";
+import { IncomingWebhook } from "@slack/webhook";
+import { SlackModule } from "./../src/slackModule";
+import { InjectSlack } from "./../src/injectSlack";
 
-describe('InjectSlack', () => {
-  const url = 'SLACK_WEBHOOK_URL'
-  let module: TestingModule
+describe("InjectSlack", () => {
+  const url = "SLACK_WEBHOOK_URL";
+  let module: TestingModule;
 
   @Injectable()
   class TestService {
@@ -19,14 +19,14 @@ describe('InjectSlack', () => {
     module = await Test.createTestingModule({
       imports: [SlackModule.forRoot({ url })],
       providers: [TestService]
-    }).compile()
-  })
+    }).compile();
+  });
 
-  describe('when decorating a class constructor parameter', () => {
-    it('should inject the slack client', () => {
+  describe("when decorating a class constructor parameter", () => {
+    it("should inject the slack client", () => {
       const testService = module.get(TestService);
-      expect(testService).toHaveProperty('slackClient');
+      expect(testService).toHaveProperty("slackClient");
       expect(testService.slackClient).toBeInstanceOf(IncomingWebhook);
     });
   });
-})
+});

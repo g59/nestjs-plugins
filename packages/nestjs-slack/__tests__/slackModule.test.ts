@@ -1,18 +1,18 @@
-import { Module } from '@nestjs/common';
-import { Test } from '@nestjs/testing';
-import { IncomingWebhook } from '@slack/webhook'
-import { SLACK_TOKEN } from './../src/slackConstants'
-import { SlackOptions, SlackOptionsFactory } from './../src/slackOptions'
-import { SlackModule } from './../src/slackModule'
+import { Module } from "@nestjs/common";
+import { Test } from "@nestjs/testing";
+import { IncomingWebhook } from "@slack/webhook";
+import { SLACK_TOKEN } from "./../src/slackConstants";
+import { SlackOptions, SlackOptionsFactory } from "./../src/slackOptions";
+import { SlackModule } from "./../src/slackModule";
 
-describe('slackModule', () => {
-  const url = 'SLACK_WEBHOOK_URL'
+describe("slackModule", () => {
+  const url = "SLACK_WEBHOOK_URL";
 
   class TestService implements SlackOptionsFactory {
     createSlackOptions(): SlackOptions {
       return {
         url
-      }
+      };
     }
   }
 
@@ -22,34 +22,34 @@ describe('slackModule', () => {
   })
   class TestModule {}
 
-  describe('forRoot', () => {
-    it('provide slack client', async () => {
+  describe("forRoot", () => {
+    it("provide slack client", async () => {
       const module = await Test.createTestingModule({
         imports: [SlackModule.forRoot({ url })]
-      }).compile()
+      }).compile();
 
-      const slackClient = module.get<IncomingWebhook>(SLACK_TOKEN)
-      expect(slackClient).toBeDefined()
-      expect(slackClient).toBeInstanceOf(IncomingWebhook)
-    })
-  })
+      const slackClient = module.get<IncomingWebhook>(SLACK_TOKEN);
+      expect(slackClient).toBeDefined();
+      expect(slackClient).toBeInstanceOf(IncomingWebhook);
+    });
+  });
 
-  describe('forRootAsync', () => {
-    it('provide slack client with `useFactory`', async () => {
+  describe("forRootAsync", () => {
+    it("provide slack client with `useFactory`", async () => {
       const module = await Test.createTestingModule({
         imports: [
           SlackModule.forRootAsync({
             useFactory: () => ({ url })
           })
         ]
-      }).compile()
+      }).compile();
 
-      const slackClient = module.get<IncomingWebhook>(SLACK_TOKEN)
-      expect(slackClient).toBeDefined()
-      expect(slackClient).toBeInstanceOf(IncomingWebhook)
-    })
+      const slackClient = module.get<IncomingWebhook>(SLACK_TOKEN);
+      expect(slackClient).toBeDefined();
+      expect(slackClient).toBeInstanceOf(IncomingWebhook);
+    });
 
-    it('provide slack client with `useExisting`', async () => {
+    it("provide slack client with `useExisting`", async () => {
       const module = await Test.createTestingModule({
         imports: [
           SlackModule.forRootAsync({
@@ -57,25 +57,25 @@ describe('slackModule', () => {
             useExisting: TestService
           })
         ]
-      }).compile()
+      }).compile();
 
-      const slackClient = module.get<IncomingWebhook>(SLACK_TOKEN)
-      expect(slackClient).toBeDefined()
-      expect(slackClient).toBeInstanceOf(IncomingWebhook)
-    })
+      const slackClient = module.get<IncomingWebhook>(SLACK_TOKEN);
+      expect(slackClient).toBeDefined();
+      expect(slackClient).toBeInstanceOf(IncomingWebhook);
+    });
 
-    it('provide slack client with `useClass`', async () => {
+    it("provide slack client with `useClass`", async () => {
       const module = await Test.createTestingModule({
         imports: [
           SlackModule.forRootAsync({
             useClass: TestService
           })
         ]
-      }).compile()
+      }).compile();
 
-      const slackClient = module.get<IncomingWebhook>(SLACK_TOKEN)
-      expect(slackClient).toBeDefined()
-      expect(slackClient).toBeInstanceOf(IncomingWebhook)
-    })
-  })
-})
+      const slackClient = module.get<IncomingWebhook>(SLACK_TOKEN);
+      expect(slackClient).toBeDefined();
+      expect(slackClient).toBeInstanceOf(IncomingWebhook);
+    });
+  });
+});
