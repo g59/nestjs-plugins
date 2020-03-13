@@ -1,5 +1,8 @@
 # nestjs-slack
 
+![Actions Status](https://github.com/piic/nestjs-plugins/workflows/Node%20CI/badge.svg)
+
+
 Nest.js + [Slack Incoming Webhook](https://github.com/slackapi/node-slack-sdk/tree/master/packages/webhook)
 
 ## Install
