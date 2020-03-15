@@ -35,7 +35,7 @@
     "typeorm": "0.2.24"
   },
   "devDependencies": {
-    "@nestjs/testing": "7.0.1",
+    "@nestjs/testing": "7.0.2",
     "@types/node": "13.9.1",
     "@types/supertest": "2.0.8",
     "supertest": "4.0.2",
