@@ -22,6 +22,6 @@
   ],
   "devDependencies": {
     "@slack/webhook": "5.0.3",
-    "@nestjs/testing": "6.11.11"
+    "@nestjs/testing": "7.0.2"
   }
 }
