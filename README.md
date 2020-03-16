@@ -15,6 +15,7 @@ This repository is managed as monorepo.
 | Package                                                     | Version                                                                                                            |
 | :---------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
 | **[nestjs-graphql-relay](./packages/nestjs-graphql-relay)** | [![npm version](https://badge.fury.io/js/nestjs-graphql-relay.svg)](https://badge.fury.io/js/nestjs-graphql-relay) |
+| **[nestjs-slack](./packages/nestjs-slack)**                 | TBA                                                                                                                |
 
 ## Usage
 
