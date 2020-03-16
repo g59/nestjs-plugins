@@ -1,6 +1,7 @@
 # nestjs-slack-webhook
 
 ![Actions Status](https://github.com/piic/nestjs-plugins/workflows/Node%20CI/badge.svg)
+[![npm version](https://badge.fury.io/js/nestjs-slack-webhook.svg)](https://badge.fury.io/js/nestjs-slack-webhook)
 
 Nest.js + [Slack Incoming Webhook](https://github.com/slackapi/node-slack-sdk/tree/master/packages/webhook)
 
