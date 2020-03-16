@@ -1,6 +1,7 @@
 {
   "name": "nestjs-plugins",
   "private": true,
+  "repository": "git@github.com:piic/nestjs-plugins.git",
   "author": "piic",
   "scripts": {
     "build": "lerna run build --include-dependents",

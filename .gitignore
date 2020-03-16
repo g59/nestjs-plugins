@@ -1,6 +1,7 @@
 lib/
-**/nestjs-plugins-test
+nestjs-plugins-test
 /nestjs-plugins
+.changelog/
 
 ### https://raw.github.com/github/gitignore/6c87d249af5f2b3f8ab65ae0a2648682ee4e8a2d/Node.gitignore
 
