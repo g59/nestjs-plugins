@@ -31,7 +31,7 @@
     "apollo-server-express": "^2.11.0",
     "graphql": "^14.6.0",
     "nestjs-graphql-relay": "^0.0.1",
-    "nestjs-slack": "^0.0.1",
+    "nestjs-slack-webhook": "^0.0.1",
     "reflect-metadata": "0.1.13",
     "rxjs": "^6.5.4",
     "type-graphql": "0.17.6",

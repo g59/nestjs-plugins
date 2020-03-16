@@ -1,14 +1,13 @@
-# nestjs-slack
+# nestjs-slack-webhook
 
 ![Actions Status](https://github.com/piic/nestjs-plugins/workflows/Node%20CI/badge.svg)
-
 
 Nest.js + [Slack Incoming Webhook](https://github.com/slackapi/node-slack-sdk/tree/master/packages/webhook)
 
 ## Install
 
 ```
-npm install nestjs-slack
+npm install nestjs-slack-webhook
 ```
 
 ## Usage
@@ -17,14 +16,15 @@ npm install nestjs-slack
 @Module({
   imports: [
     SlackModule.forRoot({
-      url: 'SLACK_WEBHOOK_URL' // ref: https://api.slack.com/messaging/webhooks#posting_with_webhooks
-    }),
-  ],
+      url: "SLACK_WEBHOOK_URL" // ref: https://api.slack.com/messaging/webhooks#posting_with_webhooks
+    })
+  ]
 })
 export class AppModule {}
 ```
 
 Inject IncomingWebhook instance
+
 ```typescript
 @Injectable()
 export class AppService {
