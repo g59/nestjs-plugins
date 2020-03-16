@@ -1,4 +1,4 @@
-## Unreleased (2020-03-16)
+## v0.0.2 (2020-03-16)
 
 #### :rocket: Enhancement
 
