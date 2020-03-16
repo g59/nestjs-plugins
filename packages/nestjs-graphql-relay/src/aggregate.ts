@@ -1,4 +1,4 @@
-import { Field, ObjectType, Int } from "type-graphql";
+import { Field, ObjectType, Int } from "@nestjs/graphql";
 
 @ObjectType({ isAbstract: true })
 export abstract class Aggregate {

@@ -1,6 +1,5 @@
-import { Resolver, Query, Args } from "@nestjs/graphql";
+import { Resolver, Query, Args, ID } from "@nestjs/graphql";
 import { fromGlobalId } from "graphql-relay";
-import { ID } from "type-graphql";
 import { isUUID } from "@nestjs/common/utils/is-uuid";
 import { RecipesService } from "../recipes/recipes.service";
 import { Node } from "../node/node";

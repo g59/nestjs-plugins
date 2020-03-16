@@ -1,6 +1,5 @@
-import { Resolver, Query, Args } from "@nestjs/graphql";
+import { Resolver, Query, Args, ObjectType, Field } from "@nestjs/graphql";
 import * as Relay from "graphql-relay";
-import { ObjectType, Field } from "type-graphql";
 import { PageInfo, Aggregate } from "nestjs-graphql-relay";
 import { Recipe } from "./models/recipe";
 import { RecipesConnectionArgs } from "./dto/recipes.input";
