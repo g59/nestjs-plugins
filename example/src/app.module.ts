@@ -1,5 +1,5 @@
 import { join } from "path";
-import { SlackModule } from "nestjs-slack";
+import { SlackModule } from "nestjs-slack-webhook";
 import { Module } from "@nestjs/common";
 import { ConfigModule, ConfigService } from "@nestjs/config";
 import { TypeOrmModule } from "@nestjs/typeorm";

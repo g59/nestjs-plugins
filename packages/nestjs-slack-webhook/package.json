@@ -1,5 +1,5 @@
 {
-  "name": "nestjs-slack",
+  "name": "nestjs-slack-webhook",
   "version": "0.0.1",
   "description": "Nest.js + slack-webhook",
   "repository": {
@@ -10,7 +10,6 @@
     "url": "https://github.com/piic/nestjs-plugins/issues"
   },
   "main": "lib/index.js",
-  "types": "lib/index.d.ts",
   "scripts": {
     "build": "yarn clean && tsc -p .",
     "clean": "rimraf lib",
@@ -23,5 +22,6 @@
   "devDependencies": {
     "@slack/webhook": "5.0.3",
     "@nestjs/testing": "7.0.2"
-  }
+  },
+  "types": "lib/index.d.ts"
 }
