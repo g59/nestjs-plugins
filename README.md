@@ -15,11 +15,10 @@ This repository is managed as monorepo.
 | Package                                                     | Version                                                                                                            |
 | :---------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
 | **[nestjs-graphql-relay](./packages/nestjs-graphql-relay)** | [![npm version](https://badge.fury.io/js/nestjs-graphql-relay.svg)](https://badge.fury.io/js/nestjs-graphql-relay) |
-| **[nestjs-slack](./packages/nestjs-slack)** |TBA|
+| **[nestjs-slack](./packages/nestjs-slack)**                 | TBA                                                                                                                |
 
 ## Usage
 
-    cp example/.env.tmpl example/.env
     yarn workspace example start:dev
 
 use [@nestjs/cli](https://docs.nestjs.com/cli/usages)

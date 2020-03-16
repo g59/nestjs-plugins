@@ -9,12 +9,16 @@ import { AppService } from "./app.service";
 import { NodeModule } from "./node/node.module";
 import { RecipesModule } from "./recipes/recipes.module";
 import { NotifyModule } from "./notify/notify.module";
+import configuration from "./config/configuration";
 
 const isProduction = process.env.NODE_ENV === "production";
 
 @Module({
   imports: [
-    ConfigModule.forRoot(),
+    ConfigModule.forRoot({
+      ignoreEnvFile: true,
+      load: [configuration]
+    }),
     TypeOrmModule.forRoot({
       type: "sqlite",
       database: "nestjs-plugins-test",
@@ -30,7 +34,7 @@ const isProduction = process.env.NODE_ENV === "production";
       imports: [ConfigModule],
       inject: [ConfigService],
       useFactory: (config: ConfigService) => ({
-        url: config.get<string>("SLACK_WEBHOOK_URL") ?? "SLACK_WEBHOOK_URL"
+        url: config.get<string>("slackWebhookUrl") ?? "SLACK_WEBHOOK_URL"
       })
     }),
     NodeModule,
