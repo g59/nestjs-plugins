@@ -1,7 +1,7 @@
 {
   "name": "nestjs-graphql-relay",
   "version": "0.0.2",
-  "description": "Nest.js + graphql-relay + type-graphql + typeorm",
+  "description": "@nestjs/graphql + graphql-relay +typeorm",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/piic/nestjs-plugins.git"
@@ -21,6 +21,9 @@
     "type-graphql",
     "typeorm"
   ],
+  "peerDependencies": {
+    "@nestjs/graphql": "^7.0.0"
+  },
   "devDependencies": {
     "@types/graphql": "14.5.0",
     "@types/graphql-relay": "0.4.11",
