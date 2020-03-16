@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "incremental": true,
     "noEmit": false,
     "outDir": "./dist",
     "removeComments": true,
