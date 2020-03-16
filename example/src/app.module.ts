@@ -9,7 +9,7 @@ import { AppService } from "./app.service";
 import { NodeModule } from "./node/node.module";
 import { RecipesModule } from "./recipes/recipes.module";
 import { NotifyModule } from "./notify/notify.module";
-import configuration from "./config/configuration";
+import slackConfig from "./config/slack";
 
 const isProduction = process.env.NODE_ENV === "production";
 
@@ -17,7 +17,7 @@ const isProduction = process.env.NODE_ENV === "production";
   imports: [
     ConfigModule.forRoot({
       ignoreEnvFile: true,
-      load: [configuration]
+      load: [slackConfig]
     }),
     TypeOrmModule.forRoot({
       type: "sqlite",
