@@ -1,6 +1,6 @@
 {
   "name": "example",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "description": "TBA",
   "license": "MIT",
@@ -30,8 +30,8 @@
     "@types/graphql": "^14.5.0",
     "apollo-server-express": "^2.11.0",
     "graphql": "^14.6.0",
-    "nestjs-graphql-relay": "^0.0.1",
-    "nestjs-slack-webhook": "^0.0.1",
+    "nestjs-graphql-relay": "^0.0.2",
+    "nestjs-slack-webhook": "^0.0.2",
     "reflect-metadata": "0.1.13",
     "rxjs": "^6.5.4",
     "typeorm": "0.2.24"
