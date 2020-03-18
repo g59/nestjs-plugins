@@ -34,7 +34,7 @@
     "lint-staged": "10.0.8",
     "prettier": "1.19.1",
     "prettier-plugin-package": "0.3.1",
-    "secretlint": "0.9.2",
+    "secretlint": "0.10.1",
     "textlint": "11.6.3",
     "ts-jest": "25.2.1",
     "ts-node": "8.6.2"
