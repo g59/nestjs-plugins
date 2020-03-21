@@ -1402,10 +1402,10 @@
     "@angular-devkit/schematics" "9.0.6"
     fs-extra "8.1.0"
 
-"@nestjs/testing@7.0.3":
-  version "7.0.3"
-  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-7.0.3.tgz#a53a8e56e59d6d5036ab427cd35db305abb0b9a4"
-  integrity sha512-2LTSigaiCO1AiZcJtdRlElCOhO3+AX4hWfgly46sDhJftx57E0AX3HHnrESwuMZAONYzp1QEXjEi5bpY24j2rw==
+"@nestjs/testing@7.0.4":
+  version "7.0.4"
+  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-7.0.4.tgz#8f2c02da4a193c6c93050063077a51011f8b4a24"
+  integrity sha512-hsTuDnJhhElzR0OUZB+qukJgOUGyaYUAfaQXTp3LbWq1QWvM/a6/ZmThcF/MrS9qkV25eSwn6x4/q9tTAGtobw==
   dependencies:
     optional "0.1.4"
     tslib "1.11.1"
@@ -1753,11 +1753,6 @@
   dependencies:
     "@secretlint/types" "^1.0.0"
     istextorbinary "^3.3.0"
-
-"@secretlint/types@^0.10.1":
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/@secretlint/types/-/types-0.10.1.tgz#0e21da917d658e4966097d6920cc25ed5e0e49ef"
-  integrity sha512-RbW/zGxCCnGHel9e2Bv21ZJb7v0T3gWVuDXZyBACjjHAh4lVRhPuBCuYo7aGDUVSrNIYdEad5dBrFPh8VxnuEQ==
 
 "@secretlint/types@^1.0.0":
   version "1.0.0"
