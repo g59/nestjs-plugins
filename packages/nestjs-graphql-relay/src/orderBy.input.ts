@@ -2,7 +2,7 @@ import { registerEnumType, InputType, Field } from "@nestjs/graphql";
 
 export enum OrderByDirection {
   ASC = "ASC",
-  DESC = "DESC"
+  DESC = "DESC",
 }
 
 registerEnumType(OrderByDirection, { name: "OrderByDirection" });

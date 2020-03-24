@@ -18,7 +18,7 @@ describe("InjectSlack", () => {
   beforeEach(async () => {
     module = await Test.createTestingModule({
       imports: [SlackModule.forRoot({ url })],
-      providers: [TestService]
+      providers: [TestService],
     }).compile();
   });
 

@@ -16,7 +16,7 @@ function getMeta({
   first = 0,
   last = 0,
   after,
-  before
+  before,
 }: ConnectionArgs): PagingMeta {
   const isForwardPaging = !!first || !!after;
   const isBackwardPaging = !!last || !!before;
@@ -48,7 +48,7 @@ export function getPagingParameters(args: ConnectionArgs) {
 
       return {
         limit: meta.first,
-        offset
+        offset,
       };
     }
     case "backward": {
@@ -83,12 +83,12 @@ export async function findAndPaginate<T>(
   const [entities, count] = await repository.findAndCount({
     ...condition,
     skip: offset,
-    take: limit
+    take: limit,
   });
 
   const res = Relay.connectionFromArraySlice(entities, connArgs, {
     arrayLength: count,
-    sliceStart: offset || 0
+    sliceStart: offset || 0,
   });
   return res;
 }

@@ -12,7 +12,7 @@ describe("getSlackClient", () => {
   it("returns slack client with custom options", () => {
     const slackClient = getSlackClient({
       url,
-      username: "test_user"
+      username: "test_user",
     });
 
     expect(slackClient).toBeInstanceOf(IncomingWebhook);

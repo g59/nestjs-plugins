@@ -11,21 +11,21 @@ describe("slackModule", () => {
   class TestService implements SlackOptionsFactory {
     createSlackOptions(): SlackOptions {
       return {
-        url
+        url,
       };
     }
   }
 
   @Module({
     exports: [TestService],
-    providers: [TestService]
+    providers: [TestService],
   })
   class TestModule {}
 
   describe("forRoot", () => {
     it("provide slack client", async () => {
       const module = await Test.createTestingModule({
-        imports: [SlackModule.forRoot({ url })]
+        imports: [SlackModule.forRoot({ url })],
       }).compile();
 
       const slackClient = module.get<IncomingWebhook>(SLACK_TOKEN);
@@ -39,9 +39,9 @@ describe("slackModule", () => {
       const module = await Test.createTestingModule({
         imports: [
           SlackModule.forRootAsync({
-            useFactory: () => ({ url })
-          })
-        ]
+            useFactory: () => ({ url }),
+          }),
+        ],
       }).compile();
 
       const slackClient = module.get<IncomingWebhook>(SLACK_TOKEN);
@@ -54,9 +54,9 @@ describe("slackModule", () => {
         imports: [
           SlackModule.forRootAsync({
             imports: [TestModule],
-            useExisting: TestService
-          })
-        ]
+            useExisting: TestService,
+          }),
+        ],
       }).compile();
 
       const slackClient = module.get<IncomingWebhook>(SLACK_TOKEN);
@@ -68,9 +68,9 @@ describe("slackModule", () => {
       const module = await Test.createTestingModule({
         imports: [
           SlackModule.forRootAsync({
-            useClass: TestService
-          })
-        ]
+            useClass: TestService,
+          }),
+        ],
       }).compile();
 
       const slackClient = module.get<IncomingWebhook>(SLACK_TOKEN);

@@ -7,14 +7,14 @@ export class SlackModule {
   public static forRoot(options: SlackOptions): DynamicModule {
     return {
       module: SlackModule,
-      imports: [SlackCoreModule.forRoot(options)]
+      imports: [SlackCoreModule.forRoot(options)],
     };
   }
 
   public static forRootAsync(options: SlackAsyncOptions): DynamicModule {
     return {
       module: SlackModule,
-      imports: [SlackCoreModule.forRootAsync(options)]
+      imports: [SlackCoreModule.forRootAsync(options)],
     };
   }
 }
