@@ -7,7 +7,7 @@ import { createSlackProvider } from "./createSlackProvider";
 import {
   SlackOptions,
   SlackAsyncOptions,
-  SlackOptionsFactory
+  SlackOptionsFactory,
 } from "./slackOptions";
 
 @Global()
@@ -19,7 +19,7 @@ export class SlackCoreModule {
     return {
       exports: [provider],
       module: SlackCoreModule,
-      providers: [provider]
+      providers: [provider],
     };
   }
 
@@ -27,14 +27,14 @@ export class SlackCoreModule {
     const slackProvider: Provider<IncomingWebhook> = {
       inject: [SLACK_MODULE],
       provide: SLACK_TOKEN,
-      useFactory: (slackOptions: SlackOptions) => getSlackClient(slackOptions)
+      useFactory: (slackOptions: SlackOptions) => getSlackClient(slackOptions),
     };
 
     return {
       exports: [slackProvider],
       imports: options.imports,
       module: SlackCoreModule,
-      providers: [...this.createAsyncProviders(options), slackProvider]
+      providers: [...this.createAsyncProviders(options), slackProvider],
     };
   }
 
@@ -47,8 +47,8 @@ export class SlackCoreModule {
       {
         provide: options.useClass,
         useClass: options.useClass,
-        inject: [options.inject ?? []]
-      } as ClassProvider
+        inject: [options.inject ?? []],
+      } as ClassProvider,
     ];
   }
 
@@ -59,7 +59,7 @@ export class SlackCoreModule {
       return {
         inject: options.inject ?? [],
         provide: SLACK_MODULE,
-        useFactory: options.useFactory
+        useFactory: options.useFactory,
       };
     }
     return {
@@ -70,7 +70,7 @@ export class SlackCoreModule {
         : [],
       provide: SLACK_MODULE,
       useFactory: (optionsFactory: SlackOptionsFactory) =>
-        optionsFactory.createSlackOptions()
+        optionsFactory.createSlackOptions(),
     };
   }
 }

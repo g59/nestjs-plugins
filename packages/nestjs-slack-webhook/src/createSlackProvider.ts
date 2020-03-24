@@ -9,6 +9,6 @@ export function createSlackProvider(
 ): Provider<IncomingWebhook> {
   return {
     provide: SLACK_TOKEN,
-    useValue: getSlackClient(options)
+    useValue: getSlackClient(options),
   };
 }

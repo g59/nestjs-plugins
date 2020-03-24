@@ -4,7 +4,7 @@ import {
   Column,
   getRepository,
   Connection,
-  createConnection
+  createConnection,
 } from "typeorm";
 import { getPagingParameters, findAndPaginate } from "../src";
 
@@ -24,7 +24,7 @@ describe("app", () => {
       type: "sqlite",
       database: "nestjs-plugins",
       synchronize: true,
-      entities: [Example]
+      entities: [Example],
     });
   });
 
