@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "@nestjs/testing": "7.0.7",
-    "@types/node": "13.9.8",
+    "@types/node": "13.11.0",
     "@types/supertest": "2.0.8",
     "supertest": "4.0.2",
     "ts-loader": "6.2.2",
