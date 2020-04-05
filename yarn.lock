@@ -1751,11 +1751,6 @@
     "@secretlint/types" "^1.1.0"
     istextorbinary "^3.3.0"
 
-"@secretlint/types@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@secretlint/types/-/types-1.0.5.tgz#796b88e0a1a9d41f10f6b7d06d70e29aaa3c84c9"
-  integrity sha512-bpeuPCIdeBwGdlCq79Nuzp2/59MxyKbL77ZUYq2Q+wU8usHXMkf7s5jKvj9+F/PZd5cJUKRa8AmSeMJ8CPNSvg==
-
 "@secretlint/types@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@secretlint/types/-/types-1.1.0.tgz#dafb350d711b24e0b19443b63d4fb1f816a5e7bc"
@@ -9570,10 +9565,10 @@ prettier-plugin-package@1.0.0:
   resolved "https://registry.yarnpkg.com/prettier-plugin-package/-/prettier-plugin-package-1.0.0.tgz#164a400f5b695246835b94c7e1b65ea253d67bdc"
   integrity sha512-flbKuLB7ftrW2zQYJjb0mF6zY7R0jDrYatpr0BBNj04Eb+g1RLbquOQSJE1LffDZfzU03fwJQ74grqQjQjYa3Q==
 
-prettier@2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.0.2.tgz#1ba8f3eb92231e769b7fcd7cb73ae1b6b74ade08"
-  integrity sha512-5xJQIPT8BraI7ZnaDwSbu5zLrB6vvi8hVV58yHQ+QK64qrY40dULy0HSRlQ2/2IdzeBpjhDkqdcFBnFeDEMVdg==
+prettier@2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.0.3.tgz#9a06f0e94a51420e78b6925568b5bec72afe41ea"
+  integrity sha512-5qpBDBHO9fpE0zruKiTZm8Gxmz7kknO+WlQR/ivV+RMwgDw/WjOgmxLDn66MPrxq/WZPx/EgEZzh87xJO5E6Fw==
 
 prettier@^1.16.0:
   version "1.19.1"
