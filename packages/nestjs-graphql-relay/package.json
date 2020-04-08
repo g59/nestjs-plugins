@@ -18,7 +18,6 @@
   "keywords": [
     "nest",
     "graphql-relay",
-    "type-graphql",
     "typeorm"
   ],
   "peerDependencies": {
@@ -27,10 +26,10 @@
   "devDependencies": {
     "@types/graphql": "14.5.0",
     "@types/graphql-relay": "0.4.11",
+    "class-validator": "^0.11.1",
     "graphql": "14.6.0",
     "graphql-relay": "0.6.0",
     "sqlite3": "4.1.1",
-    "type-graphql": "0.17.6",
     "typeorm": "0.2.24"
   },
   "types": "lib/index.d.ts"
