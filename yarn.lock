@@ -1393,7 +1393,7 @@
     webpack "4.42.1"
     webpack-node-externals "1.7.2"
 
-"@nestjs/common@^7.0.7":
+"@nestjs/common@7.0.7", "@nestjs/common@^7.0.7":
   version "7.0.7"
   resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-7.0.7.tgz#c79b742d9181dc5c8fda51b60bbf69c553cec3cf"
   integrity sha512-qAYtNtEv5GvHOeHEJVYOHYeqT+vVMW4YM63D8xWAAkQRcFUFDO9oRzi+Y27gRA1nY7DfgMk2OO5bD4+OzIm//g==
@@ -1415,7 +1415,7 @@
     lodash.set "4.3.2"
     uuid "7.0.2"
 
-"@nestjs/core@^7.0.7":
+"@nestjs/core@7.0.7", "@nestjs/core@^7.0.7":
   version "7.0.7"
   resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-7.0.7.tgz#3fd3e49c9ff76662271fe2e78b35e0195c76fa2d"
   integrity sha512-0ncPhn8foK3HqUHNlHcvOLv999djD888/nmVuEyFlnjcte34/kqNQNEEq2tMnPy9lfaKtl/P4Ibr02CCN+oLcg==
@@ -3971,7 +3971,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-class-validator@^0.11.1:
+class-validator@0.11.1:
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/class-validator/-/class-validator-0.11.1.tgz#9033b9ebdc3883e826dfc0c545a45935e3298553"
   integrity sha512-6CGdjwJLmKw+sQbK5ZDo1v1yTajkqfPOUDWSYVIlhUiCh6Phy8sAnMFE2XKHAcKAdoOz4jJUQhjPQWPYUuHxrA==
@@ -10429,7 +10429,7 @@ rxjs@6.5.4:
   dependencies:
     tslib "^1.9.0"
 
-rxjs@^6.3.3, rxjs@^6.4.0, rxjs@^6.5.3, rxjs@^6.5.5:
+rxjs@6.5.5, rxjs@^6.3.3, rxjs@^6.4.0, rxjs@^6.5.3, rxjs@^6.5.5:
   version "6.5.5"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.5.5.tgz#c5c884e3094c8cfee31bf27eb87e54ccfc87f9ec"
   integrity sha512-WfQI+1gohdf0Dai/Bbmk5L5ItH5tYqm3ki2c5GdWhKjalzjg93N3avFjVStyZZz+A2Em+ZxKH5bNghw9UeylGQ==
