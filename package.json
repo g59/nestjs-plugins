@@ -32,7 +32,7 @@
     "jest": "25.4.0",
     "lerna-changelog": "1.0.1",
     "lint-staged": "10.1.7",
-    "prettier": "2.0.4",
+    "prettier": "2.0.5",
     "prettier-plugin-package": "1.0.0",
     "secretlint": "1.1.0",
     "textlint": "11.6.3",
