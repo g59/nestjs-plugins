@@ -37,7 +37,7 @@
     "secretlint": "1.1.0",
     "textlint": "11.6.3",
     "ts-jest": "25.4.0",
-    "ts-node": "8.9.0"
+    "ts-node": "8.9.1"
   },
   "husky": {
     "hooks": {
