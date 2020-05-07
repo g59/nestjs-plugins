@@ -1491,16 +1491,16 @@
     tslib "1.11.1"
     uuid "7.0.2"
 
-"@nestjs/config@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/config/-/config-0.4.0.tgz#5259a87f5603be62faf16fdb026ff4acc3ff7004"
-  integrity sha512-QJooLLCNKzlzSD+m/CHtytd7XM5larcp+YUajBkteCo4KLQL2Kd0PFiowzXBrVEpX4b9osgZf16K+V1shJD/nA==
+"@nestjs/config@0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/config/-/config-0.4.1.tgz#9655586f9f25ee7b48402d2d85cf7c6a41289987"
+  integrity sha512-rK8BVQsOk7ba4dbLVc7KOCAABhzD2Pb76Udd8DFyHef++DPJMOMI0RsYAuxLCw01tL+CStuk4R+nz6fYuCWriQ==
   dependencies:
     dotenv "8.2.0"
     dotenv-expand "5.1.0"
     lodash.get "4.4.2"
     lodash.set "4.3.2"
-    uuid "7.0.2"
+    uuid "8.0.0"
 
 "@nestjs/core@7.0.9":
   version "7.0.9"
@@ -12562,6 +12562,11 @@ uuid@7.0.3, uuid@^7.0.2, uuid@^7.0.3:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-7.0.3.tgz#c5c9f2c8cf25dc0a372c4df1441c41f5bd0c680b"
   integrity sha512-DPSke0pXhTZgoF/d+WSt2QaKMCFSfx7QegxEWT+JOuHF5aWrKEn0G+ztjuJg/gG8/ItK+rbPCD/yNv8yyih6Cg==
+
+uuid@8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.0.0.tgz#bc6ccf91b5ff0ac07bbcdbf1c7c4e150db4dbb6c"
+  integrity sha512-jOXGuXZAWdsTH7eZLtyXMqUb9EcWMGZNbL9YcGBJl4MH4nrxHmZJhEHvyLFrkxo+28uLb/NYRcStH48fnD0Vzw==
 
 uuid@^3.0.1, uuid@^3.1.0, uuid@^3.3.2:
   version "3.4.0"
