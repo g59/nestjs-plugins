@@ -36,7 +36,7 @@
     "prettier-plugin-package": "1.0.0",
     "secretlint": "2.0.0",
     "textlint": "11.6.3",
-    "ts-jest": "25.5.0",
+    "ts-jest": "25.5.1",
     "ts-node": "8.10.1"
   },
   "husky": {
