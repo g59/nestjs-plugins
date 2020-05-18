@@ -1,6 +1,6 @@
 {
   "name": "nestjs-slack-webhook",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Nest.js + slack-webhook",
   "repository": {
     "type": "git",

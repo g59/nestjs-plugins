@@ -1,3 +1,16 @@
+## v0.0.3 (2020-05-18)
+
+#### :rocket: Enhancement
+
+- `nestjs-graphql-relay`
+  - [#152](https://github.com/piic/nestjs-plugins/pull/152) fix: skip aggregate ([@9renpoto](https://github.com/9renpoto))
+- `nestjs-graphql-relay`, `nestjs-slack-webhook`
+  - [#91](https://github.com/piic/nestjs-plugins/pull/91) chore: update dependencies ([@9renpoto](https://github.com/9renpoto))
+
+#### Committers: 1
+
+- Keisuke Kan ([@9renpoto](https://github.com/9renpoto))
+
 ## v0.0.2 (2020-03-16)
 
 #### :rocket: Enhancement
