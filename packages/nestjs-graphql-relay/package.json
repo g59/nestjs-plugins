@@ -1,6 +1,6 @@
 {
   "name": "nestjs-graphql-relay",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "@nestjs/graphql + graphql-relay +typeorm",
   "repository": {
     "type": "git",
