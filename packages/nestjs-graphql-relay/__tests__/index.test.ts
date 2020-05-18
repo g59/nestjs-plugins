@@ -1,3 +1,5 @@
+import { random } from "faker";
+import { Factory } from "typeorm-factory";
 import {
   Entity,
   PrimaryGeneratedColumn,
@@ -26,6 +28,9 @@ describe("app", () => {
       synchronize: true,
       entities: [Example],
     });
+
+    const repo = getRepository(Example);
+    await connection.query(`DELETE from ${repo.metadata.tableName}`);
   });
 
   afterAll(() => connection.close());
@@ -46,18 +51,50 @@ describe("app", () => {
     ).toThrowErrorMatchingInlineSnapshot(`"invalid before query"`);
   });
 
-  it("findAndPaginate", async () => {
-    const res = await findAndPaginate<Example>({}, {}, getRepository(Example));
-    expect(res).toMatchInlineSnapshot(`
-      Object {
-        "edges": Array [],
-        "pageInfo": Object {
-          "endCursor": null,
+  describe("findAndPaginate", () => {
+    it("empty", async () => {
+      const res = await findAndPaginate<Example>(
+        {},
+        {},
+        getRepository(Example)
+      );
+      expect(res).toMatchInlineSnapshot(`
+        Object {
+          "edges": Array [],
+          "pageInfo": Object {
+            "endCursor": null,
+            "hasNextPage": false,
+            "hasPreviousPage": false,
+            "startCursor": null,
+          },
+        }
+      `);
+    });
+
+    it("find", async () => {
+      const name = random.words();
+      const f = new Factory(Example).attr("name", random.alphaNumeric(10));
+      await f.createList(random.number({ max: 5 }));
+      await f.createList(random.number({ max: 5 }), {
+        name,
+      });
+
+      const res = await findAndPaginate<Example>(
+        {
+          where: { name },
+        },
+        {},
+        getRepository(Example)
+      );
+      res.edges.map(({ node }) => expect(node.name).toEqual(name));
+      expect(res.pageInfo).toMatchInlineSnapshot(`
+        Object {
+          "endCursor": "YXJyYXljb25uZWN0aW9uOjE=",
           "hasNextPage": false,
           "hasPreviousPage": false,
-          "startCursor": null,
-        },
-      }
-    `);
+          "startCursor": "YXJyYXljb25uZWN0aW9uOjA=",
+        }
+      `);
+    });
   });
 });

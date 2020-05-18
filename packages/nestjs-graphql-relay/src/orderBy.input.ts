@@ -10,8 +10,8 @@ registerEnumType(OrderByDirection, { name: "OrderByDirection" });
 @InputType()
 export class OrderByInput {
   @Field(() => OrderByDirection, { nullable: true })
-  createdAt?: OrderByDirection;
+  readonly createdAt?: OrderByDirection;
 
   @Field(() => OrderByDirection, { nullable: true })
-  updatedAt?: OrderByDirection;
+  readonly updatedAt?: OrderByDirection;
 }

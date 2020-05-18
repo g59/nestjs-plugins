@@ -48,7 +48,7 @@ export class ConnectionArgs implements Relay.ConnectionArguments {
   @ValidateIf((o) => o.before !== undefined)
   @Validate(CannotUseWithout, ["last"])
   @Validate(CannotUseWith, ["after", "first"])
-  before?: Relay.ConnectionCursor;
+  readonly before?: Relay.ConnectionCursor;
 
   @Field(() => String, {
     nullable: true,
@@ -57,13 +57,13 @@ export class ConnectionArgs implements Relay.ConnectionArguments {
   @ValidateIf((o) => o.after !== undefined)
   @Validate(CannotUseWithout, ["first"])
   @Validate(CannotUseWith, ["before", "last"])
-  after?: Relay.ConnectionCursor;
+  readonly after?: Relay.ConnectionCursor;
 
   @Field(() => Int, { nullable: true, description: "Paginate first" })
   @ValidateIf((o) => o.first !== undefined)
   @Min(1)
   @Validate(CannotUseWith, ["before", "last"])
-  first?: number;
+  readonly first?: number;
 
   @Field(() => Int, { nullable: true, description: "Paginate last" })
   @ValidateIf((o) => o.last !== undefined)
@@ -73,5 +73,5 @@ export class ConnectionArgs implements Relay.ConnectionArguments {
   @Validate(CannotUseWithout, ["before"])
   @Validate(CannotUseWith, ["after", "first"])
   @Min(1)
-  last?: number;
+  readonly last?: number;
 }

@@ -3,7 +3,6 @@ import { FindManyOptions, Repository } from "typeorm";
 import { ConnectionArgs } from "./connectionArgs";
 
 export { ConnectionArgs };
-export * from "./aggregate";
 export * from "./pageInfo";
 export * from "./orderBy.input";
 
@@ -86,9 +85,8 @@ export async function findAndPaginate<T>(
     take: limit,
   });
 
-  const res = Relay.connectionFromArraySlice(entities, connArgs, {
+  return Relay.connectionFromArraySlice(entities, connArgs, {
     arrayLength: count,
     sliceStart: offset || 0,
   });
-  return res;
 }

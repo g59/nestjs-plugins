@@ -20,15 +20,6 @@ export class RecipesService {
     order: FindManyOptions<Recipe>["order"],
     connArgs: ConnectionArgs
   ) {
-    const connection = await findAndPaginate(
-      { where, order },
-      connArgs,
-      this.recipes
-    );
-    const count = await this.recipes.count({ where });
-    return {
-      ...connection,
-      aggregate: { count }
-    };
+    return findAndPaginate({ where, order }, connArgs, this.recipes);
   }
 }

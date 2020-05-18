@@ -1,6 +1,6 @@
 import { Resolver, Query, Args, ObjectType, Field } from "@nestjs/graphql";
 import * as Relay from "graphql-relay";
-import { PageInfo, Aggregate } from "nestjs-graphql-relay";
+import { PageInfo } from "nestjs-graphql-relay";
 import { Recipe } from "./models/recipe";
 import { RecipesConnectionArgs } from "./dto/recipes.input";
 import { RecipesService } from "./recipes.service";
@@ -8,22 +8,19 @@ import { RecipesService } from "./recipes.service";
 @ObjectType({ isAbstract: true })
 abstract class RecipesEdge implements Relay.Edge<Recipe> {
   @Field(() => Recipe)
-  readonly node!: Recipe;
+  readonly node: Recipe;
 
   @Field()
-  readonly cursor!: Relay.ConnectionCursor;
+  readonly cursor: Relay.ConnectionCursor;
 }
 
 @ObjectType()
 export class RecipesConnection implements Relay.Connection<Recipe> {
   @Field()
-  readonly pageInfo!: PageInfo;
+  readonly pageInfo: PageInfo;
 
   @Field(() => [RecipesEdge])
-  readonly edges!: Array<Relay.Edge<Recipe>>;
-
-  @Field(() => Aggregate)
-  readonly aggregate: Aggregate;
+  readonly edges: Array<Relay.Edge<Recipe>>;
 }
 
 @Resolver("Recipes")

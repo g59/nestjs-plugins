@@ -8,13 +8,11 @@ describe("RecipesService", () => {
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      providers: [RecipesService, createMockRepository(Recipe)]
+      providers: [RecipesService, createMockRepository(Recipe)],
     }).compile();
 
     service = module.get<RecipesService>(RecipesService);
   });
 
-  it("should be defined", () => {
-    expect(service).toBeDefined();
-  });
+  it("should be defined", () => expect(service).toBeDefined());
 });
