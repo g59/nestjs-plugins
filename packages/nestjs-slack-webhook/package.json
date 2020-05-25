@@ -2,10 +2,12 @@
   "name": "nestjs-slack-webhook",
   "version": "0.0.3",
   "description": "Nest.js + slack-webhook",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/piic/nestjs-plugins.git"
   },
+  "homepage": "https://github.com/piic/nestjs-plugins/tree/master/packages/nestjs-slack-webhook",
   "bugs": {
     "url": "https://github.com/piic/nestjs-plugins/issues"
   },

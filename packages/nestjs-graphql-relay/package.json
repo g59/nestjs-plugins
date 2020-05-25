@@ -2,10 +2,12 @@
   "name": "nestjs-graphql-relay",
   "version": "0.0.3",
   "description": "@nestjs/graphql + graphql-relay +typeorm",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/piic/nestjs-plugins.git"
   },
+  "homepage": "https://github.com/piic/nestjs-plugins/tree/master/packages/nestjs-graphql-relay",
   "bugs": {
     "url": "https://github.com/piic/nestjs-plugins/issues"
   },
