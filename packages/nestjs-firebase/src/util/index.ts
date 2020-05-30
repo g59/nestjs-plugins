@@ -1,1 +1,1 @@
-export * from './getFirebaseAdmin'
+export * from "./getFirebaseAdmin";
