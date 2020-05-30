@@ -7,10 +7,15 @@
   "scripts": {
     "build": "yarn clean && tsc -p .",
     "clean": "rimraf lib",
-    "lint": "tsc -p . --noEmit",
-    "test": "jest"
+    "lint": "tsc -p . --noEmit"
   },
-  "keywords": [],
+  "keywords": [
+    "nest",
+    "firebase"
+  ],
+  "dependencies": {
+    "firebase-admin": "^8.12.1"
+  },
   "devDependencies": {
     "@nestjs/common": "7.1.1",
     "@nestjs/core": "7.1.1",
@@ -19,27 +24,5 @@
     "reflect-metadata": "0.1.13",
     "rxjs": "6.5.5"
   },
-  "types": "lib/index.d.ts",
-  "jest": {
-    "globals": {
-      "ts-jest": {
-        "tsConfig": "tsconfig.json"
-      }
-    },
-    "transform": {
-      "^.+\\.(t|j)s$": "ts-jest"
-    },
-    "transformIgnorePatterns": [
-      "^.+\\.js$"
-    ],
-    "collectCoverage": true,
-    "coverageReporters": [
-      "lcov",
-      "text-summary"
-    ],
-    "testEnvironment": "node"
-  },
-  "dependencies": {
-    "firebase-admin": "^8.12.1"
-  }
+  "types": "lib/index.d.ts"
 }
