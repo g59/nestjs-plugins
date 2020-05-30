@@ -1,0 +1,45 @@
+{
+  "name": "nestjs-firebase",
+  "version": "0.0.1",
+  "private": true,
+  "description": "TBA",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "yarn clean && tsc -p .",
+    "clean": "rimraf lib",
+    "lint": "tsc -p . --noEmit",
+    "test": "jest"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@nestjs/common": "7.1.1",
+    "@nestjs/core": "7.1.1",
+    "@nestjs/testing": "7.1.1",
+    "@slack/webhook": "5.0.3",
+    "reflect-metadata": "0.1.13",
+    "rxjs": "6.5.5"
+  },
+  "types": "lib/index.d.ts",
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "transformIgnorePatterns": [
+      "^.+\\.js$"
+    ],
+    "collectCoverage": true,
+    "coverageReporters": [
+      "lcov",
+      "text-summary"
+    ],
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "firebase-admin": "^8.12.1"
+  }
+}
