@@ -1,3 +1,13 @@
+## v0.0.4 (2020-06-02)
+
+#### :rocket: Enhancement
+* `nestjs-firebase`
+  * [#170](https://github.com/piic/nestjs-plugins/pull/170) feat: added firebase plugin  ([@abyssparanoia](https://github.com/abyssparanoia))
+
+#### Committers: 2
+- Keisuke Kan ([@9renpoto](https://github.com/9renpoto))
+- [@abyssparanoia](https://github.com/abyssparanoia)
+
 ## v0.0.3 (2020-05-18)
 
 #### :rocket: Enhancement
