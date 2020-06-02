@@ -1,8 +1,7 @@
 {
   "name": "nestjs-firebase",
   "version": "0.0.1",
-  "private": true,
-  "description": "TBA",
+  "description": "@nestjs with firebase",
   "main": "lib/index.js",
   "scripts": {
     "build": "yarn clean && tsc -p .",
@@ -13,14 +12,15 @@
     "nest",
     "firebase"
   ],
-  "dependencies": {
-    "firebase-admin": "^8.12.1"
+  "peerDependencies": {
+    "firebase-admin": "^8.0.0"
   },
   "devDependencies": {
     "@nestjs/common": "7.1.2",
     "@nestjs/core": "7.1.2",
     "@nestjs/testing": "7.1.2",
     "@slack/webhook": "5.0.3",
+    "firebase-admin": "^8.12.1",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.5.5"
   },

@@ -20,8 +20,7 @@
     "strictFunctionTypes": true,
     "strictNullChecks": true,
     "strictPropertyInitialization": false,
-    "target": "es2017",
-    "types": ["jest", "node"]
+    "target": "ES2017"
   },
   "exclude": ["node_modules", "**/*.spec.ts", "dist"],
   "include": ["src"]
