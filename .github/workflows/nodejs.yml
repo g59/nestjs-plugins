@@ -8,7 +8,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x]
+        node-version: [10.x, 12.x, 14.x]
 
     steps:
       - uses: actions/checkout@v1
@@ -23,6 +23,7 @@ jobs:
           yarn lint
           yarn test
         env:
+          SLACK_WEBHOOK_URL: https://example.com
           CI: true
       - uses: coverallsapp/github-action@master
         with:
