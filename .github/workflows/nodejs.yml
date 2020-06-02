@@ -23,7 +23,7 @@ jobs:
           yarn lint
           yarn test
         env:
-          SLACK_WSBHOOK_URL: https://example.com
+          SLACK_WEBHOOK_URL: https://example.com
           CI: true
       - uses: coverallsapp/github-action@master
         with:
