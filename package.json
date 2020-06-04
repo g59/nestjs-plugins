@@ -33,7 +33,7 @@
     "husky": "4.2.5",
     "jest": "26.0.1",
     "lerna-changelog": "1.0.1",
-    "lint-staged": "10.2.8",
+    "lint-staged": "10.2.9",
     "prettier": "2.0.5",
     "prettier-plugin-package": "1.0.0",
     "secretlint": "2.0.0",
