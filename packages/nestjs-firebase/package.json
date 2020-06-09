@@ -1,9 +1,9 @@
 {
   "name": "nestjs-firebase",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "@nestjs with firebase",
-  "main": "lib/index.js",
   "homepage": "https://github.com/piic/nestjs-plugins/tree/master/packages/nestjs-firebase",
+  "main": "lib/index.js",
   "scripts": {
     "build": "yarn clean && tsc -p .",
     "clean": "rimraf lib",
