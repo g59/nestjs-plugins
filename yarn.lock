@@ -1636,7 +1636,7 @@
     tslib "2.0.0"
     uuid "8.2.0"
 
-"@nestjs/graphql@^7.2.1", "@nestjs/graphql@^7.5.5":
+"@nestjs/graphql@7.5.5", "@nestjs/graphql@^7.2.1":
   version "7.5.5"
   resolved "https://registry.yarnpkg.com/@nestjs/graphql/-/graphql-7.5.5.tgz#2a0670a3b019b561fc55933d881b17c0780354cb"
   integrity sha512-2A3ezVOzvaglMENrw7GmViSmtDLrygMXLfy2xVlb5fJj7UWT0cLOH4IoP/zJqsFw+LNHbCzdoDR4szqbxhe15g==
