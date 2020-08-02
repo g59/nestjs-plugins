@@ -5,11 +5,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/piic/nestjs-plugins.git"
+    "url": "git+ssh://git@github.com/g59/nestjs-plugins.git"
   },
-  "homepage": "https://github.com/piic/nestjs-plugins/tree/master/packages/nestjs-slack-webhook",
+  "homepage": "https://github.com/g59/nestjs-plugins/tree/master/packages/nestjs-slack-webhook",
   "bugs": {
-    "url": "https://github.com/piic/nestjs-plugins/issues"
+    "url": "https://github.com/g59/nestjs-plugins/issues"
   },
   "main": "lib/index.js",
   "scripts": {

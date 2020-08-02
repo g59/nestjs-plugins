@@ -1,6 +1,6 @@
 # nestjs-graphql-relay
 
-![Actions Status](https://github.com/piic/nestjs-plugins/workflows/Node%20CI/badge.svg)
+![Actions Status](https://github.com/g59/nestjs-plugins/workflows/Node%20CI/badge.svg)
 [![npm version](https://badge.fury.io/js/nestjs-graphql-relay.svg)](https://badge.fury.io/js/nestjs-graphql-relay)
 
 Nest.js + typeorm + graphql-relay inspired [nestjs-graphql-relay](https://github.com/kazekyo/nestjs-graphql-relay)
@@ -13,7 +13,7 @@ npm install nestjs-graphql-relay
 
 ## Usage
 
-[example resolver](https://github.com/piic/nestjs-plugins/blob/master/example/src/recipes/recipes.resolver.ts)
+[example resolver](https://github.com/g59/nestjs-plugins/blob/master/example/src/recipes/recipes.resolver.ts)
 
 ```typescript
 @ObjectType({ isAbstract: true })
@@ -41,4 +41,4 @@ PRs accepted.
 
 ## License
 
-[MIT](https://github.com/piic/nestjs-plugins/blob/master/LICENSE) © Piic
+[MIT](https://github.com/g59/nestjs-plugins/blob/master/LICENSE) © g59
