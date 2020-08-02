@@ -1,8 +1,8 @@
 {
   "name": "nestjs-plugins",
   "private": true,
-  "repository": "git@github.com:piic/nestjs-plugins.git",
-  "author": "piic",
+  "repository": "git@github.com:g59/nestjs-plugins.git",
+  "author": "g59",
   "scripts": {
     "build": "lerna run build --include-dependents",
     "bump": "lerna version --no-git-tag-version --no-push && lerna-changelog",

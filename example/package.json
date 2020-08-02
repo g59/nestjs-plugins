@@ -4,7 +4,7 @@
   "private": true,
   "description": "piic/nestjs-plugins examples",
   "license": "MIT",
-  "author": "Piic Co.,Ltd",
+  "author": "g59",
   "scripts": {
     "build": "nest build",
     "clean": "rimraf dist",
