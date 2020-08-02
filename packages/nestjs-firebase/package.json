@@ -23,7 +23,7 @@
     "@slack/webhook": "5.0.3",
     "firebase-admin": "9.0.0",
     "reflect-metadata": "0.1.13",
-    "rxjs": "6.6.0"
+    "rxjs": "6.6.2"
   },
   "types": "lib/index.d.ts"
 }
