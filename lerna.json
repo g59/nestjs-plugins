@@ -2,12 +2,13 @@
   "packages": ["packages/*", "example"],
   "changelog": {
     "labels": {
-      "enhancement": ":rocket: Enhancement",
-      "bug": ":bug: Bug Fix"
+      "Type: Feature": ":rocket: Enhancement",
+      "Type: Bug": ":bug: Bug Fix",
+      "Type: Dependencies": ":runner: dependencies"
     },
     "cacheDir": ".changelog"
   },
   "npmClient": "yarn",
   "useWorkspaces": true,
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
