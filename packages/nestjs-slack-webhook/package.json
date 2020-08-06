@@ -21,6 +21,10 @@
     "nest",
     "slack-webhook"
   ],
+  "peerDependencies": {
+    "@nestjs/common": "^7.0.0",
+    "@slack/webhook": "^5.0.0"
+  },
   "devDependencies": {
     "@nestjs/common": "7.4.2",
     "@nestjs/core": "7.4.2",
