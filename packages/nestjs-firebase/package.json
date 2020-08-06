@@ -17,9 +17,9 @@
     "firebase-admin": "^8.0.0 || ^9.0.0"
   },
   "devDependencies": {
-    "@nestjs/common": "7.3.2",
-    "@nestjs/core": "7.3.2",
-    "@nestjs/testing": "7.3.2",
+    "@nestjs/common": "7.4.2",
+    "@nestjs/core": "7.4.2",
+    "@nestjs/testing": "7.4.2",
     "@slack/webhook": "5.0.3",
     "firebase-admin": "9.0.0",
     "reflect-metadata": "0.1.13",
