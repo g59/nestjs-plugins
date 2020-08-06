@@ -1,5 +1,8 @@
 {
-  "packages": ["packages/*", "example"],
+  "packages": [
+    "packages/*",
+    "example"
+  ],
   "changelog": {
     "labels": {
       "Type: Feature": ":rocket: Enhancement",
@@ -10,5 +13,5 @@
   },
   "npmClient": "yarn",
   "useWorkspaces": true,
-  "version": "1.0.1"
+  "version": "1.0.2"
 }
