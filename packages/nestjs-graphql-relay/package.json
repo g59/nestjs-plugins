@@ -27,15 +27,15 @@
     "typeorm": "=<0.2.24"
   },
   "devDependencies": {
-    "@nestjs/common": "^7.4.2",
+    "@nestjs/common": "7.4.2",
     "@nestjs/graphql": "7.6.0",
     "@types/graphql": "14.5.0",
     "@types/graphql-relay": "0.6.0",
-    "class-transformer": "^0.3.1",
+    "class-transformer": "0.3.1",
     "class-validator": "0.12.2",
     "graphql": "15.3.0",
     "graphql-relay": "0.6.0",
-    "reflect-metadata": "^0.1.13",
+    "reflect-metadata": "0.1.13",
     "sqlite3": "5.0.0",
     "typeorm": "0.2.24",
     "typeorm-factory": "0.0.14"
