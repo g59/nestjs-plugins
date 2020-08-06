@@ -1,8 +1,9 @@
 {
   "name": "nestjs-firebase",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "@nestjs with firebase",
   "homepage": "https://github.com/g59/nestjs-plugins/tree/master/packages/nestjs-firebase",
+  "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
     "build": "yarn clean && tsc -p .",
