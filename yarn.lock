@@ -536,31 +536,31 @@
   resolved "https://registry.yarnpkg.com/@firebase/auth-interop-types/-/auth-interop-types-0.1.5.tgz#9fc9bd7c879f16b8d1bb08373a0f48c3a8b74557"
   integrity sha512-88h74TMQ6wXChPA6h9Q3E1Jg6TkTHep2+k63OWg3s0ozyGVMeY+TTOti7PFPzq5RhszQPQOoCi59es4MaRvgCw==
 
-"@firebase/component@0.1.16":
-  version "0.1.16"
-  resolved "https://registry.yarnpkg.com/@firebase/component/-/component-0.1.16.tgz#7a0dbdfff1485d45b8485db87a982f053e68761a"
-  integrity sha512-FvffvFN0LWgv1H/FIyruTECOL69Dhy+JfwoTq+mV39V8Mz9lNpo41etonL5AOr7KmXxYJVbNwkx0L9Ei88i7JA==
+"@firebase/component@0.1.17":
+  version "0.1.17"
+  resolved "https://registry.yarnpkg.com/@firebase/component/-/component-0.1.17.tgz#2ce3e1aa060eccf0f06d20368ef9a32cf07c07be"
+  integrity sha512-/tN5iLcFp9rdpTfCJPfQ/o2ziGHlDxOzNx6XD2FoHlu4pG/PPGu+59iRfQXIowBGhxcTGD/l7oJhZEY/PVg0KQ==
   dependencies:
-    "@firebase/util" "0.2.50"
+    "@firebase/util" "0.3.0"
     tslib "^1.11.1"
 
-"@firebase/database-types@0.5.1":
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/@firebase/database-types/-/database-types-0.5.1.tgz#fab2f3fb48eec374a9f435ed21e138635cb9b71c"
-  integrity sha512-onQxom1ZBYBJ648w/VNRzUewovEDAH7lvnrrpCd69ukkyrMk6rGEO/PQ9BcNEbhlNtukpsqRS0oNOFlHs0FaSA==
+"@firebase/database-types@0.5.2", "@firebase/database-types@^0.5.2":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@firebase/database-types/-/database-types-0.5.2.tgz#23bec8477f84f519727f165c687761e29958b63c"
+  integrity sha512-ap2WQOS3LKmGuVFKUghFft7RxXTyZTDr0Xd8y2aqmWsbJVjgozi0huL/EUMgTjGFrATAjcf2A7aNs8AKKZ2a8g==
   dependencies:
     "@firebase/app-types" "0.6.1"
 
-"@firebase/database@^0.6.0":
-  version "0.6.8"
-  resolved "https://registry.yarnpkg.com/@firebase/database/-/database-0.6.8.tgz#28c9fb4e6a3322cdf9b5f58e768f21d9ac948840"
-  integrity sha512-Psibz/LD9WBvZRS7A/kkYd5i5l6tBw49adSFmCM2ZJlKE9fxZhxay02AerwfXHiq3gPKVeqXUjBIRuHOWdEXmw==
+"@firebase/database@^0.6.10":
+  version "0.6.10"
+  resolved "https://registry.yarnpkg.com/@firebase/database/-/database-0.6.10.tgz#7947d55ef25c676b7a9f4d2e2d1a4c1808ddb89c"
+  integrity sha512-Hc8zIPAroIbAoRe6xFCI5oFHubcHKoDsbYE3J5G1/BhT6DnEUSoLgx8kJ2npybVSCVyb8BvsD6swh17DGEz+0g==
   dependencies:
     "@firebase/auth-interop-types" "0.1.5"
-    "@firebase/component" "0.1.16"
-    "@firebase/database-types" "0.5.1"
+    "@firebase/component" "0.1.17"
+    "@firebase/database-types" "0.5.2"
     "@firebase/logger" "0.2.6"
-    "@firebase/util" "0.2.50"
+    "@firebase/util" "0.3.0"
     faye-websocket "0.11.3"
     tslib "^1.11.1"
 
@@ -569,10 +569,10 @@
   resolved "https://registry.yarnpkg.com/@firebase/logger/-/logger-0.2.6.tgz#3aa2ca4fe10327cabf7808bd3994e88db26d7989"
   integrity sha512-KIxcUvW/cRGWlzK9Vd2KB864HlUnCfdTH0taHE0sXW5Xl7+W68suaeau1oKNEqmc3l45azkd4NzXTCWZRZdXrw==
 
-"@firebase/util@0.2.50":
-  version "0.2.50"
-  resolved "https://registry.yarnpkg.com/@firebase/util/-/util-0.2.50.tgz#77666b845dcb49bc217650aa296a7a8986c06b44"
-  integrity sha512-vFE6+Jfc25u0ViSpFxxq0q5s+XmuJ/y7CL3ud79RQe+WLFFg+j0eH1t23k0yNSG9vZNM7h3uHRIXbV97sYLAyw==
+"@firebase/util@0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@firebase/util/-/util-0.3.0.tgz#c3e938192cde4e1c6260aecaaf22103add2352f5"
+  integrity sha512-GTwC+FSLeCPc44/TXCDReNQ5FPRIS5cb8Gr1XcD1TgiNBOvmyx61Om2YLwHp2GnN++6m6xmwmXARm06HOukATA==
   dependencies:
     tslib "^1.11.1"
 
@@ -6222,12 +6222,13 @@ find-versions@^3.2.0:
   dependencies:
     semver-regex "^2.0.0"
 
-firebase-admin@9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/firebase-admin/-/firebase-admin-9.0.0.tgz#d68551a33e9c14252453743cd6ef9e5ad3251816"
-  integrity sha512-LP4xD+JxfEZ+e1kBIKT2kbDa9UFChwgL4488NexvTjhynNcJsKCGmawl2FMvZ2UPwXKgWBpLXJ07cYp6gk5lcw==
+firebase-admin@9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/firebase-admin/-/firebase-admin-9.1.0.tgz#c8b7f8da32cc52d5f15b0be47fd88979c5e86618"
+  integrity sha512-tGGREJpoRM/mbV/5bs/q9SQRZkVhxMMq1HIJEzSEh3mtz5hC9VtaCkuLt6chuAsqHMBoc1pvnrGTOC5nOme9VQ==
   dependencies:
-    "@firebase/database" "^0.6.0"
+    "@firebase/database" "^0.6.10"
+    "@firebase/database-types" "^0.5.2"
     "@types/node" "^10.10.0"
     dicer "^0.3.0"
     jsonwebtoken "^8.5.1"
