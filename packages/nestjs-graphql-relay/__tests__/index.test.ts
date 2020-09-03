@@ -87,14 +87,7 @@ describe("app", () => {
         getRepository(Example)
       );
       res.edges.map(({ node }) => expect(node.name).toEqual(name));
-      expect(res.pageInfo).toMatchInlineSnapshot(`
-        Object {
-          "endCursor": "YXJyYXljb25uZWN0aW9uOjE=",
-          "hasNextPage": false,
-          "hasPreviousPage": false,
-          "startCursor": "YXJyYXljb25uZWN0aW9uOjA=",
-        }
-      `);
+      expect(res.pageInfo).toMatchSnapshot();
     });
   });
 });

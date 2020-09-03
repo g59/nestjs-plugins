@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app findAndPaginate find 1`] = `
+Object {
+  "endCursor": "YXJyYXljb25uZWN0aW9uOjI=",
+  "hasNextPage": false,
+  "hasPreviousPage": false,
+  "startCursor": "YXJyYXljb25uZWN0aW9uOjA=",
+}
+`;
