@@ -31,7 +31,7 @@
     "@nestjs/testing": "7.4.4",
     "@slack/webhook": "5.0.3",
     "reflect-metadata": "0.1.13",
-    "rxjs": "6.6.2"
+    "rxjs": "6.6.3"
   },
   "types": "lib/index.d.ts"
 }
