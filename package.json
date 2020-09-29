@@ -35,7 +35,7 @@
     "lerna-changelog": "1.0.1",
     "lint-staged": "10.4.0",
     "prettier": "2.1.2",
-    "prettier-plugin-package": "1.0.0",
+    "prettier-plugin-package": "1.1.0",
     "secretlint": "2.1.0",
     "textlint": "11.7.6",
     "ts-jest": "26.4.1",
