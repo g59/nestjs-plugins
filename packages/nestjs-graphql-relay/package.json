@@ -37,7 +37,7 @@
     "graphql-relay": "0.6.0",
     "reflect-metadata": "0.1.13",
     "sqlite3": "5.0.0",
-    "typeorm": "0.2.24",
+    "typeorm": "0.2.28",
     "typeorm-factory": "0.0.14"
   },
   "types": "lib/index.d.ts"
