@@ -53,8 +53,10 @@ describe("app", () => {
 
   describe("findAndPaginate", () => {
     it("empty", async () => {
-      const res = await findAndPaginate<Example>(
-        {},
+      const res = await findAndPaginate(
+        {
+          where: { name: "undefined" },
+        },
         {},
         getRepository(Example)
       );
@@ -79,7 +81,7 @@ describe("app", () => {
         name,
       });
 
-      const res = await findAndPaginate<Example>(
+      const res = await findAndPaginate(
         {
           where: { name },
         },
