@@ -47,11 +47,6 @@
     }
   },
   "jest": {
-    "globals": {
-      "ts-jest": {
-        "tsConfig": "tsconfig.json"
-      }
-    },
     "collectCoverage": true,
     "collectCoverageFrom": [
       "packages/*/src/*.ts"
