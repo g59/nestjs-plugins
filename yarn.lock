@@ -1768,10 +1768,10 @@
     tslib "2.0.1"
     uuid "8.3.0"
 
-"@nestjs/graphql@7.8.0":
-  version "7.8.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/graphql/-/graphql-7.8.0.tgz#59c2d8188792556d638e73a99ace4782230e22a9"
-  integrity sha512-RlVNMRr5cGBwPk7lWuENMOWGWIAuY3h6qL6kIuecloVKFvaHMcFU4ysWpgaz8GAWZrEXX7ix6fhul3pUz7HTMA==
+"@nestjs/graphql@7.8.1":
+  version "7.8.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/graphql/-/graphql-7.8.1.tgz#2ea08e1f0f742519064495cc39104712a4639c6d"
+  integrity sha512-BkZngj0p19ADm+BCaEmXys5m/Nuwpds8gaPkHf2aWLsebeTtIZ7yPW0UtJQfy9WdozSrwYXXxJ41s8clYOCvXw==
   dependencies:
     "@graphql-tools/merge" "6.2.5"
     "@graphql-tools/schema" "6.2.4"
