@@ -18,10 +18,10 @@
     eslint-config-prettier "^6.10.0"
     eslint-plugin-prettier "^3.1.4"
 
-"@9renpoto/textlint-config-ja@7.1.0":
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/@9renpoto/textlint-config-ja/-/textlint-config-ja-7.1.0.tgz#3a0ba8d419b8c85690762f9b21a6869598d1142c"
-  integrity sha512-5ufbm0qSZJjh/ySWwH7y3cXhl6FMmsC6siOHq/vrA1kGrV5Y+7bkKSgfHv9YX2dFeJeGi5lteZtuZpZUQKV0DA==
+"@9renpoto/textlint-config-ja@7.2.0":
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/@9renpoto/textlint-config-ja/-/textlint-config-ja-7.2.0.tgz#14d5fb6380bd0f23b9bd679011375cf7cb19117d"
+  integrity sha512-OhBpbqx4pZmJQUhuGjswQUyRonj0FTyYMHxsxAePTtKHBr82YUl4+XlkHkHLrGHafhd7ZTd33lPR6dSTf+XXNA==
   dependencies:
     textlint-filter-rule-comments "^1.2.2"
     textlint-rule-incremental-headers "^0.2.0"
@@ -34,7 +34,7 @@
     textlint-rule-no-doubled-conjunction "^1.0.2"
     textlint-rule-no-doubled-conjunctive-particle-ga "^1.1.0"
     textlint-rule-no-doubled-joshi "^3.7.2"
-    textlint-rule-no-dropping-the-ra "^1.1.2"
+    textlint-rule-no-dropping-the-ra "^2.0.0"
     textlint-rule-no-hankaku-kana "^1.0.2"
     textlint-rule-no-mix-dearu-desumasu "^4.0.0"
     textlint-rule-no-nfd "^1.0.2"
@@ -12431,10 +12431,10 @@ textlint-rule-no-doubled-joshi@^3.7.2:
     textlint-rule-helper "^2.1.1"
     textlint-util-to-string "^3.0.0"
 
-textlint-rule-no-dropping-the-ra@^1.1.2:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/textlint-rule-no-dropping-the-ra/-/textlint-rule-no-dropping-the-ra-1.1.3.tgz#134d93b0caa238104c3b43e7c24e7c9ff45cf2d1"
-  integrity sha512-JYCFIxiuX86aQZaS0McfVEJugu7EoqTtgTPIw5w/oB3htJb2SIFrLnX7Y017+IOsg7mu+bjH5Zko7H62xD2slg==
+textlint-rule-no-dropping-the-ra@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/textlint-rule-no-dropping-the-ra/-/textlint-rule-no-dropping-the-ra-2.0.0.tgz#d19cf55ff77ae546a5843bc51e4bd032dcdc0d77"
+  integrity sha512-2WvJ49KoEOxnVh+EU2MMeuRZtSzwZ5aIRbu51MASUvmOvEjfbeJHiLgO5Dz0YrFvAWmtOxtWbO6OO5y+SMHQRg==
   dependencies:
     kuromojin "^2.0.0"
     textlint-rule-helper "^2.1.1"
