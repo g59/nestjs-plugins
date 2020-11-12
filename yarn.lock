@@ -2,18 +2,18 @@
 # yarn lockfile v1
 
 
-"@9renpoto/eslint-config-typescript@7.1.0":
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/@9renpoto/eslint-config-typescript/-/eslint-config-typescript-7.1.0.tgz#21696bdb6659346179d8c079529cc362cd38a9c4"
-  integrity sha512-l453F9n5/g9LrhN/uUNLW97M/ulY1A4iNnMq/SJGNsS0jiUqwhS0d1zDQvSev9CK7sa9pF7QDQuuaZIoah1vaw==
+"@9renpoto/eslint-config-typescript@7.2.0":
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/@9renpoto/eslint-config-typescript/-/eslint-config-typescript-7.2.0.tgz#ee3afc0bb8fc583d53b51f4086b8b9fdd4604cd6"
+  integrity sha512-lJBNDActabaju6Z7MwF0qOjFh47lIN0VfmxnpT5e+/pfbXRhXq+qiGuxeiUjLprSGmWfxOKUO0WvYFS/hFIOdQ==
   dependencies:
-    "@9renpoto/eslint-config" "^7.1.0"
+    "@9renpoto/eslint-config" "^7.2.0"
     "@typescript-eslint/parser" "^4.0.0"
 
-"@9renpoto/eslint-config@^7.1.0":
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/@9renpoto/eslint-config/-/eslint-config-7.1.0.tgz#5d65ca600b3b5ec3a88a3411b2de495fb7774bb9"
-  integrity sha512-0vNi6J2HEXSZL9dEljPrVyq/19DcEf+cUP/eXisGEOAzC/wlvzlH118OKk/WCiBUR7oZNciqLFJQq3mVXoZbBw==
+"@9renpoto/eslint-config@^7.2.0":
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/@9renpoto/eslint-config/-/eslint-config-7.2.0.tgz#6290d9e6eccd05a317b4da979b397188f97714b6"
+  integrity sha512-yMtAwhCthYIqPAI7zGsU+iSf19S/97dHe7cljB8GcZ8nJXV+keG8/Phuhd8Rfr41WbbNDWN/fbCmBZY6hcKnow==
   dependencies:
     eslint-config-prettier "^6.10.0"
     eslint-plugin-prettier "^3.1.4"
