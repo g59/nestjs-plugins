@@ -7,7 +7,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/g59/nestjs-plugins.git"
   },
-  "homepage": "https://github.com/g59/nestjs-plugins/tree/master/packages/nestjs-graphql-relay",
+  "homepage": "https://github.com/g59/nestjs-plugins/tree/main/packages/nestjs-graphql-relay",
   "bugs": {
     "url": "https://github.com/g59/nestjs-plugins/issues"
   },
