@@ -41,7 +41,7 @@
     textlint-rule-preset-ja-spacing "^2.0.1"
     textlint-rule-preset-jtf-style "^2.3.4"
 
-"@9renpoto/tsconfig@^7.3.0":
+"@9renpoto/tsconfig@7.3.0":
   version "7.3.0"
   resolved "https://registry.yarnpkg.com/@9renpoto/tsconfig/-/tsconfig-7.3.0.tgz#bf0c67ce0e12dc02826d4a9a6ce318ed10016394"
   integrity sha512-fbq6ree2d0AP4VzOnBKEWSB3sJ+Htpboq/Fk8FTKbtKab86vi44JmTN3yqEz7rh/pJoaXEx+thXaGYdhwToN3g==
