@@ -18,10 +18,10 @@
     eslint-config-prettier "^6.10.0"
     eslint-plugin-prettier "^3.1.4"
 
-"@9renpoto/textlint-config-ja@7.2.0":
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/@9renpoto/textlint-config-ja/-/textlint-config-ja-7.2.0.tgz#14d5fb6380bd0f23b9bd679011375cf7cb19117d"
-  integrity sha512-OhBpbqx4pZmJQUhuGjswQUyRonj0FTyYMHxsxAePTtKHBr82YUl4+XlkHkHLrGHafhd7ZTd33lPR6dSTf+XXNA==
+"@9renpoto/textlint-config-ja@7.3.0":
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/@9renpoto/textlint-config-ja/-/textlint-config-ja-7.3.0.tgz#edd619e1db7a7e87d01937823be83a6ff60785fd"
+  integrity sha512-8ZTxxowGGy/kunV9SBegsPMlHztkSuiqWoW6aCiPo04CEMUVCFyb3P7IISfiDRIfYmwAMCRs6sNgSkEYz1vLHw==
   dependencies:
     textlint-filter-rule-comments "^1.2.2"
     textlint-rule-incremental-headers "^0.2.0"
