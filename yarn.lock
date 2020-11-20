@@ -1705,10 +1705,10 @@
     tslib "2.0.3"
     uuid "8.3.1"
 
-"@nestjs/config@0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/config/-/config-0.6.0.tgz#c34818dfc1fb93068ab987951d432654ed3e9ad4"
-  integrity sha512-musCrvh733Kccbmpi2uPOk+msb/mlrBf2bnowPHV51S5QXoBq84ipnXNIqnGQpfLjlIEdjzzjWXRLV9OeH2GZQ==
+"@nestjs/config@0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/config/-/config-0.6.1.tgz#26e4bfd4b2f9d3a6b6bed6445a2a1e766abdf1c6"
+  integrity sha512-sSIEbHp0xV7bneG2/CePqJh60ELojsBXBPuRM40AcVQwuDRQQ4RAnLT5uaJbWB2xFQjQwik4zejN+27t1cCiBQ==
   dependencies:
     dotenv "8.2.0"
     dotenv-expand "5.1.0"
