@@ -21,7 +21,7 @@
     "@nestjs/common": "7.5.5",
     "@nestjs/core": "7.5.5",
     "@nestjs/testing": "7.5.5",
-    "firebase-admin": "9.4.1",
+    "firebase-admin": "9.4.2",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.6.3"
   },
