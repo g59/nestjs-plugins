@@ -40,11 +40,6 @@
     "ts-jest": "26.4.4",
     "ts-node": "9.1.1"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "jest": {
     "collectCoverage": true,
     "collectCoverageFrom": [
