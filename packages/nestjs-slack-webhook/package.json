@@ -13,7 +13,7 @@
   },
   "main": "lib/index.js",
   "scripts": {
-    "build": "yarn clean && tsc -p .",
+    "build": "npm run clean && tsc -p .",
     "clean": "rimraf lib",
     "lint": "tsc -p . --noEmit"
   },

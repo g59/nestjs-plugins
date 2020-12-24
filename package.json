@@ -8,7 +8,6 @@
     "bump": "lerna version --no-git-tag-version --no-push && lerna-changelog",
     "clean": "lerna run clean --parallel && lerna clean",
     "lint": "run-p -l lint:*",
-    "lint:es": "npx eslint . --ext=ts,tsx",
     "lint:md": "textlint README.md packages/**/*.md",
     "lint:pkg": "lerna run lint --parallel",
     "lint:ptr": "prettier --check './packages/**/*.{js,jsx,ts,tsx}'",
@@ -18,8 +17,7 @@
   "dependencies": {
     "lerna": "3.22.1",
     "npm-run-all": "4.1.5",
-    "rimraf": "3.0.2",
-    "typescript": "4.1.3"
+    "rimraf": "3.0.2"
   },
   "devDependencies": {
     "@9renpoto/eslint-config-typescript": "7.3.0",
@@ -31,7 +29,7 @@
     "can-npm-publish": "1.3.3",
     "eslint": "7.16.0",
     "faker": "5.1.0",
-    "husky": "5.0.6",
+    "husky": "^4.3.6",
     "jest": "26.6.3",
     "lerna-changelog": "1.0.1",
     "lint-staged": "10.5.3",
