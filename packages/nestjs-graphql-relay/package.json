@@ -24,7 +24,9 @@
   ],
   "peerDependencies": {
     "@nestjs/graphql": "^7.0.0",
-    "typeorm": "^0.2.24"
+    "graphql-relay": "^0.6.0",
+    "graphql": "^14.1.1",
+    "@nestjs/typeorm": "^7.0.0"
   },
   "devDependencies": {
     "@apollo/gateway": "^0.21.4",

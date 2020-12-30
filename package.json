@@ -3,6 +3,9 @@
   "private": true,
   "repository": "git@github.com:g59/nestjs-plugins.git",
   "author": "g59",
+  "engines": {
+    "npm": "^7.0.0"
+  },
   "scripts": {
     "build": "lerna run build --include-dependents",
     "bump": "lerna version --no-git-tag-version --no-push && lerna-changelog",
