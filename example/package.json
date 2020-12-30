@@ -18,22 +18,12 @@
   },
   "dependencies": {
     "@nestjs/cli": "^7.1.2",
-    "@nestjs/common": "^7.5.3",
-    "@nestjs/config": "0.6.1",
-    "@nestjs/core": "^7.5.3",
-    "@nestjs/graphql": "^7.8.2",
+    "@nestjs/config": "^0.6.1",
     "@nestjs/platform-express": "^7.5.3",
-    "@nestjs/typeorm": "^7.1.5",
-    "@slack/webhook": "^5.0.3",
-    "@types/graphql": "^14.5.0",
     "apollo-server-express": "^2.19.0",
-    "graphql": "15.4.0",
     "nestjs-firebase": "^1.0.2",
     "nestjs-graphql-relay": "^1.0.2",
-    "nestjs-slack-webhook": "^1.0.2",
-    "reflect-metadata": "0.1.13",
-    "rxjs": "^6.6.2",
-    "typeorm": "0.2.29"
+    "nestjs-slack-webhook": "^1.0.2"
   },
   "devDependencies": {
     "@nestjs/testing": "7.6.4",

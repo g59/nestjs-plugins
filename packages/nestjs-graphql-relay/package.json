@@ -1,7 +1,7 @@
 {
   "name": "nestjs-graphql-relay",
   "version": "1.0.2",
-  "description": "@nestjs/graphql + graphql-relay +typeorm",
+  "description": "@nestjs/graphql + graphql-relay + typeorm",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
   },
   "main": "lib/index.js",
   "scripts": {
-    "build": "yarn clean && tsc -p .",
+    "build": "npm run clean && tsc -p .",
     "clean": "rimraf lib",
     "lint": "tsc -p . --noEmit"
   },
@@ -24,20 +24,15 @@
   ],
   "peerDependencies": {
     "@nestjs/graphql": "^7.0.0",
-    "typeorm": "=<0.2.24"
+    "graphql-relay": "^0.6.0",
+    "graphql": "^14.1.1",
+    "@nestjs/typeorm": "^7.0.0"
   },
   "devDependencies": {
-    "@nestjs/common": "7.6.4",
-    "@nestjs/graphql": "7.9.1",
-    "@types/graphql": "14.5.0",
-    "@types/graphql-relay": "0.6.0",
-    "class-transformer": "0.3.1",
-    "class-validator": "0.12.2",
-    "graphql": "15.4.0",
-    "graphql-relay": "0.6.0",
-    "reflect-metadata": "0.1.13",
+    "@apollo/gateway": "^0.21.4",
+    "@types/graphql-relay": "^0.6.0",
     "sqlite3": "5.0.0",
-    "typeorm": "0.2.29",
+    "ts-morph": "^9.1.0",
     "typeorm-factory": "0.0.14"
   },
   "types": "lib/index.d.ts"

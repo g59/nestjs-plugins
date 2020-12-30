@@ -8,7 +8,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x, 14.x]
+        node-version: [14.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -16,12 +16,11 @@ jobs:
         uses: actions/setup-node@v2.1.4
         with:
           node-version: ${{ matrix.node-version }}
-      - name: npm install, build, and test
-        run: |
-          yarn install
-          yarn build
-          yarn lint
-          yarn test
+      - run: npm i -g npm@7
+      - run: npm ci
+      - run: npm run build
+      - run: npm lint
+      - run: npm test
         env:
           SLACK_WEBHOOK_URL: https://example.com
           CI: true
