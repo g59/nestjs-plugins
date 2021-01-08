@@ -18,6 +18,8 @@
     "firebase-admin": "^8.0.0 || ^9.0.0"
   },
   "devDependencies": {
+    "@google-cloud/firestore": "^4.8.1",
+    "@google-cloud/storage": "^5.7.1",
     "@nestjs/testing": "7.6.4"
   },
   "types": "lib/index.d.ts"
