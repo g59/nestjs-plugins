@@ -26,7 +26,7 @@
     "@slack/webhook": "^5.0.0"
   },
   "devDependencies": {
-    "@nestjs/testing": "7.6.5"
+    "@nestjs/testing": "7.6.7"
   },
   "types": "lib/index.d.ts"
 }
