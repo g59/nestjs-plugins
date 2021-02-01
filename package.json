@@ -38,7 +38,7 @@
     "rimraf": "3.0.2",
     "secretlint": "2.1.1",
     "textlint": "11.7.7",
-    "ts-jest": "26.4.4",
+    "ts-jest": "26.5.0",
     "ts-node": "9.1.1"
   },
   "jest": {
