@@ -1,4 +1,7 @@
 {
+  "automerge": true,
+  "labels": ["Type: Maintenance"],
+  "semanticCommits": true,
   "extends": [
     "config:js-lib"
   ]
