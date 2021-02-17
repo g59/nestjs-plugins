@@ -23,7 +23,7 @@
   ],
   "peerDependencies": {
     "@nestjs/common": "^7.0.0",
-    "@slack/webhook": "^5.0.0"
+    "@slack/webhook": "^5.0.0 || ^6.0.0"
   },
   "devDependencies": {
     "@nestjs/testing": "7.6.12"
