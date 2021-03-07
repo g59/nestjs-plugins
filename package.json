@@ -18,7 +18,7 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@9renpoto/eslint-config-typescript": "7.3.0",
+    "@9renpoto/eslint-config-typescript": "7.4.0",
     "@9renpoto/textlint-config-ja": "7.3.0",
     "@9renpoto/tsconfig": "7.3.0",
     "@secretlint/secretlint-rule-preset-recommend": "2.1.1",
