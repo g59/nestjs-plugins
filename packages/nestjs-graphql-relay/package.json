@@ -32,7 +32,7 @@
     "@apollo/gateway": "0.24.4",
     "@types/graphql-relay": "0.6.0",
     "sqlite3": "5.0.2",
-    "ts-morph": "10.0.1",
+    "ts-morph": "10.0.2",
     "typeorm-factory": "0.0.14"
   },
   "types": "lib/index.d.ts"
