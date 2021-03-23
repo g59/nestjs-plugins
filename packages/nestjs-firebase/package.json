@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@google-cloud/firestore": "4.9.8",
-    "@google-cloud/storage": "5.8.1",
+    "@google-cloud/storage": "5.8.2",
     "@nestjs/testing": "7.6.15"
   },
   "types": "lib/index.d.ts"
