@@ -29,7 +29,7 @@
     "@nestjs/typeorm": "^7.0.0"
   },
   "devDependencies": {
-    "@apollo/gateway": "0.24.4",
+    "@apollo/gateway": "0.25.0",
     "@types/graphql-relay": "0.6.0",
     "sqlite3": "5.0.2",
     "ts-morph": "10.0.2",
