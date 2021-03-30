@@ -13,7 +13,7 @@ npm install nestjs-graphql-relay
 
 ## Usage
 
-[example resolver](https://github.com/g59/nestjs-plugins/blob/master/example/src/recipes/recipes.resolver.ts)
+[example resolver](https://github.com/g59/nestjs-plugins/blob/main/example/src/recipes/recipes.resolver.ts)
 
 ```typescript
 @ObjectType({ isAbstract: true })
@@ -41,4 +41,4 @@ PRs accepted.
 
 ## License
 
-[MIT](https://github.com/g59/nestjs-plugins/blob/master/LICENSE) © g59
+[MIT](https://github.com/g59/nestjs-plugins/blob/main/LICENSE) © g59

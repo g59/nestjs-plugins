@@ -35,4 +35,4 @@ PRs accepted.
 
 ## License
 
-[MIT](https://github.com/g59/nestjs-plugins/blob/master/LICENSE) © g59
+[MIT](https://github.com/g59/nestjs-plugins/blob/main/LICENSE) © g59
