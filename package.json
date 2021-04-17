@@ -22,7 +22,7 @@
     "@9renpoto/textlint-config-ja": "7.4.0",
     "@9renpoto/tsconfig": "7.4.0",
     "@secretlint/secretlint-rule-preset-recommend": "2.1.1",
-    "@types/faker": "5.5.1",
+    "@types/faker": "5.5.2",
     "@types/jest": "26.0.22",
     "can-npm-publish": "1.3.3",
     "eslint": "7.24.0",
