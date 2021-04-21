@@ -1,6 +1,6 @@
 {
   "name": "example",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "private": true,
   "description": "piic/nestjs-plugins examples",
   "license": "MIT",
@@ -21,9 +21,9 @@
     "@nestjs/config": "^0.6.1",
     "@nestjs/platform-express": "^7.5.3",
     "apollo-server-express": "^2.19.0",
-    "nestjs-firebase": "^1.0.2",
-    "nestjs-graphql-relay": "^1.0.2",
-    "nestjs-slack-webhook": "^1.0.2"
+    "nestjs-firebase": "^1.1.0",
+    "nestjs-graphql-relay": "^1.1.0",
+    "nestjs-slack-webhook": "^1.1.0"
   },
   "devDependencies": {
     "@nestjs/testing": "7.6.15",

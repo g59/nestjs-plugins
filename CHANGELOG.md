@@ -1,10 +1,24 @@
+## v1.1.0 (2021-04-21)
+
+#### :rocket: Enhancement
+
+- `nestjs-graphql-relay`
+  - [#158](https://github.com/g59/nestjs-plugins/pull/158) chore(deps): update dependency typeorm to v0.2.29 ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### Committers: 2
+
+- Keisuke Kan ([@9renpoto](https://github.com/9renpoto))
+- [@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)
+
 ## v0.0.4 (2020-06-02)
 
 #### :rocket: Enhancement
-* `nestjs-firebase`
-  * [#170](https://github.com/g59/nestjs-plugins/pull/170) feat: added firebase plugin  ([@abyssparanoia](https://github.com/abyssparanoia))
+
+- `nestjs-firebase`
+  - [#170](https://github.com/g59/nestjs-plugins/pull/170) feat: added firebase plugin ([@abyssparanoia](https://github.com/abyssparanoia))
 
 #### Committers: 2
+
 - Keisuke Kan ([@9renpoto](https://github.com/9renpoto))
 - [@abyssparanoia](https://github.com/abyssparanoia)
 
