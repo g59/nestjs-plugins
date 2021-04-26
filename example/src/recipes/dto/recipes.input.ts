@@ -1,12 +1,17 @@
 import { ConnectionArgs, OrderByInput } from "nestjs-graphql-relay";
-import { InputType, Field, ArgsType } from '@nestjs/graphql';
+import {
+  InputType,
+  Field,
+  ArgsType,
+  PartialType,
+  PickType,
+} from "@nestjs/graphql";
 import { Recipe } from "../models/recipe";
 
 @InputType()
-export class RecipeWhereInput implements Partial<Recipe> {
-  @Field(() => String, { nullable: true })
-  readonly title?: Recipe["title"];
-}
+export class RecipeWhereInput extends PartialType(
+  PickType(Recipe, ["title"], InputType)
+) {}
 
 @ArgsType()
 export class RecipesConnectionArgs extends ConnectionArgs {

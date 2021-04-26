@@ -1,6 +1,6 @@
 import { join } from "path";
 import { SlackModule } from "nestjs-slack-webhook";
-import { FirebaseModule } from 'nestjs-firebase'
+import { FirebaseModule } from "nestjs-firebase";
 import { Module } from "@nestjs/common";
 import { ConfigModule, ConfigService } from "@nestjs/config";
 import { TypeOrmModule } from "@nestjs/typeorm";
@@ -10,38 +10,50 @@ import { AppService } from "./app.service";
 import { NodeModule } from "./node/node.module";
 import { RecipesModule } from "./recipes/recipes.module";
 import { NotifyModule } from "./notify/notify.module";
+import { ZendeskModule } from "nestjs-zendesk";
+import { ZendeskModule as ZendeskWrapperModule } from "./zendesk/zendesk.module";
 import slackConfig from "./config/slack";
+import zendeskConfig from "./config/zendesk";
 
 @Module({
   imports: [
     ConfigModule.forRoot({
       ignoreEnvFile: true,
-      load: [slackConfig]
+      load: [slackConfig, zendeskConfig],
     }),
     TypeOrmModule.forRoot({
       type: "sqlite",
       database: "nestjs-plugins-test",
       entities: [join(__dirname, "./recipes/models/recipe.[t|j]s")],
-      synchronize: true
+      synchronize: true,
     }),
     FirebaseModule.forRoot({
-      googleApplicationCredential: join(__dirname, '../../dummy.firebase.amin.key.json'),
+      googleApplicationCredential: join(
+        __dirname,
+        "../../dummy.firebase.amin.key.json"
+      ),
     }),
     GraphQLModule.forRoot({
       installSubscriptionHandlers: true,
       autoSchemaFile: join(__dirname, `./schema.gql`),
-      playground: true
+      playground: true,
     }),
     SlackModule.forRootAsync({
       imports: [ConfigModule],
       inject: [ConfigService],
-      useFactory: (config) => config.get("slack")
+      useFactory: (config) => config.get("slack"),
+    }),
+    ZendeskModule.forRootAsync({
+      imports: [ConfigModule],
+      inject: [ConfigService],
+      useFactory: (config) => config.get("zendesk"),
     }),
     NodeModule,
     RecipesModule,
-    NotifyModule
+    NotifyModule,
+    ZendeskWrapperModule,
   ],
   controllers: [AppController],
-  providers: [AppService]
+  providers: [AppService],
 })
 export class AppModule {}

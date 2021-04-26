@@ -1,0 +1,31 @@
+{
+  "name": "nestjs-zendesk",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/g59/nestjs-plugins.git"
+  },
+  "author": "g59",
+  "homepage": "https://github.com/g59/nestjs-plugins/tree/main/packages/nestjs-zendesk",
+  "bugs": {
+    "url": "https://github.com/g59/nestjs-plugins/issues"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "npm run clean && tsc -p .",
+    "clean": "rimraf lib",
+    "lint": "tsc -p . --noEmit"
+  },
+  "keywords": [
+    "nest",
+    "zendesk"
+  ],
+  "peerDependencies": {
+    "node-zendesk": "^2.0.6"
+  },
+  "devDependencies": {
+    "@types/node-zendesk": "^2.0.1"
+  }
+}
