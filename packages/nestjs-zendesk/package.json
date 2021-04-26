@@ -3,7 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/g59/nestjs-plugins.git"
+  },
   "author": "g59",
+  "homepage": "https://github.com/g59/nestjs-plugins/tree/main/packages/nestjs-zendesk",
+  "bugs": {
+    "url": "https://github.com/g59/nestjs-plugins/issues"
+  },
   "main": "lib/index.js",
   "scripts": {
     "build": "npm run clean && tsc -p .",

@@ -7,7 +7,7 @@
 
 ## Install
 
-    yarn install
+    npm install
 
 ## Packages
 
@@ -18,14 +18,11 @@ This repository is managed as monorepo.
 | **[nestjs-firebase](./packages/nestjs-firebase)**           | [![npm version](https://badge.fury.io/js/nestjs-firebase.svg)](https://badge.fury.io/js/nestjs-firebase)           |
 | **[nestjs-graphql-relay](./packages/nestjs-graphql-relay)** | [![npm version](https://badge.fury.io/js/nestjs-graphql-relay.svg)](https://badge.fury.io/js/nestjs-graphql-relay) |
 | **[nestjs-slack-webhook](./packages/nestjs-slack-webhook)** | [![npm version](https://badge.fury.io/js/nestjs-slack-webhook.svg)](https://badge.fury.io/js/nestjs-slack-webhook) |
+| **[nestjs-zendesk](./packages/nestjs-zendesk)**             | [![npm version](https://badge.fury.io/js/nestjs-zendesk.svg)](https://badge.fury.io/js/nestjs-zendesk)             |
 
 ## Usage
 
-    yarn workspace example start:dev
-
-use [@nestjs/cli](https://docs.nestjs.com/cli/usages)
-
-    yarn workspace example nest generate module cats
+    npx lerna run start:dev --scope example
 
 ## Contributing
 
