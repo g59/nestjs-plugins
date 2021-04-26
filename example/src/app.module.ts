@@ -11,6 +11,7 @@ import { NodeModule } from "./node/node.module";
 import { RecipesModule } from "./recipes/recipes.module";
 import { NotifyModule } from "./notify/notify.module";
 import { ZendeskModule } from "nestjs-zendesk";
+import { ZendeskModule as ZendeskWrapperModule } from "./zendesk/zendesk.module";
 import slackConfig from "./config/slack";
 import zendeskConfig from "./config/zendesk";
 
@@ -50,6 +51,7 @@ import zendeskConfig from "./config/zendesk";
     NodeModule,
     RecipesModule,
     NotifyModule,
+    ZendeskWrapperModule,
   ],
   controllers: [AppController],
   providers: [AppService],
