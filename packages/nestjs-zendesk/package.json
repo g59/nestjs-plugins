@@ -26,6 +26,6 @@
     "node-zendesk": "^2.0.6"
   },
   "devDependencies": {
-    "@types/node-zendesk": "^2.0.1"
+    "@types/node-zendesk": "2.0.1"
   }
 }
