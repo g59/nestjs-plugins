@@ -1,8 +1,15 @@
 import { ZendeskModule } from "./";
 import { Test } from "@nestjs/testing";
+import { ClientOptions } from "node-zendesk";
 
 describe("ZendeskModule", () => {
   let module: ZendeskModule;
+  const options: ClientOptions = {
+    username: "name",
+    token: "token",
+    remoteUri: "http://example.com",
+  };
+
   beforeAll(async () => {
     const moduleFixture = await Test.createTestingModule({
       imports: [ZendeskModule],
@@ -14,11 +21,7 @@ describe("ZendeskModule", () => {
   it("defined", () => expect(module).toBeDefined());
 
   it("forRoot", () => {
-    const res = ZendeskModule.forRoot({
-      username: "name",
-      token: "token",
-      remoteUri: "http://example.com",
-    });
+    const res = ZendeskModule.forRoot(options);
 
     expect(res.exports).toHaveLength(1);
     expect(res.imports).toBeUndefined();
@@ -64,5 +67,10 @@ describe("ZendeskModule", () => {
       ]
     `);
     expect(res.module).toBeDefined();
+  });
+
+  it("forRootAsync with useFactory", () => {
+    const res = ZendeskModule.forRootAsync({ useFactory: () => options });
+    expect((res as any).inject).toMatchInlineSnapshot(`undefined`);
   });
 });
