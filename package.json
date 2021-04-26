@@ -42,13 +42,11 @@
     "ts-node": "9.1.1"
   },
   "jest": {
+    "preset": "ts-jest",
     "collectCoverage": true,
     "collectCoverageFrom": [
       "packages/*/src/*.ts"
     ],
-    "transform": {
-      "^.+\\.(t|j)s$": "ts-jest"
-    },
     "testEnvironment": "node"
   },
   "lint-staged": {

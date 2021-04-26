@@ -1,4 +1,4 @@
-import { random } from "faker";
+import { datatype } from "faker";
 import { Factory } from "typeorm-factory";
 import {
   Entity,
@@ -74,10 +74,10 @@ describe("app", () => {
     });
 
     it("find", async () => {
-      const name = random.words();
-      const f = new Factory(Example).attr("name", random.alphaNumeric(10));
-      await f.createList(random.number({ max: 5 }));
-      await f.createList(random.number({ max: 5 }), {
+      const name = datatype.string();
+      const f = new Factory(Example).attr("name", datatype.string(10));
+      await f.createList(datatype.number({ max: 5 }));
+      await f.createList(datatype.number({ max: 5 }), {
         name,
       });
 
