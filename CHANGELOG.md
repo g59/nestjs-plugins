@@ -1,3 +1,14 @@
+## v1.2.0 (2021-04-26)
+
+#### :rocket: Enhancement
+
+- `nestjs-graphql-relay`, `nestjs-zendesk`
+  - [#632](https://github.com/g59/nestjs-plugins/pull/632) feat: add nestjs-zendesk module ([@9renpoto](https://github.com/9renpoto))
+
+#### Committers: 1
+
+- Keisuke Kan ([@9renpoto](https://github.com/9renpoto))
+
 ## v1.1.0 (2021-04-21)
 
 #### :rocket: Enhancement
