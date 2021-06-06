@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@9renpoto/eslint-config-typescript": "7.5.0",
-    "@9renpoto/textlint-config-ja": "7.4.0",
+    "@9renpoto/textlint-config-ja": "7.5.0",
     "@9renpoto/tsconfig": "7.4.0",
     "@secretlint/secretlint-rule-preset-recommend": "3.0.0",
     "@types/faker": "5.5.6",
