@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@apollo/gateway": "0.26.3",
-    "@types/graphql-relay": "0.6.0",
+    "@types/graphql-relay": "0.7.0",
     "sqlite3": "5.0.2",
     "ts-morph": "11.0.3",
     "typeorm-factory": "0.0.14"
