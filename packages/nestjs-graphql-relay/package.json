@@ -23,7 +23,7 @@
     "typeorm"
   ],
   "peerDependencies": {
-    "@apollo/gateway": "^0.33.0",
+    "@apollo/gateway": "^0.33.0 || ^0.38.0",
     "@nestjs/graphql": "^8.0.0",
     "@nestjs/typeorm": "^8.0.0",
     "graphql-relay": "^0.8.0"
