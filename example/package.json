@@ -19,16 +19,16 @@
   "dependencies": {
     "@nestjs/cli": "^8.0.2",
     "@nestjs/config": "^1.0.0",
-    "@nestjs/platform-express": "^7.5.3",
-    "apollo-server-express": "^2.19.0",
+    "@nestjs/platform-express": "^8.0.6",
+    "apollo-server-types": "^0.9.0",
     "nestjs-firebase": "^1.2.0",
     "nestjs-graphql-relay": "^1.2.0",
     "nestjs-slack-webhook": "^1.2.0",
     "nestjs-zendesk": "^1.2.0"
   },
   "devDependencies": {
-    "@nestjs/testing": "7.6.18",
-    "@types/node": "15.6.1",
+    "@nestjs/testing": "8.0.6",
+    "@types/node": "16.6.1",
     "@types/supertest": "2.0.11",
     "supertest": "6.1.5",
     "ts-loader": "9.2.5",
