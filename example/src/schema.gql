@@ -2,30 +2,38 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
+interface Node {
+  id: ID!
+}
+
+type PageInfo {
+  startCursor: String
+  endCursor: String
+  hasPreviousPage: Boolean!
+  hasNextPage: Boolean!
+}
+
+type Recipe implements Node {
+  id: ID!
+  title: String!
+  description: String
+  creationDate: DateTime!
+  ingredients: [String!]!
+}
+
 """
 A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
 """
 scalar DateTime
 
-interface Node {
-  id: ID!
+type RecipesConnection {
+  pageInfo: PageInfo!
+  edges: [RecipesEdge!]!
 }
 
-enum OrderByDirection {
-  ASC
-  DESC
-}
-
-input OrderByInput {
-  createdAt: OrderByDirection
-  updatedAt: OrderByDirection
-}
-
-type PageInfo {
-  hasNextPage: Boolean
-  hasPreviousPage: Boolean
-  startCursor: String
-  endCursor: String
+type RecipesEdge {
+  node: Recipe!
+  cursor: String!
 }
 
 type Query {
@@ -47,24 +55,16 @@ type Query {
   ): RecipesConnection!
 }
 
-type Recipe implements Node {
-  id: ID!
-  title: String!
-  description: String
-  creationDate: DateTime!
-  ingredients: [String!]!
-}
-
-type RecipesConnection {
-  pageInfo: PageInfo!
-  edges: [RecipesEdge!]!
-}
-
-type RecipesEdge {
-  node: Recipe!
-  cursor: String!
-}
-
 input RecipeWhereInput {
   title: String
+}
+
+input OrderByInput {
+  createdAt: OrderByDirection
+  updatedAt: OrderByDirection
+}
+
+enum OrderByDirection {
+  ASC
+  DESC
 }
