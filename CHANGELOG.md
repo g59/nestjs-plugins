@@ -1,3 +1,14 @@
+## v8.0.0 (2021-08-18)
+
+#### :rocket: Enhancement
+
+- `nestjs-firebase`, `nestjs-graphql-relay`, `nestjs-slack-webhook`
+  - [#864](https://github.com/g59/nestjs-plugins/pull/864) chore: upgrade @nestjs v8 ([@9renpoto](https://github.com/9renpoto))
+
+#### Committers: 1
+
+- Keisuke Kan ([@9renpoto](https://github.com/9renpoto))
+
 ## v1.2.0 (2021-04-26)
 
 #### :rocket: Enhancement
