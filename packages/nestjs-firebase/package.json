@@ -18,7 +18,7 @@
     "firebase-admin": "^8.0.0 || ^9.0.0"
   },
   "devDependencies": {
-    "@google-cloud/firestore": "4.14.1",
+    "@google-cloud/firestore": "4.14.2",
     "@google-cloud/storage": "5.13.1",
     "@nestjs/testing": "8.0.6"
   },
