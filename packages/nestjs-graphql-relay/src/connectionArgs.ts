@@ -1,15 +1,14 @@
-import "reflect-metadata";
-
 import { ArgsType, Field, Int } from "@nestjs/graphql";
 import {
-  ValidateIf,
-  Validate,
   Min,
-  ValidatorConstraint,
+  Validate,
+  ValidateIf,
   ValidationArguments,
+  ValidatorConstraint,
   ValidatorConstraintInterface,
 } from "class-validator";
 import * as Relay from "graphql-relay";
+import "reflect-metadata";
 
 @ValidatorConstraint({ async: false })
 export class CannotUseWithout implements ValidatorConstraintInterface {

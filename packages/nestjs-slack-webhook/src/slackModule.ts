@@ -1,6 +1,6 @@
 import { DynamicModule, Module } from "@nestjs/common";
 import { SlackCoreModule } from "./slackCoreModule";
-import { SlackOptions, SlackAsyncOptions } from "./slackOptions";
+import { SlackAsyncOptions, SlackOptions } from "./slackOptions";
 
 @Module({})
 export class SlackModule {

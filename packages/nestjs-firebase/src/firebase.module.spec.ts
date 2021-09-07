@@ -1,9 +1,9 @@
 import { Test } from "@nestjs/testing";
 import { FirebaseConstants } from "./firebase.constants";
 import {
+  FirebaseAdmin,
   FirebaseModuleOptions,
   FirebaseModuleOptionsFactory,
-  FirebaseAdmin,
 } from "./firebase.interface";
 import { FirebaseModule } from "./firebase.module";
 import { getFirebaseAdmin } from "./util";

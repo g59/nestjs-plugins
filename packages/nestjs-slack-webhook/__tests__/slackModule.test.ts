@@ -2,8 +2,8 @@ import { Module } from "@nestjs/common";
 import { Test } from "@nestjs/testing";
 import { IncomingWebhook } from "@slack/webhook";
 import { SLACK_TOKEN } from "./../src/slackConstants";
-import { SlackOptions, SlackOptionsFactory } from "./../src/slackOptions";
 import { SlackModule } from "./../src/slackModule";
+import { SlackOptions, SlackOptionsFactory } from "./../src/slackOptions";
 
 describe("slackModule", () => {
   const url = "SLACK_WEBHOOK_URL";

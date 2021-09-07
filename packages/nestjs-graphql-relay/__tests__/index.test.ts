@@ -1,14 +1,14 @@
 import { datatype } from "faker";
-import { Factory } from "typeorm-factory";
 import {
-  Entity,
-  PrimaryGeneratedColumn,
   Column,
-  getRepository,
   Connection,
   createConnection,
+  Entity,
+  getRepository,
+  PrimaryGeneratedColumn,
 } from "typeorm";
-import { getPagingParameters, findAndPaginate } from "../src";
+import { Factory } from "typeorm-factory";
+import { findAndPaginate, getPagingParameters } from "../src";
 
 @Entity()
 class Example {

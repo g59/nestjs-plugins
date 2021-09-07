@@ -1,8 +1,8 @@
 import { Injectable } from "@nestjs/common";
 import { Test, TestingModule } from "@nestjs/testing";
 import { IncomingWebhook } from "@slack/webhook";
-import { SlackModule } from "../src/slackModule";
 import { InjectSlack } from "../src/injectSlack";
+import { SlackModule } from "../src/slackModule";
 
 describe("InjectSlack", () => {
   const url = "SLACK_WEBHOOK_URL";
