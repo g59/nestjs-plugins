@@ -1,5 +1,5 @@
-import { Type } from "@nestjs/common";
-import { ModuleMetadata } from "@nestjs/common/interfaces";
+import type { Type } from "@nestjs/common";
+import type { ModuleMetadata } from "@nestjs/common/interfaces";
 import * as firebaseAdmin from "firebase-admin";
 
 export interface FirebaseModuleOptions {
@@ -25,4 +25,5 @@ export interface FirebaseAdmin {
   auth: firebaseAdmin.auth.Auth;
   messaging: firebaseAdmin.messaging.Messaging;
   db: firebaseAdmin.firestore.Firestore;
+  storage: firebaseAdmin.storage.Storage;
 }

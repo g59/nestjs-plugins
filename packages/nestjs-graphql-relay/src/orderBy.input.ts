@@ -1,4 +1,4 @@
-import { registerEnumType, InputType, Field } from "@nestjs/graphql";
+import { Field, InputType, registerEnumType } from "@nestjs/graphql";
 
 export enum OrderByDirection {
   ASC = "ASC",

@@ -2,9 +2,9 @@ import * as Relay from "graphql-relay";
 import { FindManyOptions, Repository } from "typeorm";
 import { ConnectionArgs } from "./connectionArgs";
 
-export { ConnectionArgs };
-export * from "./pageInfo";
 export * from "./orderBy.input";
+export * from "./pageInfo";
+export { ConnectionArgs };
 
 type PagingMeta =
   | { pagingType: "forward"; after?: string; first: number }

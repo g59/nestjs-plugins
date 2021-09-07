@@ -1,6 +1,6 @@
-import { ZendeskModule } from "./";
 import { Test } from "@nestjs/testing";
 import { ClientOptions } from "node-zendesk";
+import { ZendeskModule } from "./";
 
 describe("ZendeskModule", () => {
   let module: ZendeskModule;

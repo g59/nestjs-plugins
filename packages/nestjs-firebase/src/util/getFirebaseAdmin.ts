@@ -1,6 +1,5 @@
 import * as firebaseAdmin from "firebase-admin";
-
-import { FirebaseModuleOptions, FirebaseAdmin } from "../firebase.interface";
+import { FirebaseAdmin, FirebaseModuleOptions } from "../firebase.interface";
 
 export const getFirebaseAdmin = (
   options: FirebaseModuleOptions
@@ -15,5 +14,6 @@ export const getFirebaseAdmin = (
     auth: app.auth(),
     messaging: app.messaging(),
     db: app.firestore(),
+    storage: app.storage(),
   };
 };

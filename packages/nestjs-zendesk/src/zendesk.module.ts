@@ -1,6 +1,6 @@
-import { Provider, DynamicModule, Global, Module } from "@nestjs/common";
-import zendesk from "node-zendesk";
+import { DynamicModule, Global, Module, Provider } from "@nestjs/common";
 import type { ClassProvider } from "@nestjs/common/interfaces";
+import zendesk from "node-zendesk";
 import { ZENDESK_MODULE, ZENDESK_TOKEN } from "./zendesk.constants";
 import type {
   ZendeskAsyncOptions,
