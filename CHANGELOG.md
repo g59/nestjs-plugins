@@ -1,3 +1,14 @@
+## v8.1.0 (2021-09-07)
+
+#### :rocket: Enhancement
+
+- `nestjs-firebase`, `nestjs-graphql-relay`, `nestjs-slack-webhook`, `nestjs-zendesk`
+  - [#905](https://github.com/g59/nestjs-plugins/pull/905) feat: export firebase admin storage ([@9renpoto](https://github.com/9renpoto))
+
+#### Committers: 1
+
+- Keisuke Kan ([@9renpoto](https://github.com/9renpoto))
+
 ## v8.0.0 (2021-08-18)
 
 #### :rocket: Enhancement
