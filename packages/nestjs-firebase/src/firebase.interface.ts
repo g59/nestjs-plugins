@@ -1,10 +1,11 @@
 import type { Type } from "@nestjs/common";
 import type { ModuleMetadata } from "@nestjs/common/interfaces";
 import * as firebaseAdmin from "firebase-admin";
+import { AppOptions } from "firebase-admin";
 
-export interface FirebaseModuleOptions {
-  googleApplicationCredential: string;
-}
+export type FirebaseModuleOptions = {
+  googleApplicationCredential?: string | firebaseAdmin.ServiceAccount;
+} & Omit<AppOptions, "credential">;
 
 export type FirebaseModuleAsyncOptions = {
   useClass?: Type<FirebaseModuleOptionsFactory>;
