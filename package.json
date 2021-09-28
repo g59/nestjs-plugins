@@ -21,7 +21,7 @@
     "@9renpoto/eslint-config-typescript": "7.5.0",
     "@9renpoto/textlint-config-ja": "7.5.0",
     "@9renpoto/tsconfig": "7.5.0",
-    "@nestjs/platform-express": "8.0.7",
+    "@nestjs/platform-express": "8.0.8",
     "@secretlint/secretlint-rule-preset-recommend": "4.1.0",
     "@types/faker": "5.5.8",
     "@types/jest": "27.0.2",
