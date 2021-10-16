@@ -23,7 +23,7 @@
     "@9renpoto/tsconfig": "7.5.0",
     "@nestjs/platform-express": "8.1.1",
     "@secretlint/secretlint-rule-preset-recommend": "4.1.3",
-    "@types/faker": "5.5.8",
+    "@types/faker": "5.5.9",
     "@types/jest": "27.0.2",
     "apollo-server-express": "2.25.2",
     "can-npm-publish": "1.3.6",
