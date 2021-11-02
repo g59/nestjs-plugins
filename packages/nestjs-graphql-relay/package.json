@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "sqlite3": "5.0.2",
-    "ts-morph": "12.1.0",
+    "ts-morph": "12.2.0",
     "typeorm-factory": "0.0.14"
   },
   "types": "lib/index.d.ts"
