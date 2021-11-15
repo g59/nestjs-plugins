@@ -1,6 +1,6 @@
-import * as firebaseAdmin from 'firebase-admin';
-import { AppOptions } from 'firebase-admin';
-import { FirebaseAdmin, FirebaseModuleOptions } from '../firebase.interface';
+import * as firebaseAdmin from "firebase-admin";
+import { AppOptions } from "firebase-admin";
+import { FirebaseAdmin, FirebaseModuleOptions } from "../firebase.interface";
 
 export const getFirebaseAdmin = ({
   googleApplicationCredential: serviceAccountPath,
@@ -14,7 +14,7 @@ export const getFirebaseAdmin = ({
   const isOptionsNotEmpty = Object.keys(options).length > 0;
 
   const app = firebaseAdmin.initializeApp(
-    isOptionsNotEmpty ? firebaseAdminOptions : undefined,
+    isOptionsNotEmpty ? firebaseAdminOptions : undefined
   );
 
   return {
