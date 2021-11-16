@@ -11,7 +11,7 @@ export const getFirebaseAdmin = ({
     firebaseAdminOptions.credential =
       firebaseAdmin.credential.cert(serviceAccountPath);
   }
-  const isOptionsNotEmpty = Object.keys(options).length > 0;
+  const isOptionsNotEmpty = Object.keys(firebaseAdminOptions).length > 0;
 
   const app = firebaseAdmin.initializeApp(
     isOptionsNotEmpty ? firebaseAdminOptions : undefined
