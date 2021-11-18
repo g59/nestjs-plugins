@@ -27,7 +27,7 @@
     "nestjs-zendesk": "^8.0.0"
   },
   "devDependencies": {
-    "@nestjs/testing": "8.2.1",
+    "@nestjs/testing": "8.2.2",
     "@types/node": "16.11.7",
     "@types/supertest": "2.0.11",
     "supertest": "6.1.6",
