@@ -2,19 +2,26 @@ import * as admin from "firebase-admin";
 import { FirebaseAdmin, FirebaseModuleOptions } from "../firebase.interface";
 
 const createInstances = (app: admin.app.App): FirebaseAdmin => ({
-    auth: app.auth(),
-    messaging: app.messaging(),
-    db: app.firestore(),
-    storage: app.storage(),
-})
+  auth: app.auth(),
+  messaging: app.messaging(),
+  db: app.firestore(),
+  storage: app.storage(),
+});
 
-export const getFirebaseAdmin = (options?: FirebaseModuleOptions): FirebaseAdmin => {
+export const getFirebaseAdmin = (
+  options?: FirebaseModuleOptions
+): FirebaseAdmin => {
   if (!options || Object.values(options).filter((v) => !!v).length === 0) {
-    return createInstances(admin.initializeApp())
+    return createInstances(admin.initializeApp());
   }
-  const { googleApplicationCredential: serviceAccountPath,  ...appOptions } = options;
-  return createInstances(admin.initializeApp({
-    credential: serviceAccountPath ? admin.credential.cert(serviceAccountPath): undefined,
-    ...appOptions
-  }));
+  const { googleApplicationCredential: serviceAccountPath, ...appOptions } =
+    options;
+  return createInstances(
+    admin.initializeApp({
+      credential: serviceAccountPath
+        ? admin.credential.cert(serviceAccountPath)
+        : undefined,
+      ...appOptions,
+    })
+  );
 };
