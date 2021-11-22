@@ -1,26 +1,27 @@
-import * as firebaseAdmin from "firebase-admin";
-import { AppOptions } from "firebase-admin";
+import * as admin from "firebase-admin";
 import { FirebaseAdmin, FirebaseModuleOptions } from "../firebase.interface";
 
-export const getFirebaseAdmin = ({
-  googleApplicationCredential: serviceAccountPath,
-  ...options
-}: FirebaseModuleOptions): FirebaseAdmin => {
-  const firebaseAdminOptions: AppOptions = options || {};
-  if (serviceAccountPath) {
-    firebaseAdminOptions.credential =
-      firebaseAdmin.credential.cert(serviceAccountPath);
+const createInstances = (app: admin.app.App): FirebaseAdmin => ({
+  auth: app.auth(),
+  messaging: app.messaging(),
+  db: app.firestore(),
+  storage: app.storage(),
+});
+
+export const getFirebaseAdmin = (
+  options?: FirebaseModuleOptions
+): FirebaseAdmin => {
+  if (!options || Object.values(options).filter((v) => !!v).length === 0) {
+    return createInstances(admin.initializeApp());
   }
-  const isOptionsNotEmpty = Object.keys(firebaseAdminOptions).length > 0;
-
-  const app = firebaseAdmin.initializeApp(
-    isOptionsNotEmpty ? firebaseAdminOptions : undefined
+  const { googleApplicationCredential: serviceAccountPath, ...appOptions } =
+    options;
+  return createInstances(
+    admin.initializeApp({
+      credential: serviceAccountPath
+        ? admin.credential.cert(serviceAccountPath)
+        : undefined,
+      ...appOptions,
+    })
   );
-
-  return {
-    auth: app.auth(),
-    messaging: app.messaging(),
-    db: app.firestore(),
-    storage: app.storage(),
-  };
 };
