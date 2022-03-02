@@ -23,7 +23,7 @@
     "@9renpoto/textlint-config-ja": "7.5.0",
     "@9renpoto/tsconfig": "7.5.0",
     "@nestjs/platform-express": "8.4.0",
-    "@secretlint/secretlint-rule-preset-recommend": "4.1.4",
+    "@secretlint/secretlint-rule-preset-recommend": "4.2.0",
     "@types/faker": "5.5.9",
     "@types/jest": "27.4.1",
     "apollo-server-express": "2.25.3",
