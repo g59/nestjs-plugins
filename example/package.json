@@ -31,7 +31,7 @@
     "@types/node": "17.0.2",
     "@types/supertest": "2.0.11",
     "supertest": "6.2.2",
-    "ts-loader": "9.2.6",
+    "ts-loader": "9.2.7",
     "tsconfig-paths": "3.12.0"
   }
 }
