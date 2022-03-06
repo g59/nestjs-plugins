@@ -42,7 +42,7 @@
     "secretlint": "5.0.1",
     "textlint": "12.1.1",
     "ts-jest": "27.1.3",
-    "ts-node": "10.6.0"
+    "ts-node": "10.7.0"
   },
   "jest": {
     "preset": "ts-jest",
