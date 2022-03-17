@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@nestjs/cli": "^8.0.2",
-    "@nestjs/config": "^1.0.0",
+    "@nestjs/config": "^2.0.0",
     "@nestjs/platform-express": "^8.0.6",
     "apollo-server-types": "^3.0.0",
     "nestjs-firebase": "^8.0.0",
