@@ -9,7 +9,7 @@ const createInstances = (app: admin.app.App): FirebaseAdmin => ({
 });
 
 export const getFirebaseAdmin = (
-  options?: FirebaseModuleOptions
+  options?: FirebaseModuleOptions,
 ): FirebaseAdmin => {
   if (!options || Object.values(options).filter((v) => !!v).length === 0) {
     return createInstances(admin.initializeApp());
@@ -22,6 +22,6 @@ export const getFirebaseAdmin = (
         ? admin.credential.cert(serviceAccountPath)
         : undefined,
       ...appOptions,
-    })
+    }),
   );
 };

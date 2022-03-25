@@ -53,7 +53,7 @@ export class SlackCoreModule {
   }
 
   private static createAsyncOptionsProvider(
-    options: SlackAsyncOptions
+    options: SlackAsyncOptions,
   ): Provider {
     if (options.useFactory) {
       return {

@@ -6,6 +6,6 @@ import { NodeResolver } from "./node.resolver";
 
 @Module({
   imports: [TypeOrmModule.forFeature([Recipe])],
-  providers: [NodeResolver, RecipesService]
+  providers: [NodeResolver, RecipesService],
 })
 export class NodeModule {}

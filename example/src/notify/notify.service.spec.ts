@@ -9,7 +9,7 @@ describe("NotifyService", () => {
   beforeEach(async () => {
     slack = createSlackServiceMock();
     const module: TestingModule = await Test.createTestingModule({
-      providers: [NotifyService, slack]
+      providers: [NotifyService, slack],
     }).compile();
 
     service = module.get<NotifyService>(NotifyService);

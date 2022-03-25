@@ -6,10 +6,10 @@ import {
   FirebaseModuleOptionsFactory,
 } from "./firebase.interface";
 import { FirebaseModule } from "./firebase.module";
-import { getFirebaseAdmin } from "./util";
+import * as utils from "./util";
 
 jest.mock("./util");
-(getFirebaseAdmin as any).mockReturnValue({});
+jest.spyOn(utils, "getFirebaseAdmin").mockReturnValue({});
 
 describe("FirebaseModule", () => {
   const googleApplicationCredential = "test";
@@ -28,7 +28,7 @@ describe("FirebaseModule", () => {
       }).compile();
 
       const firebase = module.get<FirebaseAdmin>(
-        FirebaseConstants.FIREBASE_TOKEN
+        FirebaseConstants.FIREBASE_TOKEN,
       );
       expect(firebase).toBeDefined();
     });
@@ -46,7 +46,7 @@ describe("FirebaseModule", () => {
         }).compile();
 
         const firebase = module.get<FirebaseAdmin>(
-          FirebaseConstants.FIREBASE_TOKEN
+          FirebaseConstants.FIREBASE_TOKEN,
         );
         expect(firebase).toBeDefined();
       });
@@ -62,7 +62,7 @@ describe("FirebaseModule", () => {
         }).compile();
 
         const firebase = module.get<FirebaseAdmin>(
-          FirebaseConstants.FIREBASE_TOKEN
+          FirebaseConstants.FIREBASE_TOKEN,
         );
         expect(firebase).toBeDefined();
       });

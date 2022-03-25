@@ -39,9 +39,8 @@
     "*": [
       "secretlint"
     ],
-    "*.{ts,tsx}": [
-      "deno fmt",
-      "deno lint"
+    "*.{ts,tsx,md}": [
+      "deno fmt"
     ]
   },
   "workspaces": [

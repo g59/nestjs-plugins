@@ -11,7 +11,7 @@ describe("InjectSlack", () => {
   @Injectable()
   class TestService {
     public constructor(
-      @InjectSlack() public readonly slackClient: IncomingWebhook
+      @InjectSlack() public readonly slackClient: IncomingWebhook,
     ) {}
   }
 

@@ -8,7 +8,7 @@ import type {
 } from "./zendesk.interface";
 
 function createProvider(
-  options: zendesk.ClientOptions
+  options: zendesk.ClientOptions,
 ): Provider<zendesk.Client> {
   return {
     provide: ZENDESK_TOKEN,

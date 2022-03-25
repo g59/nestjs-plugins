@@ -76,7 +76,7 @@ export function getPagingParameters(args: ConnectionArgs) {
 export async function findAndPaginate<T>(
   condition: FindManyOptions<T>,
   connArgs: ConnectionArgs,
-  repository: Repository<T>
+  repository: Repository<T>,
 ) {
   const { limit, offset } = getPagingParameters(connArgs);
   const [entities, count] = await repository.findAndCount({

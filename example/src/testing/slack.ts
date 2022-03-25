@@ -6,7 +6,7 @@ export function createSlackServiceMock(): Provider<Partial<IncomingWebhook>> {
   return {
     provide: SLACK_TOKEN,
     useValue: {
-      send: jest.fn()
-    }
+      send: jest.fn(),
+    },
   };
 }

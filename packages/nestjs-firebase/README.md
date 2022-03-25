@@ -24,7 +24,7 @@ export class AppModule {}
 // using in service class
 export class Service {
   constructor(
-    @InjectFirebaseAdmin() private readonly firebase: FirebaseAdmin
+    @InjectFirebaseAdmin() private readonly firebase: FirebaseAdmin,
   ) {}
 }
 ```

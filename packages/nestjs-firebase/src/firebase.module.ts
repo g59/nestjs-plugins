@@ -26,7 +26,7 @@ export class FirebaseModule {
   }
 
   public static forRootAsync(
-    options: FirebaseModuleAsyncOptions
+    options: FirebaseModuleAsyncOptions,
   ): DynamicModule {
     const firebaseProvider: Provider = {
       inject: [FirebaseConstants.FIREBASE_MODULE],
@@ -44,7 +44,7 @@ export class FirebaseModule {
   }
 
   private static createAsyncProviders(
-    options: FirebaseModuleAsyncOptions
+    options: FirebaseModuleAsyncOptions,
   ): Provider[] {
     if (options.useFactory || options.useExisting) {
       return [this.createAsyncOptionsProvider(options)];
@@ -60,7 +60,7 @@ export class FirebaseModule {
   }
 
   private static createAsyncOptionsProvider(
-    options: FirebaseModuleAsyncOptions
+    options: FirebaseModuleAsyncOptions,
   ): Provider {
     if (options.useFactory) {
       return {
@@ -72,7 +72,7 @@ export class FirebaseModule {
     return {
       provide: FirebaseConstants.FIREBASE_MODULE,
       useFactory: async (
-        optionsFactory: FirebaseModuleOptionsFactory
+        optionsFactory: FirebaseModuleOptionsFactory,
       ): Promise<FirebaseModuleOptions> =>
         await optionsFactory.createFirebaseModuleOptions(),
       inject: options.useClass ? [options.useClass] : [],
