@@ -10,28 +10,19 @@
     "clean": "rimraf dist",
     "lint": "tsc -p . --noEmit",
     "start": "nest start",
-    "start:debug": "nest start --debug --watch",
     "start:dev": "nest start --watch",
-    "start:prod": "node dist/main",
-    "test": "jest",
-    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand"
+    "test": "jest"
   },
   "dependencies": {
     "@nestjs/cli": "^8.0.2",
     "@nestjs/config": "^2.0.0",
-    "@nestjs/platform-express": "^8.0.6",
-    "apollo-server-types": "^3.0.0",
+    "@nestjs/platform-fastify": "^8.4.2",
     "nestjs-firebase": "^8.0.0",
     "nestjs-graphql-relay": "^8.0.0",
     "nestjs-slack-webhook": "^8.0.0",
     "nestjs-zendesk": "^8.0.0"
   },
   "devDependencies": {
-    "@nestjs/testing": "8.4.2",
-    "@types/node": "17.0.2",
-    "@types/supertest": "2.0.12",
-    "supertest": "6.2.2",
-    "ts-loader": "9.2.8",
-    "tsconfig-paths": "3.14.1"
+    "@nestjs/testing": "8.4.2"
   }
 }
