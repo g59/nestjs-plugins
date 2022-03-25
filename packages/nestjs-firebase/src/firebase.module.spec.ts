@@ -9,7 +9,7 @@ import { FirebaseModule } from "./firebase.module";
 import * as utils from "./util";
 
 jest.mock("./util");
-jest.spyOn(utils, "getFirebaseAdmin").mockReturnValue({});
+jest.spyOn(utils, "getFirebaseAdmin").mockReturnValue({} as any);
 
 describe("FirebaseModule", () => {
   const googleApplicationCredential = "test";
