@@ -3,7 +3,8 @@
 ![Actions Status](https://github.com/g59/nestjs-plugins/workflows/Node%20CI/badge.svg)
 [![npm version](https://badge.fury.io/js/nestjs-slack-webhook.svg)](https://badge.fury.io/js/nestjs-slack-webhook)
 
-Nest.js + [Slack Incoming Webhook](https://github.com/slackapi/node-slack-sdk/tree/main/packages/webhook)
+Nest.js +
+[Slack Incoming Webhook](https://github.com/slackapi/node-slack-sdk/tree/main/packages/webhook)
 
 ## Install
 
@@ -30,8 +31,7 @@ Inject IncomingWebhook instance
 @Injectable()
 export class AppService {
   constructor(
-    @InjectSlack()
-    private readonly slack: IncomingWebhook
+    @InjectSlack() private readonly slack: IncomingWebhook,
   ) {}
 }
 ```

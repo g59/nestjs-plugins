@@ -5,6 +5,6 @@ describe("getFirebaseAdmin", () => {
     expect(
       getFirebaseAdmin({
         googleApplicationCredential: undefined,
-      })
+      }),
     ).toBeTruthy());
 });

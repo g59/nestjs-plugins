@@ -1,8 +1,8 @@
 import { ConnectionArgs, OrderByInput } from "nestjs-graphql-relay";
 import {
-  InputType,
-  Field,
   ArgsType,
+  Field,
+  InputType,
   PartialType,
   PickType,
 } from "@nestjs/graphql";
@@ -10,7 +10,7 @@ import { Recipe } from "../models/recipe";
 
 @InputType()
 export class RecipeWhereInput extends PartialType(
-  PickType(Recipe, ["title"], InputType)
+  PickType(Recipe, ["title"], InputType),
 ) {}
 
 @ArgsType()

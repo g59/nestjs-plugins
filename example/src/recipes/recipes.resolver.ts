@@ -1,4 +1,4 @@
-import { Resolver, Query, Args, ObjectType, Field } from "@nestjs/graphql";
+import { Args, Field, ObjectType, Query, Resolver } from "@nestjs/graphql";
 import * as Relay from "graphql-relay";
 import { PageInfo } from "nestjs-graphql-relay";
 import { Recipe } from "./models/recipe";
@@ -29,7 +29,7 @@ export class RecipesResolver {
 
   @Query(() => RecipesConnection)
   recipes(
-    @Args() { where, orderBy, ...args }: RecipesConnectionArgs
+    @Args() { where, orderBy, ...args }: RecipesConnectionArgs,
   ): Promise<RecipesConnection> {
     return this.recipesService.find(where, undefined, args);
   }

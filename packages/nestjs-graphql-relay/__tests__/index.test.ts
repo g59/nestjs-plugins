@@ -1,4 +1,3 @@
-import { datatype } from "faker";
 import {
   Column,
   Connection,
@@ -43,12 +42,10 @@ describe("app", () => {
         "offset": 0,
       }
     `);
-    expect(() =>
-      getPagingParameters({ first: 1, after: "after" })
-    ).toThrowErrorMatchingInlineSnapshot(`"invalid before query"`);
-    expect(() =>
-      getPagingParameters({ last: 1, before: "before" })
-    ).toThrowErrorMatchingInlineSnapshot(`"invalid before query"`);
+    expect(() => getPagingParameters({ first: 1, after: "after" }))
+      .toThrowErrorMatchingInlineSnapshot(`"invalid before query"`);
+    expect(() => getPagingParameters({ last: 1, before: "before" }))
+      .toThrowErrorMatchingInlineSnapshot(`"invalid before query"`);
   });
 
   describe("findAndPaginate", () => {
@@ -58,7 +55,7 @@ describe("app", () => {
           where: { name: "undefined" },
         },
         {},
-        getRepository(Example)
+        getRepository(Example),
       );
       expect(res).toMatchInlineSnapshot(`
         Object {
@@ -74,10 +71,10 @@ describe("app", () => {
     });
 
     it("find", async () => {
-      const name = datatype.string();
-      const f = new Factory(Example).attr("name", datatype.string(10));
-      await f.createList(datatype.number({ max: 5 }));
-      await f.createList(datatype.number({ max: 5 }), {
+      const name = "name";
+      const f = new Factory(Example).attr("name", "random name");
+      await f.createList(123);
+      await f.createList(123, {
         name,
       });
 
@@ -86,7 +83,7 @@ describe("app", () => {
           where: { name },
         },
         {},
-        getRepository(Example)
+        getRepository(Example),
       );
       res.edges.map(({ node }) => expect(node.name).toEqual(name));
       expect(res.pageInfo).toMatchSnapshot();

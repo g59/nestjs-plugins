@@ -5,8 +5,7 @@ import { IncomingWebhook, IncomingWebhookSendArguments } from "@slack/webhook";
 @Injectable()
 export class NotifyService {
   constructor(
-    @InjectSlack()
-    private readonly slack: IncomingWebhook
+    @InjectSlack() private readonly slack: IncomingWebhook,
   ) {}
 
   async notify(args: IncomingWebhookSendArguments) {

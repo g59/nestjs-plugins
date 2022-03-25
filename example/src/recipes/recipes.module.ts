@@ -6,6 +6,6 @@ import { Recipe } from "./models/recipe";
 
 @Module({
   imports: [TypeOrmModule.forFeature([Recipe])],
-  providers: [RecipesResolver, RecipesService]
+  providers: [RecipesResolver, RecipesService],
 })
 export class RecipesModule {}

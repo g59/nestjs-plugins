@@ -1,4 +1,4 @@
-import { InterfaceType, Field, ID } from "@nestjs/graphql";
+import { Field, ID, InterfaceType } from "@nestjs/graphql";
 
 @InterfaceType()
 export abstract class Node {

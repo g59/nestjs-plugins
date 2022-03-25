@@ -9,7 +9,7 @@ describe("NodeResolver", () => {
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      providers: [NodeResolver, RecipesService, createMockRepository(Recipe)]
+      providers: [NodeResolver, RecipesService, createMockRepository(Recipe)],
     }).compile();
 
     resolver = module.get<NodeResolver>(NodeResolver);

@@ -30,7 +30,7 @@ import zendeskConfig from "./config/zendesk";
     FirebaseModule.forRoot({
       googleApplicationCredential: join(
         __dirname,
-        "../../dummy.firebase.amin.key.json"
+        "../../dummy.firebase.amin.key.json",
       ),
     }),
     GraphQLModule.forRoot({

@@ -1,14 +1,13 @@
 import { Injectable } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
-import { findAndPaginate, ConnectionArgs } from "nestjs-graphql-relay";
+import { ConnectionArgs, findAndPaginate } from "nestjs-graphql-relay";
 import { FindManyOptions, Repository } from "typeorm";
 import { Recipe } from "./models/recipe";
 
 @Injectable()
 export class RecipesService {
   constructor(
-    @InjectRepository(Recipe)
-    private readonly recipes: Repository<Recipe>
+    @InjectRepository(Recipe) private readonly recipes: Repository<Recipe>,
   ) {}
 
   async findById(id: string) {
@@ -18,7 +17,7 @@ export class RecipesService {
   async find(
     where: FindManyOptions<Recipe>["where"],
     order: FindManyOptions<Recipe>["order"],
-    connArgs: ConnectionArgs
+    connArgs: ConnectionArgs,
   ) {
     return findAndPaginate({ where, order }, connArgs, this.recipes);
   }

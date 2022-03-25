@@ -11,7 +11,7 @@ describe("Notify Controller", () => {
     slack = createSlackServiceMock();
     const module: TestingModule = await Test.createTestingModule({
       controllers: [NotifyController],
-      providers: [NotifyService, slack]
+      providers: [NotifyService, slack],
     }).compile();
 
     controller = module.get<NotifyController>(NotifyController);

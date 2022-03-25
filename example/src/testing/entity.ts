@@ -15,11 +15,11 @@ export function createMockRepository<T>(Entity: Function) {
     create: jest.fn(),
     count: jest.fn(),
     save: jest.fn(),
-    update: jest.fn()
+    update: jest.fn(),
   };
 
   return {
     provide: getRepositoryToken(Entity),
-    useValue
+    useValue,
   };
 }

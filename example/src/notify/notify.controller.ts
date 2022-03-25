@@ -9,7 +9,7 @@ export class NotifyController {
   @Get()
   async notifyToSlack() {
     const args: IncomingWebhookSendArguments = {
-      text: "Hello Slack!"
+      text: "Hello Slack!",
     };
     return this.notifyService.notify(args);
   }
