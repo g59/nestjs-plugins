@@ -1,6 +1,6 @@
 {
   "name": "nestjs-firebase",
-  "version": "8.2.2",
+  "version": "8.2.3",
   "description": "@nestjs with firebase",
   "license": "MIT",
   "homepage": "https://github.com/g59/nestjs-plugins/tree/main/packages/nestjs-firebase",
@@ -15,6 +15,7 @@
     "firebase"
   ],
   "peerDependencies": {
+    "@nestjs/common": "^8.0.0",
     "firebase-admin": "^8.0.0 || ^9.0.0 || ^10.0.0"
   },
   "devDependencies": {
