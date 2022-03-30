@@ -18,6 +18,9 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: npm test
+        env:
+          SLACK_WEBHOOK_URL: https://example.com
+          CI: true
 
   publish-gpr:
     needs: build
