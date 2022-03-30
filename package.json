@@ -11,7 +11,6 @@
     "bump": "lerna version --no-git-tag-version --no-push && lerna-changelog",
     "clean": "lerna run clean --parallel && lerna clean",
     "lint": "lerna run lint --parallel",
-    "release": "lerna exec --no-bail -- 'can-npm-publish && npm publish --registry=\"https://registry.npmjs.org/\"'",
     "test": "jest",
     "prepare": "husky install"
   },
