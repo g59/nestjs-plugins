@@ -22,7 +22,7 @@
     "husky": "8.0.1",
     "lerna": "4.0.0",
     "lerna-changelog": "2.2.0",
-    "lint-staged": "12.4.1",
+    "lint-staged": "12.4.2",
     "secretlint": "5.2.0",
     "ts-jest": "28.0.3"
   },
