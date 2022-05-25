@@ -5,6 +5,7 @@ const createInstances = (app: admin.app.App): FirebaseAdmin => ({
   auth: app.auth(),
   messaging: app.messaging(),
   db: app.firestore(),
+  database: app.database(),
   storage: app.storage(),
 });
 
