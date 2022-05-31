@@ -24,6 +24,6 @@
     "nestjs-zendesk": "^8.0.0"
   },
   "devDependencies": {
-    "@nestjs/testing": "8.4.5"
+    "@nestjs/testing": "8.4.6"
   }
 }
