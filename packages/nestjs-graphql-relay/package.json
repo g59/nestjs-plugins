@@ -32,7 +32,7 @@
     "@types/validator": "^13.7.1",
     "@types/ws": "^8.5.3",
     "sqlite3": "5.0.8",
-    "ts-morph": "15.0.0",
+    "ts-morph": "15.1.0",
     "typeorm-factory": "0.0.14"
   },
   "types": "lib/index.d.ts"
