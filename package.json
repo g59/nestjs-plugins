@@ -23,7 +23,7 @@
     "lerna": "5.1.6",
     "lerna-changelog": "2.2.0",
     "lint-staged": "13.0.3",
-    "secretlint": "5.2.0",
+    "secretlint": "5.2.3",
     "ts-jest": "28.0.5"
   },
   "jest": {
