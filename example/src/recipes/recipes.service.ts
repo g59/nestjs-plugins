@@ -11,7 +11,7 @@ export class RecipesService {
   ) {}
 
   async findById(id: string) {
-    return this.recipes.findOneOrFail(id);
+    return this.recipes.findOneOrFail({ where: { id } });
   }
 
   async find(

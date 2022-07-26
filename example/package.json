@@ -1,6 +1,6 @@
 {
   "name": "example",
-  "version": "8.2.0",
+  "version": "9.0.0",
   "private": true,
   "description": "nestjs-plugins examples",
   "license": "MIT",
@@ -18,10 +18,10 @@
     "@nestjs/config": "^2.0.0",
     "@nestjs/platform-fastify": "^8.4.2",
     "apollo-server-fastify": "^3.6.6",
-    "nestjs-firebase": "^8.0.0",
-    "nestjs-graphql-relay": "^8.0.0",
-    "nestjs-slack-webhook": "^8.0.0",
-    "nestjs-zendesk": "^8.0.0"
+    "nestjs-firebase": "^9.0.0",
+    "nestjs-graphql-relay": "^9.0.0",
+    "nestjs-slack-webhook": "^9.0.0",
+    "nestjs-zendesk": "^9.0.0"
   },
   "devDependencies": {
     "@nestjs/testing": "8.4.7"
