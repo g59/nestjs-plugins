@@ -12,5 +12,5 @@
   },
   "npmClient": "npm",
   "useWorkspaces": true,
-  "version": "8.2.3"
+  "version": "9.0.0"
 }

@@ -1,6 +1,6 @@
 {
   "name": "nestjs-slack-webhook",
-  "version": "8.2.3",
+  "version": "9.0.0",
   "description": "Nest.js + slack-webhook",
   "license": "MIT",
   "repository": {
@@ -22,11 +22,8 @@
     "slack-webhook"
   ],
   "peerDependencies": {
-    "@nestjs/common": "^8.0.0",
+    "@nestjs/common": "^8.0.0 || ^9.0.0",
     "@slack/webhook": "^6.0.0"
-  },
-  "devDependencies": {
-    "@nestjs/testing": "8.4.7"
   },
   "types": "lib/index.d.ts"
 }
