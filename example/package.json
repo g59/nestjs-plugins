@@ -16,7 +16,7 @@
   "dependencies": {
     "@nestjs/cli": "^9.0.0",
     "@nestjs/config": "^2.0.0",
-    "@nestjs/platform-fastify": "^8.4.2",
+    "@nestjs/platform-fastify": "^9.0.9",
     "apollo-server-fastify": "^3.6.6",
     "nestjs-firebase": "^9.0.0",
     "nestjs-graphql-relay": "^9.0.0",
