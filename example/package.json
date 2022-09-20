@@ -14,7 +14,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "uuid": "^8.0.0",
+    "uuid": "^9.0.0",
     "@nestjs/cli": "^9.0.0",
     "@nestjs/config": "^2.0.0",
     "@nestjs/platform-fastify": "^9.0.0",
