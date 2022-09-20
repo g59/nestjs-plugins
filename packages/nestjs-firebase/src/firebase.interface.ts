@@ -25,6 +25,6 @@ export interface FirebaseModuleOptionsFactory {
 export interface FirebaseAdmin {
   auth: firebaseAdmin.auth.Auth;
   messaging: firebaseAdmin.messaging.Messaging;
-  db: firebaseAdmin.firestore.Firestore;
+  firestore: firebaseAdmin.firestore.Firestore;
   storage: firebaseAdmin.storage.Storage;
 }
