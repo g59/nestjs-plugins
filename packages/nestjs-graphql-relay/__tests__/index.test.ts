@@ -1,12 +1,4 @@
-import {
-  Column,
-  Connection,
-  createConnection,
-  Entity,
-  getRepository,
-  PrimaryGeneratedColumn,
-} from "typeorm";
-import { Factory } from "typeorm-factory";
+import { Column, DataSource, Entity, PrimaryGeneratedColumn } from "typeorm";
 import { findAndPaginate, getPagingParameters } from "../src";
 
 @Entity()
@@ -19,20 +11,22 @@ class Example {
 }
 
 describe("app", () => {
-  let connection: Connection;
+  let AppDataSource: DataSource;
   beforeAll(async () => {
-    connection = await createConnection({
+    AppDataSource = new DataSource({
       type: "sqlite",
       database: "nestjs-plugins",
       synchronize: true,
       entities: [Example],
     });
 
-    const repo = getRepository(Example);
-    await connection.query(`DELETE from ${repo.metadata.tableName}`);
+    await AppDataSource.initialize();
+
+    const repo = AppDataSource.getRepository(Example);
+    await AppDataSource.query(`DELETE from ${repo.metadata.tableName}`);
   });
 
-  afterAll(() => connection.close());
+  afterAll(() => AppDataSource.destroy());
 
   it("getPagingParameters", () => {
     expect(getPagingParameters({})).toMatchInlineSnapshot(`Object {}`);
@@ -55,7 +49,7 @@ describe("app", () => {
           where: { name: "undefined" },
         },
         {},
-        getRepository(Example),
+        AppDataSource.getRepository(Example),
       );
       expect(res).toMatchInlineSnapshot(`
         Object {
@@ -72,18 +66,23 @@ describe("app", () => {
 
     it("find", async () => {
       const name = "name";
-      const f = new Factory(Example).attr("name", "random name");
-      await f.createList(123);
-      await f.createList(123, {
-        name,
-      });
+      await AppDataSource.query(
+        `INSERT INTO ${
+          AppDataSource.getRepository(Example).metadata.tableName
+        } ("name") VALUES ("random name")`,
+      );
+      await AppDataSource.query(
+        `INSERT INTO ${
+          AppDataSource.getRepository(Example).metadata.tableName
+        } ("name") VALUES ("${name}")`,
+      );
 
       const res = await findAndPaginate(
         {
           where: { name },
         },
         {},
-        getRepository(Example),
+        AppDataSource.getRepository(Example),
       );
       res.edges.map(({ node }) => expect(node.name).toEqual(name));
       expect(res.pageInfo).toMatchSnapshot();

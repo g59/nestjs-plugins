@@ -44,28 +44,26 @@ describe("ZendeskModule", () => {
     `);
     expect(res.imports).toBeUndefined();
     expect(res.providers).toMatchInlineSnapshot(`
-      Array [
-        Object {
-          "inject": Array [],
-          "provide": "ZENDESK_MODULE",
-          "useFactory": [Function],
-        },
-        Object {
-          "inject": Array [
-            Array [],
-          ],
-          "provide": undefined,
-          "useClass": undefined,
-        },
-        Object {
-          "inject": Array [
-            "ZENDESK_MODULE",
-          ],
-          "provide": "ZENDESK_TOKEN",
-          "useFactory": [Function],
-        },
-      ]
-    `);
+Array [
+  Object {
+    "inject": Array [],
+    "provide": "ZENDESK_MODULE",
+    "useFactory": [Function],
+  },
+  Object {
+    "inject": undefined,
+    "provide": undefined,
+    "useClass": undefined,
+  },
+  Object {
+    "inject": Array [
+      "ZENDESK_MODULE",
+    ],
+    "provide": "ZENDESK_TOKEN",
+    "useFactory": [Function],
+  },
+]
+`);
     expect(res.module).toBeDefined();
   });
 

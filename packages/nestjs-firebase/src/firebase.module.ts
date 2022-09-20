@@ -54,7 +54,7 @@ export class FirebaseModule {
       {
         provide: options.useClass,
         useClass: options.useClass,
-        inject: [options.inject || []],
+        inject: options.inject,
       } as ClassProvider,
     ];
   }

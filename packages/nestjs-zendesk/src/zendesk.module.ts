@@ -45,7 +45,7 @@ function createAsyncProviders(options: ZendeskAsyncOptions): Provider[] {
     {
       provide: options.useClass,
       useClass: options.useClass,
-      inject: [options.inject ?? []],
+      inject: options.inject,
     } as ClassProvider,
   ];
 }

@@ -22,7 +22,7 @@
     "slack-webhook"
   ],
   "peerDependencies": {
-    "@nestjs/common": "^8.0.0 || ^9.0.0",
+    "@nestjs/common": "^9.0.0",
     "@slack/webhook": "^6.0.0"
   },
   "types": "lib/index.d.ts"

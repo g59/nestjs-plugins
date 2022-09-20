@@ -12,6 +12,7 @@ import { RecipesModule } from "./recipes/recipes.module";
 import { NotifyModule } from "./notify/notify.module";
 import { ZendeskModule } from "nestjs-zendesk";
 import { ZendeskModule as ZendeskWrapperModule } from "./zendesk/zendesk.module";
+import { ApolloDriver } from "@nestjs/apollo";
 import slackConfig from "./config/slack";
 import zendeskConfig from "./config/zendesk";
 
@@ -37,6 +38,7 @@ import zendeskConfig from "./config/zendesk";
       installSubscriptionHandlers: true,
       autoSchemaFile: join(__dirname, `./schema.gql`),
       playground: true,
+      driver: ApolloDriver,
     }),
     SlackModule.forRootAsync({
       imports: [ConfigModule],
