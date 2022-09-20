@@ -1,8 +1,9 @@
 import { Test, TestingModule } from "@nestjs/testing";
-import { createMockRepository } from "../testing/entity";
 import { RecipesResolver } from "./recipes.resolver";
 import { RecipesService } from "./recipes.service";
 import { Recipe } from "./models/recipe";
+import { getRepositoryToken } from "@nestjs/typeorm";
+import { Repository } from "typeorm";
 
 describe("RecipesResolver", () => {
   let resolver: RecipesResolver;
@@ -12,7 +13,10 @@ describe("RecipesResolver", () => {
       providers: [
         RecipesResolver,
         RecipesService,
-        createMockRepository(Recipe),
+        {
+          provide: getRepositoryToken(Recipe),
+          useClass: Repository,
+        },
       ],
     }).compile();
 

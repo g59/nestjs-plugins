@@ -47,7 +47,7 @@ export class SlackCoreModule {
       {
         provide: options.useClass,
         useClass: options.useClass,
-        inject: [options.inject ?? []],
+        inject: options.inject,
       } as ClassProvider,
     ];
   }

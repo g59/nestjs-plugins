@@ -24,17 +24,16 @@
   ],
   "peerDependencies": {
     "@apollo/gateway": "^0.42.0",
-    "@nestjs/graphql": "^9.0.0",
+    "@nestjs/graphql": "^10.0.0",
     "@nestjs/typeorm": "^9.0.0",
     "graphql-relay": "^0.9.0",
-    "typeorm": "^0.3.0"
+    "class-validator": "*"
   },
   "devDependencies": {
     "@types/validator": "^13.7.1",
     "@types/ws": "^8.5.3",
     "sqlite3": "5.1.1",
-    "ts-morph": "16.0.0",
-    "typeorm-factory": "0.0.14"
+    "ts-morph": "16.0.0"
   },
   "types": "lib/index.d.ts"
 }

@@ -1,5 +1,5 @@
 import * as Relay from "graphql-relay";
-import { FindManyOptions, Repository } from "typeorm";
+import { FindManyOptions, ObjectLiteral, Repository } from "typeorm";
 import { ConnectionArgs } from "./connectionArgs";
 
 export * from "./orderBy.input";
@@ -73,7 +73,7 @@ export function getPagingParameters(args: ConnectionArgs) {
   }
 }
 
-export async function findAndPaginate<T>(
+export async function findAndPaginate<T extends ObjectLiteral>(
   condition: FindManyOptions<T>,
   connArgs: ConnectionArgs,
   repository: Repository<T>,

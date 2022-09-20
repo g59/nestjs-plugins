@@ -2,7 +2,7 @@
 
 exports[`app findAndPaginate find 1`] = `
 Object {
-  "endCursor": "YXJyYXljb25uZWN0aW9uOjEyMg==",
+  "endCursor": "YXJyYXljb25uZWN0aW9uOjA=",
   "hasNextPage": false,
   "hasPreviousPage": false,
   "startCursor": "YXJyYXljb25uZWN0aW9uOjA=",

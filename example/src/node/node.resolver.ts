@@ -1,7 +1,7 @@
 import { Args, ID, Query, Resolver } from "@nestjs/graphql";
 import { fromGlobalId } from "graphql-relay";
-import { isUUID } from "@nestjs/common/utils/is-uuid";
 import { RecipesService } from "../recipes/recipes.service";
+import * as uuid from "uuid";
 import { Node } from "../node/node";
 
 @Resolver()
@@ -11,7 +11,7 @@ export class NodeResolver {
   @Query(() => Node, { nullable: true })
   async node(@Args({ name: "id", type: () => ID }) relayId: string) {
     const { id, type } = fromGlobalId(relayId);
-    if (!isUUID(id)) {
+    if (!uuid.validate(id)) {
       return null;
     }
     switch (type) {
