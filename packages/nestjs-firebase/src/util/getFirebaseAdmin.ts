@@ -4,7 +4,7 @@ import { FirebaseAdmin, FirebaseModuleOptions } from "../firebase.interface";
 const createInstances = (app: admin.app.App): FirebaseAdmin => ({
   auth: app.auth(),
   messaging: app.messaging(),
-  db: app.firestore(),
+  firestore: app.firestore(),
   storage: app.storage(),
 });
 
