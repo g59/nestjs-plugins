@@ -19,7 +19,7 @@
     "firebase-admin": "^8.0.0 || ^9.0.0 || ^10.0.0"
   },
   "devDependencies": {
-    "@google-cloud/firestore": "6.4.1",
+    "@google-cloud/firestore": "6.4.2",
     "@google-cloud/storage": "6.9.0"
   },
   "types": "lib/index.d.ts"
