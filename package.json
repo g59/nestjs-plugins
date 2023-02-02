@@ -17,7 +17,7 @@
   "devDependencies": {
     "@9renpoto/tsconfig": "7.6.0",
     "@nestjs/testing": "^9.1.1",
-    "@secretlint/secretlint-rule-preset-recommend": "6.0.2",
+    "@secretlint/secretlint-rule-preset-recommend": "6.1.0",
     "@types/jest": "29.4.0",
     "can-npm-publish": "1.3.6",
     "husky": "8.0.3",
