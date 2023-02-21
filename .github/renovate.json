@@ -1,0 +1,6 @@
+{
+  "automerge": true,
+  "extends": ["config:base"],
+  "labels": ["Type: Maintenance"],
+  "semanticCommits": true
+}
