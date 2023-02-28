@@ -14,16 +14,16 @@
     "test": "jest"
   },
   "dependencies": {
-    "uuid": "^9.0.0",
+    "@nestjs/apollo": "^10.2.0",
     "@nestjs/cli": "^9.0.0",
     "@nestjs/config": "^2.0.0",
     "@nestjs/platform-fastify": "^9.0.0",
-    "@nestjs/apollo": "^10.0.0",
     "apollo-server-fastify": "^3.10.0",
     "nestjs-firebase": "^9.0.0",
     "nestjs-graphql-relay": "^9.0.0",
     "nestjs-slack-webhook": "^9.0.0",
-    "nestjs-zendesk": "^9.0.0"
+    "nestjs-zendesk": "^9.0.0",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@nestjs/testing": "^9.0.0",
