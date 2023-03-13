@@ -22,5 +22,5 @@ describe("app (e2e)", () => {
   afterEach(() => app.close());
 
   // TODO fix https://github.com/nestjs/graphql/issues/2307
-  it.skip("defined", () => expect(app).toBeDefined());
+  it("defined", () => expect(app).toBeDefined());
 });
