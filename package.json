@@ -25,7 +25,7 @@
     "lerna-changelog": "2.2.0",
     "lint-staged": "13.2.0",
     "secretlint": "6.2.3",
-    "ts-jest": "28.0.8"
+    "ts-jest": "29.0.5"
   },
   "jest": {
     "preset": "ts-jest",
