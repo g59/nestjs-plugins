@@ -7,24 +7,19 @@
     "npm": "^9.0.0"
   },
   "scripts": {
-    "build": "lerna run build --include-dependents",
-    "bump": "lerna version --no-git-tag-version --no-push && lerna-changelog",
-    "clean": "lerna run clean --parallel && lerna clean",
-    "lint": "lerna run lint --parallel",
+    "build": "npm run build --workspaces",
+    "clean": "npm run clean --workspaces",
+    "lint": "npm run lint --workspaces",
     "test": "jest",
     "prepare": "husky install"
   },
   "devDependencies": {
     "@9renpoto/tsconfig": "^7.6.0",
     "@nestjs/testing": "^9.0.0",
-    "@secretlint/secretlint-rule-preset-recommend": "^6.2.3",
     "@types/jest": "^29.4.0",
     "can-npm-publish": "^1.3.6",
     "husky": "^8.0.3",
-    "lerna": "^6.5.1",
-    "lerna-changelog": "^2.2.0",
     "lint-staged": "^13.2.0",
-    "secretlint": "^6.2.3",
     "ts-jest": "^29.0.5"
   },
   "jest": {
@@ -36,9 +31,6 @@
     "testEnvironment": "node"
   },
   "lint-staged": {
-    "*": [
-      "secretlint"
-    ],
     "*.{ts,tsx,md}": [
       "deno fmt"
     ]

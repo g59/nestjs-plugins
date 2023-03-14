@@ -29,13 +29,13 @@ describe("app", () => {
   afterAll(() => AppDataSource.destroy());
 
   it("getPagingParameters", () => {
-    expect(getPagingParameters({})).toMatchInlineSnapshot(`Object {}`);
-    expect(getPagingParameters({ first: 1 })).toMatchInlineSnapshot(`
-      Object {
+    expect(getPagingParameters({})).toEqual({});
+    expect(getPagingParameters({ first: 1 })).toEqual(
+      {
         "limit": 1,
         "offset": 0,
-      }
-    `);
+      },
+    );
     expect(() => getPagingParameters({ first: 1, after: "after" }))
       .toThrowErrorMatchingInlineSnapshot(`"invalid before query"`);
     expect(() => getPagingParameters({ last: 1, before: "before" }))
@@ -51,17 +51,17 @@ describe("app", () => {
         {},
         AppDataSource.getRepository(Example),
       );
-      expect(res).toMatchInlineSnapshot(`
-        Object {
-          "edges": Array [],
-          "pageInfo": Object {
+      expect(res).toEqual(
+        {
+          "edges": [],
+          "pageInfo": {
             "endCursor": null,
             "hasNextPage": false,
             "hasPreviousPage": false,
             "startCursor": null,
           },
-        }
-      `);
+        },
+      );
     });
 
     it("find", async () => {
