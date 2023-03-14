@@ -32,31 +32,31 @@ describe("ZendeskModule", () => {
   it("forRootAsync", () => {
     const res = ZendeskModule.forRootAsync({});
     expect(res.exports).toMatchInlineSnapshot(`
-      Array [
-        Object {
-          "inject": Array [
-            "ZENDESK_MODULE",
-          ],
-          "provide": "ZENDESK_TOKEN",
-          "useFactory": [Function],
-        },
-      ]
-    `);
+[
+  {
+    "inject": [
+      "ZENDESK_MODULE",
+    ],
+    "provide": "ZENDESK_TOKEN",
+    "useFactory": [Function],
+  },
+]
+`);
     expect(res.imports).toBeUndefined();
     expect(res.providers).toMatchInlineSnapshot(`
-Array [
-  Object {
-    "inject": Array [],
+[
+  {
+    "inject": [],
     "provide": "ZENDESK_MODULE",
     "useFactory": [Function],
   },
-  Object {
+  {
     "inject": undefined,
     "provide": undefined,
     "useClass": undefined,
   },
-  Object {
-    "inject": Array [
+  {
+    "inject": [
       "ZENDESK_MODULE",
     ],
     "provide": "ZENDESK_TOKEN",
