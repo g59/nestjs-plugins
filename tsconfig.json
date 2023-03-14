@@ -7,6 +7,6 @@
     "moduleResolution": "node",
     "noEmit": true,
     "strictPropertyInitialization": false,
-    "target": "es2017"
+    "target": "ESNext"
   }
 }
