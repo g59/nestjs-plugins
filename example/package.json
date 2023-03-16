@@ -27,7 +27,7 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
-    "@nestjs/testing": "^9.0.0",
+    "@nestjs/testing": "^9.3.10",
     "@types/uuid": "^9.0.0"
   }
 }
