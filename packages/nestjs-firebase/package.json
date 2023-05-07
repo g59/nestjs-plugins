@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@google-cloud/firestore": "^6.5.0",
-    "@google-cloud/storage": "^6.9.5"
+    "@google-cloud/storage": "^6.10.0"
   },
   "types": "lib/index.d.ts"
 }
