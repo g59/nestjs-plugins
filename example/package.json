@@ -16,7 +16,7 @@
   "dependencies": {
     "@apollo/server": "^4.7.1",
     "@as-integrations/fastify": "^2.0.0",
-    "@nestjs/apollo": "^11.0.5",
+    "@nestjs/apollo": "^11.0.6",
     "@nestjs/cli": "^9.5.0",
     "@nestjs/config": "^2.3.2",
     "@nestjs/platform-fastify": "^9.4.1",
