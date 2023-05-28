@@ -19,7 +19,7 @@
     "@nestjs/apollo": "^11.0.6",
     "@nestjs/cli": "^9.5.0",
     "@nestjs/config": "^2.3.2",
-    "@nestjs/platform-fastify": "^9.4.1",
+    "@nestjs/platform-fastify": "^9.4.2",
     "nestjs-firebase": "^9.0.0",
     "nestjs-graphql-relay": "^9.0.0",
     "nestjs-slack-webhook": "^9.0.0",
