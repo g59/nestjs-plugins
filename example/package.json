@@ -14,7 +14,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@apollo/server": "^4.7.1",
+    "@apollo/server": "^4.7.3",
     "@as-integrations/fastify": "^2.0.0",
     "@nestjs/apollo": "^11.0.6",
     "@nestjs/cli": "^9.5.0",
