@@ -20,10 +20,10 @@
     "@nestjs/cli": "^10.0.0",
     "@nestjs/config": "^3.0.0",
     "@nestjs/platform-fastify": "^10.0.0",
-    "nestjs-firebase": "^9.0.0",
-    "nestjs-graphql-relay": "^9.0.0",
-    "nestjs-slack-webhook": "^9.0.0",
-    "nestjs-zendesk": "^9.0.0",
+    "nestjs-firebase": "^10.0.0",
+    "nestjs-graphql-relay": "^10.0.0",
+    "nestjs-slack-webhook": "^10.0.0",
+    "nestjs-zendesk": "^10.0.0",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
