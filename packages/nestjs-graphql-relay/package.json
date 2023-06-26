@@ -1,6 +1,6 @@
 {
   "name": "nestjs-graphql-relay",
-  "version": "9.0.0",
+  "version": "10.0.0",
   "description": "@nestjs/graphql + graphql-relay + typeorm",
   "license": "MIT",
   "repository": {
