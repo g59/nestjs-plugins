@@ -19,7 +19,7 @@
     "@nestjs/testing": "^10.0.0",
     "@types/jest": "^29.5.2",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.2",
+    "lint-staged": "^13.2.3",
     "ts-jest": "^29.1.0"
   },
   "jest": {
