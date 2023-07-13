@@ -26,6 +26,6 @@ jobs:
         env:
           SLACK_WEBHOOK_URL: https://example.com
           CI: true
-      - uses: coverallsapp/github-action@v2.2.0
+      - uses: coverallsapp/github-action@v2.2.1
         with:
           github-token: ${{ secrets.github_token }}
