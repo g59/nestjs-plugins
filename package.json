@@ -15,7 +15,7 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@9renpoto/tsconfig": "^7.6.0",
+    "@9renpoto/tsconfig": "^7.7.2",
     "@nestjs/testing": "^10.0.0",
     "@types/jest": "^29.5.2",
     "husky": "^8.0.3",
