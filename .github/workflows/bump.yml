@@ -65,8 +65,5 @@ jobs:
           commit-message: 'bump: v${{ steps.get_version.outputs.NEW_VERSION }}'
           body: ${{ steps.get_release_note.outputs.result  }}
           title: 'chore: bump v${{ steps.get_version.outputs.NEW_VERSION }}'
-          labels: |
-            Type: Documentation
           draft: true
-          assignees: caddi-machine-user
           milestone: 'v${{ steps.get_version.outputs.NEW_VERSION }}'
