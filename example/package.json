@@ -17,7 +17,7 @@
     "@apollo/server": "^4.7.3",
     "@as-integrations/fastify": "^2.0.0",
     "@nestjs/apollo": "^12.0.0",
-    "@nestjs/cli": "^10.0.0",
+    "@nestjs/cli": "^10.1.14",
     "@nestjs/config": "^3.0.0",
     "@nestjs/platform-fastify": "^10.0.0",
     "nestjs-firebase": "^10.0.0",
