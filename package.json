@@ -4,7 +4,7 @@
   "repository": "git@github.com:g59/nestjs-plugins.git",
   "author": "g59",
   "engines": {
-    "npm": "^9.0.0"
+    "npm": "^10.0.0"
   },
   "version": "10.0.0",
   "scripts": {
