@@ -21,7 +21,7 @@ This repository is managed as monorepo.
 
 ## Usage
 
-    npx lerna run start:dev --scope example
+    npm run start:dev --workspace example
 
 ## Contributing
 

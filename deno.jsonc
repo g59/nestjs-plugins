@@ -1,0 +1,11 @@
+{
+  "fmt": {
+    "exclude": [
+      "CHANGELOG.md",
+      "node_modules/",
+      "coverage/",
+      "**/lib/",
+      "**/dist/"
+    ]
+  }
+}
