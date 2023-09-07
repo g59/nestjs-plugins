@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       semver:
-        description: 'Which SemVer'
+        description: "Which SemVer"
         required: true
-        default: 'patch'
+        default: "patch"
         type: choice
         options:
           - major
@@ -44,14 +44,16 @@ jobs:
               {
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                tag_name: process.env.NEW_VERSION,
+                tag_name: `v${process.env.NEW_VERSION}`,
               }
             );
             return notes.data.body;
 
-      - name: generate title
-        run: echo "v${{ steps.get_version.outputs.NEW_VERSION }} ($(date '+%Y-%m-%d'))" > new
-      - run: echo "${{ steps.get_release_note.outputs.result }}" >> new
+      - run: |
+          cat << EOF >> new
+          ## v${{ steps.get_version.outputs.NEW_VERSION }} ($(date '+%Y-%m-%d'))
+          ${{ steps.get_release_note.outputs.result }}
+          EOF
       - run: cat new ./CHANGELOG.md > temp
       - run: mv temp ./CHANGELOG.md
       - run: rm new
@@ -60,10 +62,10 @@ jobs:
         uses: peter-evans/create-pull-request@v5.0.2
         with:
           base: main
-          branch: release
+          branch: release-${{ steps.get_version.outputs.NEW_VERSION }}
           token: ${{secrets.GITHUB_TOKEN}}
-          commit-message: 'bump: v${{ steps.get_version.outputs.NEW_VERSION }}'
+          commit-message: "bump: v${{ steps.get_version.outputs.NEW_VERSION }}"
           body: ${{ steps.get_release_note.outputs.result  }}
-          title: 'chore: bump v${{ steps.get_version.outputs.NEW_VERSION }}'
+          title: "chore: bump v${{ steps.get_version.outputs.NEW_VERSION }}"
           draft: true
-          milestone: 'v${{ steps.get_version.outputs.NEW_VERSION }}'
+          milestone: "v${{ steps.get_version.outputs.NEW_VERSION }}"
