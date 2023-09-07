@@ -3,8 +3,8 @@ name: actionlint
 on:
   pull_request:
     paths:
-      - '.github/actions/**'
-      - '.github/workflows/**'
+      - ".github/actions/**"
+      - ".github/workflows/**"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
