@@ -1,3 +1,30 @@
+## v10.2.0 (2023-09-30)
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### Other Changes
+* chore(deps): update coverallsapp/github-action action to v2.2.3 by @renovate in https://github.com/g59/nestjs-plugins/pull/1674
+* chore(deps): update dependency @google-cloud/storage to v7.1.0 by @renovate in https://github.com/g59/nestjs-plugins/pull/1675
+* fix(deps): update nest monorepo to v10.2.5 by @renovate in https://github.com/g59/nestjs-plugins/pull/1676
+* fix(deps): update dependency @nestjs/apollo to v12.0.9 by @renovate in https://github.com/g59/nestjs-plugins/pull/1680
+* fix(deps): update dependency @nestjs/config to v3.1.0 by @renovate in https://github.com/g59/nestjs-plugins/pull/1681
+* fix(deps): update dependency uuid to v9.0.1 by @renovate in https://github.com/g59/nestjs-plugins/pull/1682
+* fix(deps): update dependency @nestjs/config to v3.1.1 by @renovate in https://github.com/g59/nestjs-plugins/pull/1683
+* chore(deps): update dependency node-zendesk to v4 by @renovate in https://github.com/g59/nestjs-plugins/pull/1684
+* chore(deps): update dependency @types/uuid to v9.0.4 by @renovate in https://github.com/g59/nestjs-plugins/pull/1685
+* chore(deps): update dependency @types/jest to v29.5.5 by @renovate in https://github.com/g59/nestjs-plugins/pull/1686
+* chore(deps): bump graphql from 16.7.1 to 16.8.1 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1687
+* fix(deps): update dependency @nestjs/cli to v10.1.18 by @renovate in https://github.com/g59/nestjs-plugins/pull/1688
+* fix(deps): update nest monorepo to v10.2.6 by @renovate in https://github.com/g59/nestjs-plugins/pull/1689
+* chore(deps): update actions/checkout digest to 8ade135 by @renovate in https://github.com/g59/nestjs-plugins/pull/1690
+* chore(deps): update actions/checkout action to v4.1.0 by @renovate in https://github.com/g59/nestjs-plugins/pull/1691
+* chore(deps): update dependency @types/node-zendesk to v2.0.12 by @renovate in https://github.com/g59/nestjs-plugins/pull/1692
+* chore(deps): update dependency @types/ws to v8.5.6 by @renovate in https://github.com/g59/nestjs-plugins/pull/1693
+* chore(deps): update dependency @types/validator to v13.11.2 by @renovate in https://github.com/g59/nestjs-plugins/pull/1694
+* chore(deps): update dependency @google-cloud/firestore to v6.8.0 by @renovate in https://github.com/g59/nestjs-plugins/pull/1695
+
+
+**Full Changelog**: https://github.com/g59/nestjs-plugins/compare/v10.1.0...v10.2.0
 ## v10.1.0 (2023-09-07)
 <!-- Release notes generated using configuration in .github/release.yml at main -->
 
