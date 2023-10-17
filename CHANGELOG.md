@@ -1,3 +1,24 @@
+## v10.3.0 (2023-10-17)
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### Other Changes
+* chore(deps): update dependency @google-cloud/firestore to v7 by @renovate in https://github.com/g59/nestjs-plugins/pull/1697
+* chore(deps): update dependency @slack/webhook to v7 by @renovate in https://github.com/g59/nestjs-plugins/pull/1698
+* fix(deps): update dependency @apollo/server to v4.9.4 by @renovate in https://github.com/g59/nestjs-plugins/pull/1699
+* fix(deps): update dependency @as-integrations/fastify to v2.1.1 by @renovate in https://github.com/g59/nestjs-plugins/pull/1700
+* fix(deps): update nest monorepo to v10.2.7 by @renovate in https://github.com/g59/nestjs-plugins/pull/1703
+* chore(deps): update dependency @google-cloud/storage to v7.2.0 by @renovate in https://github.com/g59/nestjs-plugins/pull/1704
+* chore(deps): update dependency @types/uuid to v9.0.5 by @renovate in https://github.com/g59/nestjs-plugins/pull/1705
+* chore(deps): update dependency @types/ws to v8.5.7 by @renovate in https://github.com/g59/nestjs-plugins/pull/1708
+* chore(deps): update dependency @google-cloud/storage to v7.3.0 by @renovate in https://github.com/g59/nestjs-plugins/pull/1709
+* chore(deps): update dependency @types/validator to v13.11.3 by @renovate in https://github.com/g59/nestjs-plugins/pull/1710
+* chore(deps): update dependency @google-cloud/firestore to v7.1.0 by @renovate in https://github.com/g59/nestjs-plugins/pull/1711
+* chore(deps): update dependency lint-staged to v15 by @renovate in https://github.com/g59/nestjs-plugins/pull/1712
+* chore(deps): update dependency lint-staged to v15.0.1 by @renovate in https://github.com/g59/nestjs-plugins/pull/1713
+
+
+**Full Changelog**: https://github.com/g59/nestjs-plugins/compare/v10.2.0...v10.3.0
 ## v10.2.0 (2023-09-30)
 <!-- Release notes generated using configuration in .github/release.yml at main -->
 
