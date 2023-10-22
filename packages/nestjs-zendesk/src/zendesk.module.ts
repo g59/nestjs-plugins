@@ -1,6 +1,6 @@
 import { DynamicModule, Global, Module, Provider } from "@nestjs/common";
 import type { ClassProvider } from "@nestjs/common/interfaces";
-import zendesk from "node-zendesk";
+import * as zendesk from "node-zendesk";
 import { ZENDESK_MODULE, ZENDESK_TOKEN } from "./zendesk.constants";
 import type {
   ZendeskAsyncOptions,
@@ -8,8 +8,8 @@ import type {
 } from "./zendesk.interface";
 
 function createProvider(
-  options: zendesk.ClientOptions,
-): Provider<zendesk.Client> {
+  options: zendesk.ZendeskClientOptions,
+): Provider<zendesk.ZendeskClient> {
   return {
     provide: ZENDESK_TOKEN,
     useValue: zendesk.createClient(options),
@@ -53,7 +53,7 @@ function createAsyncProviders(options: ZendeskAsyncOptions): Provider[] {
 @Global()
 @Module({})
 export class ZendeskModule {
-  static forRoot(options: zendesk.ClientOptions): DynamicModule {
+  static forRoot(options: zendesk.ZendeskClientOptions): DynamicModule {
     const provider = createProvider(options);
     return {
       module: ZendeskModule,
@@ -63,10 +63,10 @@ export class ZendeskModule {
   }
 
   static forRootAsync(options: ZendeskAsyncOptions): DynamicModule {
-    const provider: Provider<zendesk.Client> = {
+    const provider: Provider<zendesk.ZendeskClient> = {
       inject: [ZENDESK_MODULE],
       provide: ZENDESK_TOKEN,
-      useFactory: (options: zendesk.ClientOptions) =>
+      useFactory: (options: zendesk.ZendeskClientOptions) =>
         zendesk.createClient(options),
     };
 

@@ -1,11 +1,11 @@
 import { registerAs } from "@nestjs/config";
-import type { ClientOptions } from "node-zendesk";
+import type { ZendeskClientOptions } from "node-zendesk";
 
 export default registerAs(
   "zendesk",
-  (): ClientOptions => ({
+  (): ZendeskClientOptions => ({
     username: process.env.ZENDESK_USER_NAME!,
     token: process.env.ZENDESK_TOKEN!,
-    remoteUri: process.env.ZENDESK_REMOTE_URI!,
+    endpointUri: process.env.ZENDESK_REMOTE_URI!,
   }),
 );

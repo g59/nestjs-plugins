@@ -23,10 +23,9 @@
     "zendesk"
   ],
   "peerDependencies": {
-    "node-zendesk": "^5.0.0 || ^4.0.0"
+    "node-zendesk": "^5.0.0"
   },
   "devDependencies": {
-    "@nestjs/testing": "^10.0.0",
-    "@types/node-zendesk": "^2.0.11"
+    "@nestjs/testing": "^10.0.0"
   }
 }
