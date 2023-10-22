@@ -64,7 +64,7 @@ jobs:
         uses: peter-evans/create-pull-request@v5.0.2
         with:
           base: ${{ github.ref }}
-          branch: release-${{ github.ref_name }}-${{ steps.get_version.outputs.NEW_VERSION }}
+          branch: bump/${{ github.ref_name }}-${{ steps.get_version.outputs.NEW_VERSION }}
           token: ${{secrets.GITHUB_TOKEN}}
           commit-message: "bump: v${{ steps.get_version.outputs.NEW_VERSION }}"
           body: ${{ steps.get_release_note.outputs.result  }}
