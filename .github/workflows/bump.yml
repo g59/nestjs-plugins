@@ -22,7 +22,9 @@ jobs:
   bump:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
 
       - run: npm version ${{ inputs.semver }} --no-git-tag-version --workspaces
 
@@ -61,8 +63,8 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5.0.2
         with:
-          base: main
-          branch: release-${{ steps.get_version.outputs.NEW_VERSION }}
+          base: ${{ github.ref }}
+          branch: release-${{ github.ref_name }}-${{ steps.get_version.outputs.NEW_VERSION }}
           token: ${{secrets.GITHUB_TOKEN}}
           commit-message: "bump: v${{ steps.get_version.outputs.NEW_VERSION }}"
           body: ${{ steps.get_release_note.outputs.result  }}

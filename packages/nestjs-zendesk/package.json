@@ -23,7 +23,7 @@
     "zendesk"
   ],
   "peerDependencies": {
-    "node-zendesk": "^2.0.6 || ^3.0.0 || ^4.0.0"
+    "node-zendesk": "^5.0.0 || ^4.0.0"
   },
   "devDependencies": {
     "@nestjs/testing": "^10.0.0",
