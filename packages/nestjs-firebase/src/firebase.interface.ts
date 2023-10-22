@@ -26,6 +26,7 @@ export interface FirebaseAdmin {
   auth: firebaseAdmin.auth.Auth;
   messaging: firebaseAdmin.messaging.Messaging;
   firestore: firebaseAdmin.firestore.Firestore;
+  database?: firebaseAdmin.database.Database;
   storage: firebaseAdmin.storage.Storage;
   remoteConfig: firebaseAdmin.remoteConfig.RemoteConfig;
 }
