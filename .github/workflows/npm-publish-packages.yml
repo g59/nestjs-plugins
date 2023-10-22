@@ -14,13 +14,12 @@ jobs:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
       - uses: actions/setup-node@v3.8.1
         with:
-          node-version: 18
+          node-version: lts/*
       - run: npm ci
       - run: npm run build
       - run: npm test
         env:
           SLACK_WEBHOOK_URL: https://example.com
-          CI: true
 
   publish-gpr:
     needs: build
@@ -29,7 +28,7 @@ jobs:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
       - uses: actions/setup-node@v3.8.1
         with:
-          node-version: 18
+          node-version: lts/*
           registry-url: "https://registry.npmjs.org"
       - run: npm ci
       - run: npm run build
