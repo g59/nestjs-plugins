@@ -1,11 +1,14 @@
 import * as admin from "firebase-admin";
 import { FirebaseAdmin, FirebaseModuleOptions } from "../firebase.interface";
 
-const createInstances = (app: admin.app.App): FirebaseAdmin => ({
+const createInstances = (
+  app: admin.app.App,
+  initDatabase = false,
+): FirebaseAdmin => ({
   auth: app.auth(),
   messaging: app.messaging(),
   firestore: app.firestore(),
-  database: app.database(),
+  database: initDatabase ? app.database() : undefined,
   storage: app.storage(),
   remoteConfig: app.remoteConfig(),
 });
@@ -25,5 +28,6 @@ export const getFirebaseAdmin = (
         : undefined,
       ...appOptions,
     }),
+    !!appOptions.databaseURL,
   );
 };
