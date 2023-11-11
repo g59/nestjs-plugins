@@ -1,8 +1,7 @@
 # nestjs-plugins
 
 ![Actions Status](https://github.com/g59/nestjs-plugins/workflows/Node%20CI/badge.svg)
-[![Coverage Status](https://coveralls.io/repos/github/g59/nestjs-plugins/badge.svg?branch=main)](https://coveralls.io/github/g59/nestjs-plugins?branch=main)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![codecov](https://codecov.io/gh/g59/nestjs-plugins/graph/badge.svg?token=KVABG274X8)](https://codecov.io/gh/g59/nestjs-plugins)
 
 ## Install
 
