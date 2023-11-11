@@ -6,13 +6,17 @@ import {
   FirebaseModuleOptionsFactory,
 } from "./firebase.interface";
 import { FirebaseModule } from "./firebase.module";
-import * as utils from "./util";
-
-jest.mock("./util");
-jest.spyOn(utils, "getFirebaseAdmin").mockReturnValue({} as any);
+import * as admin from "firebase-admin";
+import * as path from "path";
+import { mock } from "jest-mock-extended";
 
 describe("FirebaseModule", () => {
-  const googleApplicationCredential = "test";
+  jest.spyOn(admin, "initializeApp").mockReturnValue(mock<admin.app.App>());
+
+  const googleApplicationCredential = path.join(
+    __dirname,
+    "../../../dummy.firebase.amin.key.json",
+  );
   class TestService implements FirebaseModuleOptionsFactory {
     createFirebaseModuleOptions(): FirebaseModuleOptions {
       return {

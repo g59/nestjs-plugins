@@ -11,9 +11,9 @@ jobs:
         node-version: [lts/*, latest]
 
     steps:
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+      - uses: actions/checkout@v4
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4.0.0
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
@@ -23,6 +23,5 @@ jobs:
         env:
           SLACK_WEBHOOK_URL: https://example.com
           CI: true
-      - uses: coverallsapp/github-action@3dfc5567390f6fa9267c0ee9c251e4c8c3f18949 # v2.2.3
-        with:
-          github-token: ${{ secrets.github_token }}
+      - name: Codecov
+        uses: codecov/codecov-action@v3
