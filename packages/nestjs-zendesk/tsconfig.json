@@ -3,5 +3,6 @@
   "compilerOptions": {
     "outDir": "./lib",
     "noEmit": false
-  }
+  },
+  "include": ["src"]
 }
