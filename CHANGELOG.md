@@ -1,3 +1,70 @@
+## v10.3.0 (2023-11-23)
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### :rocket: Type: Feature
+* (feat): add remote config to nestjs firebase module by @Duduzera1997 in https://github.com/g59/nestjs-plugins/pull/1706
+* refactor: upgrade zendesk by @9renpoto in https://github.com/g59/nestjs-plugins/pull/1726
+* refactor: use managed types by @9renpoto in https://github.com/g59/nestjs-plugins/pull/1727
+* chore: firebase ability to use Realtime Database by @9renpoto in https://github.com/g59/nestjs-plugins/pull/1728
+### Other Changes
+* chore(deps): update dependency @google-cloud/firestore to v7 by @renovate in https://github.com/g59/nestjs-plugins/pull/1697
+* chore(deps): update dependency @slack/webhook to v7 by @renovate in https://github.com/g59/nestjs-plugins/pull/1698
+* fix(deps): update dependency @apollo/server to v4.9.4 by @renovate in https://github.com/g59/nestjs-plugins/pull/1699
+* fix(deps): update dependency @as-integrations/fastify to v2.1.1 by @renovate in https://github.com/g59/nestjs-plugins/pull/1700
+* fix(deps): update nest monorepo to v10.2.7 by @renovate in https://github.com/g59/nestjs-plugins/pull/1703
+* chore(deps): update dependency @google-cloud/storage to v7.2.0 by @renovate in https://github.com/g59/nestjs-plugins/pull/1704
+* chore(deps): update dependency @types/uuid to v9.0.5 by @renovate in https://github.com/g59/nestjs-plugins/pull/1705
+* chore(deps): update dependency @types/ws to v8.5.7 by @renovate in https://github.com/g59/nestjs-plugins/pull/1708
+* chore(deps): update dependency @google-cloud/storage to v7.3.0 by @renovate in https://github.com/g59/nestjs-plugins/pull/1709
+* chore(deps): update dependency @types/validator to v13.11.3 by @renovate in https://github.com/g59/nestjs-plugins/pull/1710
+* chore(deps): update dependency @google-cloud/firestore to v7.1.0 by @renovate in https://github.com/g59/nestjs-plugins/pull/1711
+* chore(deps): update dependency lint-staged to v15 by @renovate in https://github.com/g59/nestjs-plugins/pull/1712
+* chore(deps): update dependency lint-staged to v15.0.1 by @renovate in https://github.com/g59/nestjs-plugins/pull/1713
+* chore(deps): update actions/checkout action to v4.1.1 by @renovate in https://github.com/g59/nestjs-plugins/pull/1714
+* chore(deps): update dependency @types/jest to v29.5.6 by @renovate in https://github.com/g59/nestjs-plugins/pull/1718
+* chore(deps): update dependency @types/node-zendesk to v2.0.13 by @renovate in https://github.com/g59/nestjs-plugins/pull/1719
+* chore(deps): update dependency @types/validator to v13.11.5 by @renovate in https://github.com/g59/nestjs-plugins/pull/1721
+* chore(deps): update dependency @types/uuid to v9.0.6 by @renovate in https://github.com/g59/nestjs-plugins/pull/1720
+* chore(deps): update dependency @types/ws to v8.5.8 by @renovate in https://github.com/g59/nestjs-plugins/pull/1722
+* chore(deps): update actions/checkout digest to b4ffde6 by @renovate in https://github.com/g59/nestjs-plugins/pull/1723
+* chore(deps): update dependency lint-staged to v15.0.2 by @renovate in https://github.com/g59/nestjs-plugins/pull/1724
+* chore(deps): update dependency @google-cloud/storage to v7.3.1 by @renovate in https://github.com/g59/nestjs-plugins/pull/1725
+* chore(deps-dev): bump @babel/traverse from 7.22.5 to 7.23.2 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1715
+* fix(.github): rename branches by @9renpoto in https://github.com/g59/nestjs-plugins/pull/1729
+* Revert "fix(.github): rename branches" by @9renpoto in https://github.com/g59/nestjs-plugins/pull/1730
+* chore(deps): update actions/setup-node action to v3.8.2 by @renovate in https://github.com/g59/nestjs-plugins/pull/1731
+* fix(deps): update dependency @nestjs/cli to v10.2.0 by @renovate in https://github.com/g59/nestjs-plugins/pull/1732
+* chore(deps): update actions/setup-node action to v4 by @renovate in https://github.com/g59/nestjs-plugins/pull/1733
+* chore(deps): update dependency @google-cloud/storage to v7.3.2 by @renovate in https://github.com/g59/nestjs-plugins/pull/1734
+* chore(deps): update dependency @google-cloud/storage to v7.4.0 by @renovate in https://github.com/g59/nestjs-plugins/pull/1735
+* fix(deps): update dependency @apollo/server to v4.9.5 by @renovate in https://github.com/g59/nestjs-plugins/pull/1736
+* fix(deps): update dependency @nestjs/cli to v10.2.1 by @renovate in https://github.com/g59/nestjs-plugins/pull/1738
+* chore(deps): update dependency @google-cloud/storage to v7.5.0 by @renovate in https://github.com/g59/nestjs-plugins/pull/1739
+* chore(deps): update dependency @types/jest to v29.5.7 by @renovate in https://github.com/g59/nestjs-plugins/pull/1740
+* fix(deps): update nest monorepo to v10.2.8 by @renovate in https://github.com/g59/nestjs-plugins/pull/1741
+* chore(deps): update dependency @types/jest to v29.5.8 by @renovate in https://github.com/g59/nestjs-plugins/pull/1742
+* chore(deps): update dependency @types/uuid to v9.0.7 by @renovate in https://github.com/g59/nestjs-plugins/pull/1743
+* chore(deps): update dependency @types/ws to v8.5.9 by @renovate in https://github.com/g59/nestjs-plugins/pull/1745
+* chore(deps): update dependency @types/validator to v13.11.6 by @renovate in https://github.com/g59/nestjs-plugins/pull/1744
+* fix(deps): update dependency @nestjs/apollo to v12.0.10 by @renovate in https://github.com/g59/nestjs-plugins/pull/1746
+* chore(deps): update dependency @google-cloud/storage to v7.6.0 by @renovate in https://github.com/g59/nestjs-plugins/pull/1747
+* feat: coveralls to codecov by @9renpoto in https://github.com/g59/nestjs-plugins/pull/1748
+* chore(deps): update dependency lint-staged to v15.1.0 by @renovate in https://github.com/g59/nestjs-plugins/pull/1749
+* chore(deps): update actions/github-script action to v7 by @renovate in https://github.com/g59/nestjs-plugins/pull/1750
+* fix(deps): update dependency @nestjs/apollo to v12.0.11 by @renovate in https://github.com/g59/nestjs-plugins/pull/1751
+* fix(deps): update nest monorepo to v10.2.9 by @renovate in https://github.com/g59/nestjs-plugins/pull/1752
+* fix(deps): update nest monorepo to v10.2.10 by @renovate in https://github.com/g59/nestjs-plugins/pull/1753
+* chore(deps): update dependency @types/validator to v13.11.7 by @renovate in https://github.com/g59/nestjs-plugins/pull/1754
+* chore(deps): update dependency @types/ws to v8.5.10 by @renovate in https://github.com/g59/nestjs-plugins/pull/1756
+* chore(deps): update dependency @types/jest to v29.5.9 by @renovate in https://github.com/g59/nestjs-plugins/pull/1755
+* chore(deps): update dependency @types/jest to v29.5.10 by @renovate in https://github.com/g59/nestjs-plugins/pull/1757
+* fix: generate release notes by @9renpoto in https://github.com/g59/nestjs-plugins/pull/1758
+
+## New Contributors
+* @Duduzera1997 made their first contribution in https://github.com/g59/nestjs-plugins/pull/1706
+
+**Full Changelog**: https://github.com/g59/nestjs-plugins/compare/v10.2.0...v10.3.0
 ## v10.2.0 (2023-09-30)
 <!-- Release notes generated using configuration in .github/release.yml at main -->
 
