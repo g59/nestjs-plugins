@@ -17,7 +17,7 @@
   "devDependencies": {
     "@9renpoto/tsconfig": "^7.6.0",
     "@nestjs/testing": "^10.0.0",
-    "@types/jest": "^29.5.2",
+    "@types/jest": "^29.5.11",
     "husky": "^8.0.3",
     "jest-mock-extended": "^3.0.5",
     "lint-staged": "^15.2.0",
