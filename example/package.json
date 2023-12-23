@@ -10,7 +10,7 @@
     "clean": "rimraf dist",
     "lint": "tsc -p . --noEmit",
     "start": "nest start",
-    "start:dev": "nest start --watch",
+    "start:dev": "nest start -b swc --type-check --watch",
     "test": "jest"
   },
   "dependencies": {

@@ -4,6 +4,5 @@
     "outDir": "./lib",
     "noEmit": false
   },
-  "exclude": ["node_modules", "**/*.spec.ts", "dist"],
   "include": ["src"]
 }
