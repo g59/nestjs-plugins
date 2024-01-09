@@ -1,3 +1,19 @@
+## v10.4.0 (2024-01-09)
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### Other Changes
+* chore(deps): update dependency @9renpoto/tsconfig to v7.7.4 by @renovate in https://github.com/g59/nestjs-plugins/pull/1760
+* Delete .github/renovate.json by @9renpoto in https://github.com/g59/nestjs-plugins/pull/1761
+* chore(deps-dev): bump @google-cloud/storage from 7.6.0 to 7.7.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1764
+* chore(deps-dev): bump lint-staged from 15.1.0 to 15.2.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1765
+* chore(deps-dev): bump @types/jest from 29.5.10 to 29.5.11 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1766
+* chore(deps-dev): bump @nestjs/testing from 10.2.10 to 10.3.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1769
+* chore(deps): bump @nestjs/platform-fastify from 10.2.10 to 10.3.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1770
+* chore(deps): bump @apollo/server from 4.9.5 to 4.10.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1772
+
+
+**Full Changelog**: https://github.com/g59/nestjs-plugins/compare/v10.3.0...v10.4.0
 ## v10.3.0 (2023-11-23)
 <!-- Release notes generated using configuration in .github/release.yml at main -->
 
