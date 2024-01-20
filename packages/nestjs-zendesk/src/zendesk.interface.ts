@@ -6,10 +6,10 @@ export interface ZendeskOptionsFactory {
 }
 
 export interface ZendeskAsyncOptions extends Pick<ModuleMetadata, "imports"> {
-  inject?: any[];
+  inject?: unknown[];
   useClass?: Type<ZendeskOptionsFactory>;
   useExisting?: Type<ZendeskOptionsFactory>;
   useFactory?: (
-    ...args: any[]
+    ...args: unknown[]
   ) => Promise<ZendeskClientOptions> | ZendeskClientOptions;
 }
