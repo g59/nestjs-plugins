@@ -14,13 +14,10 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "npm run clean && tsc -p .",
-    "clean": "rimraf lib",
+    "clean": "tsc --build --clean",
     "lint": "tsc -p . --noEmit"
   },
-  "keywords": [
-    "nest",
-    "slack-webhook"
-  ],
+  "keywords": ["nest", "slack-webhook"],
   "peerDependencies": {
     "@nestjs/common": "^10.0.0",
     "@slack/webhook": "^6.0.0 || ^7.0.0"

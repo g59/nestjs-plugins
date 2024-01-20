@@ -14,7 +14,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "npm run clean && tsc -p .",
-    "clean": "rimraf lib",
+    "clean": "tsc --build --clean",
     "lint": "tsc -p . --noEmit"
   },
   "keywords": [

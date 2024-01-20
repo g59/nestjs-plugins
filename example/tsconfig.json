@@ -1,4 +1,5 @@
 {
+  "extends": "../tsconfig.json",
   "compilerOptions": {
     "declaration": true,
     "noEmit": false,
@@ -6,6 +7,5 @@
     "removeComments": true,
     "sourceMap": true
   },
-  "exclude": ["node_modules", "dist"],
-  "extends": "../tsconfig.json"
+  "exclude": ["__tests__/*", "*.spec.ts"]
 }

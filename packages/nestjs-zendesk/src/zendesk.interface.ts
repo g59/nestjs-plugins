@@ -1,4 +1,8 @@
-import type { ModuleMetadata, Type } from "@nestjs/common/interfaces";
+import type {
+  FactoryProvider,
+  ModuleMetadata,
+  Type,
+} from "@nestjs/common/interfaces";
 import type { ZendeskClientOptions } from "node-zendesk";
 
 export interface ZendeskOptionsFactory {
@@ -6,10 +10,8 @@ export interface ZendeskOptionsFactory {
 }
 
 export interface ZendeskAsyncOptions extends Pick<ModuleMetadata, "imports"> {
-  inject?: unknown[];
+  inject?: FactoryProvider["inject"];
   useClass?: Type<ZendeskOptionsFactory>;
   useExisting?: Type<ZendeskOptionsFactory>;
-  useFactory?: (
-    ...args: unknown[]
-  ) => Promise<ZendeskClientOptions> | ZendeskClientOptions;
+  useFactory?: FactoryProvider<ZendeskClientOptions>["useFactory"];
 }
