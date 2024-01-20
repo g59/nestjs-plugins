@@ -10,8 +10,8 @@ export interface SlackOptionsFactory {
 }
 
 export interface SlackAsyncOptions extends Pick<ModuleMetadata, "imports"> {
-  inject?: any[];
+  inject?: unknown[];
   useClass?: Type<SlackOptionsFactory>;
   useExisting?: Type<SlackOptionsFactory>;
-  useFactory?: (...args: any[]) => Promise<SlackOptions> | SlackOptions;
+  useFactory?: (...args: unknown[]) => Promise<SlackOptions> | SlackOptions;
 }

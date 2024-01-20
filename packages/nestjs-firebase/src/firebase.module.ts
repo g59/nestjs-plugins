@@ -11,6 +11,7 @@ import { getFirebaseAdmin } from "./util";
 
 @Global()
 @Module({})
+// biome-ignore lint/complexity/noStaticOnlyClass: <explanation>
 export class FirebaseModule {
   public static forRoot(options: FirebaseModuleOptions): DynamicModule {
     const provider: Provider<FirebaseAdmin> = {
@@ -34,7 +35,7 @@ export class FirebaseModule {
       useFactory: (options: FirebaseModuleOptions) => getFirebaseAdmin(options),
     };
 
-    const asyncProviders = this.createAsyncProviders(options);
+    const asyncProviders = FirebaseModule.createAsyncProviders(options);
     return {
       module: FirebaseModule,
       imports: [...(options.imports || [])],
@@ -47,10 +48,10 @@ export class FirebaseModule {
     options: FirebaseModuleAsyncOptions,
   ): Provider[] {
     if (options.useFactory || options.useExisting) {
-      return [this.createAsyncOptionsProvider(options)];
+      return [FirebaseModule.createAsyncOptionsProvider(options)];
     }
     return [
-      this.createAsyncOptionsProvider(options),
+      FirebaseModule.createAsyncOptionsProvider(options),
       {
         provide: options.useClass,
         useClass: options.useClass,
