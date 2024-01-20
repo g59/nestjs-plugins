@@ -1,6 +1,6 @@
+import { Field, ID, ObjectType } from "@nestjs/graphql";
 import { toGlobalId } from "graphql-relay";
 import { Column, Entity, PrimaryColumn } from "typeorm";
-import { Field, ID, ObjectType } from "@nestjs/graphql";
 import { Node } from "../../node/node";
 
 @ObjectType({ implements: Node })

@@ -30,16 +30,16 @@ describe("app", () => {
 
   it("getPagingParameters", () => {
     expect(getPagingParameters({})).toEqual({});
-    expect(getPagingParameters({ first: 1 })).toEqual(
-      {
-        "limit": 1,
-        "offset": 0,
-      },
-    );
-    expect(() => getPagingParameters({ first: 1, after: "after" }))
-      .toThrowErrorMatchingInlineSnapshot(`"invalid before query"`);
-    expect(() => getPagingParameters({ last: 1, before: "before" }))
-      .toThrowErrorMatchingInlineSnapshot(`"invalid before query"`);
+    expect(getPagingParameters({ first: 1 })).toEqual({
+      limit: 1,
+      offset: 0,
+    });
+    expect(() =>
+      getPagingParameters({ first: 1, after: "after" }),
+    ).toThrowErrorMatchingInlineSnapshot(`"invalid before query"`);
+    expect(() =>
+      getPagingParameters({ last: 1, before: "before" }),
+    ).toThrowErrorMatchingInlineSnapshot(`"invalid before query"`);
   });
 
   describe("findAndPaginate", () => {
@@ -51,17 +51,15 @@ describe("app", () => {
         {},
         AppDataSource.getRepository(Example),
       );
-      expect(res).toEqual(
-        {
-          "edges": [],
-          "pageInfo": {
-            "endCursor": null,
-            "hasNextPage": false,
-            "hasPreviousPage": false,
-            "startCursor": null,
-          },
+      expect(res).toEqual({
+        edges: [],
+        pageInfo: {
+          endCursor: null,
+          hasNextPage: false,
+          hasPreviousPage: false,
+          startCursor: null,
         },
-      );
+      });
     });
 
     it("find", async () => {

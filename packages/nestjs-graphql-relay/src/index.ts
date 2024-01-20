@@ -23,8 +23,8 @@ function getMeta({
   return isForwardPaging
     ? { pagingType: "forward", after, first }
     : isBackwardPaging
-    ? { pagingType: "backward", before, last }
-    : { pagingType: "none" };
+      ? { pagingType: "backward", before, last }
+      : { pagingType: "none" };
 }
 
 /*
@@ -41,7 +41,7 @@ export function getPagingParameters(args: ConnectionArgs) {
         offset = Relay.cursorToOffset(meta.after) + 1;
       }
 
-      if (isNaN(offset)) {
+      if (Number.isNaN(offset)) {
         throw new Error("invalid before query");
       }
 
@@ -53,9 +53,9 @@ export function getPagingParameters(args: ConnectionArgs) {
     case "backward": {
       const { last, before } = meta;
       let limit = last;
-      let offset = Relay.cursorToOffset(before!) - last;
+      let offset = Relay.cursorToOffset(before || "") - last;
 
-      if (isNaN(offset)) {
+      if (Number.isNaN(offset)) {
         throw new Error("invalid before query");
       }
 

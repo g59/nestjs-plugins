@@ -1,4 +1,7 @@
+import * as path from "path";
 import { Test } from "@nestjs/testing";
+import * as admin from "firebase-admin";
+import { mock } from "jest-mock-extended";
 import { FirebaseConstants } from "./firebase.constants";
 import {
   FirebaseAdmin,
@@ -6,9 +9,6 @@ import {
   FirebaseModuleOptionsFactory,
 } from "./firebase.interface";
 import { FirebaseModule } from "./firebase.module";
-import * as admin from "firebase-admin";
-import * as path from "path";
-import { mock } from "jest-mock-extended";
 
 describe("FirebaseModule", () => {
   jest.spyOn(admin, "initializeApp").mockReturnValue(mock<admin.app.App>());

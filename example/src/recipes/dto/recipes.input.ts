@@ -1,4 +1,3 @@
-import { ConnectionArgs, OrderByInput } from "nestjs-graphql-relay";
 import {
   ArgsType,
   Field,
@@ -6,6 +5,7 @@ import {
   PartialType,
   PickType,
 } from "@nestjs/graphql";
+import { ConnectionArgs, OrderByInput } from "nestjs-graphql-relay";
 import { Recipe } from "../models/recipe";
 
 @InputType()

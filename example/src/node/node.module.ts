@@ -1,7 +1,7 @@
 import { Module } from "@nestjs/common";
 import { TypeOrmModule } from "@nestjs/typeorm";
-import { RecipesService } from "../recipes/recipes.service";
 import { Recipe } from "../recipes/models/recipe";
+import { RecipesService } from "../recipes/recipes.service";
 import { NodeResolver } from "./node.resolver";
 
 @Module({

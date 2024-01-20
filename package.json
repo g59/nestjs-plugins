@@ -11,16 +11,13 @@
     "build": "npm run build --workspaces",
     "clean": "npm run clean --workspaces",
     "lint": "npm run lint --workspaces",
-    "test": "jest",
-    "prepare": "husky install"
+    "test": "jest"
   },
   "devDependencies": {
     "@9renpoto/tsconfig": "^7.8.0",
     "@nestjs/testing": "^10.3.0",
     "@types/jest": "^29.5.11",
-    "husky": "^8.0.3",
     "jest-mock-extended": "^3.0.5",
-    "lint-staged": "^15.2.0",
     "ts-jest": "^29.1.0"
   },
   "jest": {
@@ -30,11 +27,6 @@
       "packages/*/src/*.ts"
     ],
     "testEnvironment": "node"
-  },
-  "lint-staged": {
-    "*.ts": [
-      "deno fmt"
-    ]
   },
   "workspaces": [
     "packages/*",

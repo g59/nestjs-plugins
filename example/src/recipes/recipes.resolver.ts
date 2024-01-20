@@ -1,8 +1,8 @@
 import { Args, Field, ObjectType, Query, Resolver } from "@nestjs/graphql";
 import * as Relay from "graphql-relay";
 import { PageInfo } from "nestjs-graphql-relay";
-import { Recipe } from "./models/recipe";
 import { RecipesConnectionArgs } from "./dto/recipes.input";
+import { Recipe } from "./models/recipe";
 import { RecipesService } from "./recipes.service";
 
 @ObjectType({ isAbstract: true })

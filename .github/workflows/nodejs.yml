@@ -5,6 +5,7 @@ on:
 
 jobs:
   build:
+    timeout-minutes: 3
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -12,6 +13,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        uses: biomejs/setup-biome@v2
+        with:
+          version: latest
+      - name: Run Biome
+        run: biome ci .
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:

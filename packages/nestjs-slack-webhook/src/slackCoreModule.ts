@@ -12,6 +12,7 @@ import {
 
 @Global()
 @Module({})
+// biome-ignore lint/complexity/noStaticOnlyClass: <explanation>
 export class SlackCoreModule {
   public static forRoot(options: SlackOptions): DynamicModule {
     const provider = createSlackProvider(options);
@@ -34,16 +35,19 @@ export class SlackCoreModule {
       exports: [slackProvider],
       imports: options.imports,
       module: SlackCoreModule,
-      providers: [...this.createAsyncProviders(options), slackProvider],
+      providers: [
+        ...SlackCoreModule.createAsyncProviders(options),
+        slackProvider,
+      ],
     };
   }
 
   private static createAsyncProviders(options: SlackAsyncOptions): Provider[] {
     if (options.useExisting || options.useFactory) {
-      return [this.createAsyncOptionsProvider(options)];
+      return [SlackCoreModule.createAsyncOptionsProvider(options)];
     }
     return [
-      this.createAsyncOptionsProvider(options),
+      SlackCoreModule.createAsyncOptionsProvider(options),
       {
         provide: options.useClass,
         useClass: options.useClass,
@@ -66,8 +70,8 @@ export class SlackCoreModule {
       inject: options.useExisting
         ? [options.useExisting]
         : options.useClass
-        ? [options.useClass]
-        : [],
+          ? [options.useClass]
+          : [],
       provide: SLACK_MODULE,
       useFactory: (optionsFactory: SlackOptionsFactory) =>
         optionsFactory.createSlackOptions(),
