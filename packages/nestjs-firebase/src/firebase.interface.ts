@@ -10,9 +10,9 @@ export type FirebaseModuleOptions = {
 export type FirebaseModuleAsyncOptions = {
   useClass?: Type<FirebaseModuleOptionsFactory>;
   useFactory?: (
-    ...args: any[]
+    ...args: unknown[]
   ) => Promise<FirebaseModuleOptions> | FirebaseModuleOptions;
-  inject?: any[];
+  inject?: unknown[];
   useExisting?: Type<FirebaseModuleOptionsFactory>;
 } & Pick<ModuleMetadata, "imports">;
 

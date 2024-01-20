@@ -3,6 +3,7 @@ import { SlackCoreModule } from "./slackCoreModule";
 import { SlackAsyncOptions, SlackOptions } from "./slackOptions";
 
 @Module({})
+// biome-ignore lint/complexity/noStaticOnlyClass: <explanation>
 export class SlackModule {
   public static forRoot(options: SlackOptions): DynamicModule {
     return {
