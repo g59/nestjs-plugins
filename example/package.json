@@ -8,10 +8,9 @@
   "scripts": {
     "build": "nest build",
     "clean": "rimraf dist",
+    "prebuild": "rimraf dist",
     "lint": "tsc -p . --noEmit",
-    "start": "nest start",
-    "start:dev": "nest start --watch",
-    "test": "jest"
+    "start": "nest start --watch"
   },
   "dependencies": {
     "@apollo/server": "^4.10.0",

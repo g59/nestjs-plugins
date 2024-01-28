@@ -1,19 +1,23 @@
 import { Test, TestingModule } from "@nestjs/testing";
-import { RecipesService } from "../recipes/recipes.service";
-import { NodeResolver } from "./node.resolver";
-import { Recipe } from "../recipes/models/recipe";
 import { getRepositoryToken } from "@nestjs/typeorm";
 import { Repository } from "typeorm";
+import { Recipe } from "../recipes/models/recipe";
+import { RecipesService } from "../recipes/recipes.service";
+import { NodeResolver } from "./node.resolver";
 
 describe("NodeResolver", () => {
   let resolver: NodeResolver;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      providers: [NodeResolver, RecipesService, {
-        provide: getRepositoryToken(Recipe),
-        useClass: Repository,
-      }],
+      providers: [
+        NodeResolver,
+        RecipesService,
+        {
+          provide: getRepositoryToken(Recipe),
+          useClass: Repository,
+        },
+      ],
     }).compile();
 
     resolver = module.get<NodeResolver>(NodeResolver);

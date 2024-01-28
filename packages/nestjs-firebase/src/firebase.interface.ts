@@ -1,5 +1,8 @@
 import type { Type } from "@nestjs/common";
-import type { ModuleMetadata } from "@nestjs/common/interfaces";
+import type {
+  FactoryProvider,
+  ModuleMetadata,
+} from "@nestjs/common/interfaces";
 import * as firebaseAdmin from "firebase-admin";
 import { AppOptions } from "firebase-admin";
 
@@ -10,9 +13,9 @@ export type FirebaseModuleOptions = {
 export type FirebaseModuleAsyncOptions = {
   useClass?: Type<FirebaseModuleOptionsFactory>;
   useFactory?: (
-    ...args: any[]
+    ...args: unknown[]
   ) => Promise<FirebaseModuleOptions> | FirebaseModuleOptions;
-  inject?: any[];
+  inject?: FactoryProvider<FirebaseModuleOptions>["inject"];
   useExisting?: Type<FirebaseModuleOptionsFactory>;
 } & Pick<ModuleMetadata, "imports">;
 

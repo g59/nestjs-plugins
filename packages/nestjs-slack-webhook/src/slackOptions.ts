@@ -1,4 +1,8 @@
-import { ModuleMetadata, Type } from "@nestjs/common/interfaces";
+import type {
+  FactoryProvider,
+  ModuleMetadata,
+  Type,
+} from "@nestjs/common/interfaces";
 import { IncomingWebhookDefaultArguments } from "@slack/webhook";
 
 export interface SlackOptions extends IncomingWebhookDefaultArguments {
@@ -10,8 +14,8 @@ export interface SlackOptionsFactory {
 }
 
 export interface SlackAsyncOptions extends Pick<ModuleMetadata, "imports"> {
-  inject?: any[];
+  inject?: FactoryProvider["inject"];
   useClass?: Type<SlackOptionsFactory>;
   useExisting?: Type<SlackOptionsFactory>;
-  useFactory?: (...args: any[]) => Promise<SlackOptions> | SlackOptions;
+  useFactory?: FactoryProvider<SlackOptions>["useFactory"];
 }

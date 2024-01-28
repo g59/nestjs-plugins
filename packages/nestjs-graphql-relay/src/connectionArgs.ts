@@ -12,8 +12,8 @@ import "reflect-metadata";
 
 @ValidatorConstraint({ async: false })
 export class CannotUseWithout implements ValidatorConstraintInterface {
-  validate(_: any, args: ValidationArguments) {
-    const object = args.object as any;
+  validate(_: unknown, args: ValidationArguments) {
+    const object = args.object as Record<string, unknown>;
     const required = args.constraints[0] as string;
     return object[required] !== undefined;
   }
@@ -25,8 +25,8 @@ export class CannotUseWithout implements ValidatorConstraintInterface {
 
 @ValidatorConstraint({ async: false })
 export class CannotUseWith implements ValidatorConstraintInterface {
-  validate(_: any, args: ValidationArguments) {
-    const object = args.object as any;
+  validate(_: unknown, args: ValidationArguments) {
+    const object = args.object as Record<string, unknown>;
     const result = args.constraints.every((propertyName) => {
       return object[propertyName] === undefined;
     });

@@ -5,7 +5,9 @@
 
 ## Install
 
-    npm install
+```sh
+npm install
+```
 
 ## Packages
 
@@ -20,7 +22,11 @@ This repository is managed as monorepo.
 
 ## Usage
 
-    npm run start:dev --workspace example
+```sh
+# recommend
+pre-commit install
+npm run start:dev --workspace example
+```
 
 ## Contributing
 

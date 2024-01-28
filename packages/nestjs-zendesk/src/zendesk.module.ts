@@ -52,6 +52,7 @@ function createAsyncProviders(options: ZendeskAsyncOptions): Provider[] {
 
 @Global()
 @Module({})
+// biome-ignore lint/complexity/noStaticOnlyClass: <explanation>
 export class ZendeskModule {
   static forRoot(options: zendesk.ZendeskClientOptions): DynamicModule {
     const provider = createProvider(options);
