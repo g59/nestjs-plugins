@@ -2,10 +2,10 @@ version: 2
 updates:
 - package-ecosystem: npm
   directory: "/"
-    groups:
-      nestjs:
-        patterns:
-          - "@nestjs*"
+  groups:
+    nestjs:
+      patterns:
+        - "@nestjs*"
   schedule:
     interval: daily
     time: "07:00"
