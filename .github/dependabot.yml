@@ -2,13 +2,17 @@ version: 2
 updates:
 - package-ecosystem: npm
   directory: "/"
+    groups:
+      nestjs:
+        patterns:
+          - "@nestjs*"
   schedule:
     interval: daily
     time: "07:00"
-  open-pull-requests-limit: 10
+  open-pull-requests-limit: 99
 - package-ecosystem: github-actions
   directory: "/"
   schedule:
     interval: daily
     time: "07:00"
-  open-pull-requests-limit: 10
+  open-pull-requests-limit: 99
