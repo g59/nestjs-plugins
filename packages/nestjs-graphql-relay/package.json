@@ -31,7 +31,7 @@
     "class-validator": "*"
   },
   "devDependencies": {
-    "@types/validator": "^13.11.8",
+    "@types/validator": "^13.11.9",
     "@types/ws": "^8.5.5",
     "sqlite3": "^5.1.7"
   },
