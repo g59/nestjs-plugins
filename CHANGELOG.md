@@ -1,3 +1,37 @@
+## v10.4.0 (2024-02-20)
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### Other Changes
+* chore(deps): update dependency @9renpoto/tsconfig to v7.7.4 by @renovate in https://github.com/g59/nestjs-plugins/pull/1760
+* Delete .github/renovate.json by @9renpoto in https://github.com/g59/nestjs-plugins/pull/1761
+* chore(deps-dev): bump @google-cloud/storage from 7.6.0 to 7.7.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1764
+* chore(deps-dev): bump lint-staged from 15.1.0 to 15.2.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1765
+* chore(deps-dev): bump @types/jest from 29.5.10 to 29.5.11 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1766
+* chore(deps-dev): bump @nestjs/testing from 10.2.10 to 10.3.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1769
+* chore(deps): bump @nestjs/platform-fastify from 10.2.10 to 10.3.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1770
+* chore(deps): bump @apollo/server from 4.9.5 to 4.10.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1772
+* chore(deps): bump follow-redirects from 1.15.3 to 1.15.4 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1776
+* chore(deps): bump @nestjs/cli from 10.2.1 to 10.3.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1774
+* chore(deps-dev): bump sqlite3 from 5.1.6 to 5.1.7 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1773
+* chore(deps-dev): bump @9renpoto/tsconfig from 7.7.4 to 7.8.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1777
+* chore(deps-dev): bump @google-cloud/firestore from 7.1.0 to 7.2.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1780
+* chore: use biome by @9renpoto in https://github.com/g59/nestjs-plugins/pull/1781
+* chore: group nestjs by @9renpoto in https://github.com/g59/nestjs-plugins/pull/1788
+* chore(deps-dev): bump @types/uuid from 9.0.7 to 9.0.8 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1787
+* chore(deps-dev): bump ts-jest from 29.1.1 to 29.1.2 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1782
+* chore(deps-dev): bump @nestjs/testing from 10.3.0 to 10.3.1 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1784
+* fix(.github): group nestjs by @9renpoto in https://github.com/g59/nestjs-plugins/pull/1789
+* chore(deps): bump the nestjs group with 1 update by @dependabot in https://github.com/g59/nestjs-plugins/pull/1790
+* chore(deps-dev): bump @types/validator from 13.11.7 to 13.11.8 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1775
+* chore(deps-dev): bump @google-cloud/firestore from 7.2.0 to 7.3.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1791
+* chore(deps-dev): bump @types/jest from 29.5.11 to 29.5.12 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1794
+* chore(deps-dev): bump @types/validator from 13.11.8 to 13.11.9 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1796
+* chore(deps): bump the nestjs group with 5 updates by @dependabot in https://github.com/g59/nestjs-plugins/pull/1797
+* chore(deps): bump the nestjs group with 2 updates by @dependabot in https://github.com/g59/nestjs-plugins/pull/1799
+
+
+**Full Changelog**: https://github.com/g59/nestjs-plugins/compare/v10.3.0...v10.4.0
 ## v10.3.0 (2023-11-23)
 <!-- Release notes generated using configuration in .github/release.yml at main -->
 
