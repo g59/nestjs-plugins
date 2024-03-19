@@ -1,3 +1,15 @@
+## v10.5.0 (2024-03-19)
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### Other Changes
+* chore(deps): bump ip from 2.0.0 to 2.0.1 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1800
+* chore(deps-dev): bump @google-cloud/storage from 7.7.0 to 7.8.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1807
+* chore(deps): bump jose from 4.15.4 to 4.15.5 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1806
+* chore(deps): bump @apollo/server from 4.10.0 to 4.10.1 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1805
+
+
+**Full Changelog**: https://github.com/g59/nestjs-plugins/compare/v10.4.0...v10.5.0
 ## v10.4.0 (2024-02-20)
 <!-- Release notes generated using configuration in .github/release.yml at main -->
 
