@@ -3,11 +3,11 @@ import {
   Min,
   Validate,
   ValidateIf,
-  ValidationArguments,
+  type ValidationArguments,
   ValidatorConstraint,
-  ValidatorConstraintInterface,
+  type ValidatorConstraintInterface,
 } from "class-validator";
-import * as Relay from "graphql-relay";
+import type * as Relay from "graphql-relay";
 import "reflect-metadata";
 
 @ValidatorConstraint({ async: false })

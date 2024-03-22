@@ -1,4 +1,4 @@
-import { Test, TestingModule } from "@nestjs/testing";
+import { Test, type TestingModule } from "@nestjs/testing";
 import { ZENDESK_TOKEN } from "nestjs-zendesk";
 import { ZendeskService } from "./zendesk.service";
 

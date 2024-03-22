@@ -1,7 +1,12 @@
-import { DynamicModule, Global, Module, Provider } from "@nestjs/common";
-import { ClassProvider } from "@nestjs/common/interfaces";
-import { FirebaseConstants } from "./firebase.constants";
 import {
+  type DynamicModule,
+  Global,
+  Module,
+  type Provider,
+} from "@nestjs/common";
+import type { ClassProvider } from "@nestjs/common/interfaces";
+import { FirebaseConstants } from "./firebase.constants";
+import type {
   FirebaseAdmin,
   FirebaseModuleAsyncOptions,
   FirebaseModuleOptions,

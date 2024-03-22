@@ -3,7 +3,7 @@ import type {
   ModuleMetadata,
   Type,
 } from "@nestjs/common/interfaces";
-import { IncomingWebhookDefaultArguments } from "@slack/webhook";
+import type { IncomingWebhookDefaultArguments } from "@slack/webhook";
 
 export interface SlackOptions extends IncomingWebhookDefaultArguments {
   url: string;

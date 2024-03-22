@@ -1,6 +1,6 @@
 import { Controller, Get } from "@nestjs/common";
-import { IncomingWebhookSendArguments } from "@slack/webhook";
-import { NotifyService } from "./notify.service";
+import type { IncomingWebhookSendArguments } from "@slack/webhook";
+import type { NotifyService } from "./notify.service";
 
 @Controller("notify")
 export class NotifyController {

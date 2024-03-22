@@ -1,5 +1,5 @@
 import { registerAs } from "@nestjs/config";
-import { SlackOptions } from "nestjs-slack-webhook";
+import type { SlackOptions } from "nestjs-slack-webhook";
 
 export default registerAs(
   "slack",

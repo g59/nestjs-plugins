@@ -1,10 +1,15 @@
-import { DynamicModule, Global, Module, Provider } from "@nestjs/common";
-import { ClassProvider } from "@nestjs/common/interfaces";
-import { IncomingWebhook } from "@slack/webhook";
+import {
+  type DynamicModule,
+  Global,
+  Module,
+  type Provider,
+} from "@nestjs/common";
+import type { ClassProvider } from "@nestjs/common/interfaces";
+import type { IncomingWebhook } from "@slack/webhook";
 import { createSlackProvider } from "./createSlackProvider";
 import { getSlackClient } from "./getSlackClient";
 import { SLACK_MODULE, SLACK_TOKEN } from "./slackConstants";
-import {
+import type {
   SlackAsyncOptions,
   SlackOptions,
   SlackOptionsFactory,

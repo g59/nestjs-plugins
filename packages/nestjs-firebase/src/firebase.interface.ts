@@ -3,8 +3,8 @@ import type {
   FactoryProvider,
   ModuleMetadata,
 } from "@nestjs/common/interfaces";
-import * as firebaseAdmin from "firebase-admin";
-import { AppOptions } from "firebase-admin";
+import type * as firebaseAdmin from "firebase-admin";
+import type { AppOptions } from "firebase-admin";
 
 export type FirebaseModuleOptions = {
   googleApplicationCredential?: string | firebaseAdmin.ServiceAccount;

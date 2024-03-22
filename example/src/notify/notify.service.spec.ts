@@ -1,4 +1,4 @@
-import { Test, TestingModule } from "@nestjs/testing";
+import { Test, type TestingModule } from "@nestjs/testing";
 import { createSlackServiceMock } from "../testing/slack";
 import { NotifyService } from "./notify.service";
 

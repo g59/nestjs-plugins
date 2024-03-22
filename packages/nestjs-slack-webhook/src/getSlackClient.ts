@@ -1,5 +1,5 @@
 import { IncomingWebhook } from "@slack/webhook";
-import { SlackOptions } from "./slackOptions";
+import type { SlackOptions } from "./slackOptions";
 
 export function getSlackClient({
   url,

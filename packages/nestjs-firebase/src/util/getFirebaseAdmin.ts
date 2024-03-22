@@ -1,5 +1,8 @@
 import * as admin from "firebase-admin";
-import { FirebaseAdmin, FirebaseModuleOptions } from "../firebase.interface";
+import type {
+  FirebaseAdmin,
+  FirebaseModuleOptions,
+} from "../firebase.interface";
 
 const createInstances = (
   app: admin.app.App,

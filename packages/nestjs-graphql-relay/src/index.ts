@@ -1,5 +1,5 @@
 import * as Relay from "graphql-relay";
-import { FindManyOptions, ObjectLiteral, Repository } from "typeorm";
+import type { FindManyOptions, ObjectLiteral, Repository } from "typeorm";
 import { ConnectionArgs } from "./connectionArgs";
 
 export * from "./orderBy.input";

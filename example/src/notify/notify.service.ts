@@ -1,5 +1,8 @@
 import { Injectable } from "@nestjs/common";
-import { IncomingWebhook, IncomingWebhookSendArguments } from "@slack/webhook";
+import type {
+  IncomingWebhook,
+  IncomingWebhookSendArguments,
+} from "@slack/webhook";
 import { InjectSlack } from "nestjs-slack-webhook";
 
 @Injectable()

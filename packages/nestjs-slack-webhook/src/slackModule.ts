@@ -1,6 +1,6 @@
-import { DynamicModule, Module } from "@nestjs/common";
+import { type DynamicModule, Module } from "@nestjs/common";
 import { SlackCoreModule } from "./slackCoreModule";
-import { SlackAsyncOptions, SlackOptions } from "./slackOptions";
+import type { SlackAsyncOptions, SlackOptions } from "./slackOptions";
 
 @Module({})
 // biome-ignore lint/complexity/noStaticOnlyClass: <explanation>

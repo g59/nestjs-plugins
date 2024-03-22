@@ -1,7 +1,7 @@
 import { Injectable } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
-import { ConnectionArgs, findAndPaginate } from "nestjs-graphql-relay";
-import { FindManyOptions, Repository } from "typeorm";
+import { type ConnectionArgs, findAndPaginate } from "nestjs-graphql-relay";
+import type { FindManyOptions, Repository } from "typeorm";
 import { Recipe } from "./models/recipe";
 
 @Injectable()

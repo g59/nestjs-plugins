@@ -1,5 +1,5 @@
 import { Test } from "@nestjs/testing";
-import { ZendeskClientOptions } from "node-zendesk";
+import type { ZendeskClientOptions } from "node-zendesk";
 import { ZendeskModule } from "./";
 
 describe("ZendeskModule", () => {

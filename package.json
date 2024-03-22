@@ -23,13 +23,8 @@
   "jest": {
     "preset": "ts-jest",
     "collectCoverage": true,
-    "collectCoverageFrom": [
-      "packages/*/src/*.ts"
-    ],
+    "collectCoverageFrom": ["packages/*/src/*.ts"],
     "testEnvironment": "node"
   },
-  "workspaces": [
-    "packages/*",
-    "example"
-  ]
+  "workspaces": ["packages/*", "example"]
 }

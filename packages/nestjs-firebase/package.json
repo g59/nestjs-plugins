@@ -10,10 +10,7 @@
     "clean": "tsc --build --clean",
     "lint": "tsc -p . --noEmit"
   },
-  "keywords": [
-    "nest",
-    "firebase"
-  ],
+  "keywords": ["nest", "firebase"],
   "peerDependencies": {
     "@nestjs/common": "^10.0.0",
     "firebase-admin": "^10.0.0 || ^11.0.0"

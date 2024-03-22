@@ -1,9 +1,9 @@
 import { Args, Field, ObjectType, Query, Resolver } from "@nestjs/graphql";
-import * as Relay from "graphql-relay";
-import { PageInfo } from "nestjs-graphql-relay";
-import { RecipesConnectionArgs } from "./dto/recipes.input";
+import type * as Relay from "graphql-relay";
+import type { PageInfo } from "nestjs-graphql-relay";
+import type { RecipesConnectionArgs } from "./dto/recipes.input";
 import { Recipe } from "./models/recipe";
-import { RecipesService } from "./recipes.service";
+import type { RecipesService } from "./recipes.service";
 
 @ObjectType({ isAbstract: true })
 abstract class RecipesEdge implements Relay.Edge<Recipe> {
