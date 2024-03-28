@@ -18,7 +18,7 @@
     "@nestjs/apollo": "^12.1.0",
     "@nestjs/cli": "^10.3.2",
     "@nestjs/config": "^3.2.1",
-    "@nestjs/platform-fastify": "^10.3.5",
+    "@nestjs/platform-fastify": "^10.3.6",
     "nestjs-firebase": "^10.0.0",
     "nestjs-graphql-relay": "^10.0.0",
     "nestjs-slack-webhook": "^10.0.0",
@@ -26,7 +26,7 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
-    "@nestjs/testing": "^10.3.5",
+    "@nestjs/testing": "^10.3.6",
     "@types/uuid": "^9.0.8"
   }
 }
