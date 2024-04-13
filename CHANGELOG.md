@@ -1,3 +1,35 @@
+## v10.5.0 (2024-04-13)
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### :rocket: Type: Feature
+* feat: allow firebase-admin v12 by @h3mpti in https://github.com/g59/nestjs-plugins/pull/1826
+### Other Changes
+* chore(deps): bump ip from 2.0.0 to 2.0.1 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1800
+* chore(deps-dev): bump @google-cloud/storage from 7.7.0 to 7.8.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1807
+* chore(deps): bump jose from 4.15.4 to 4.15.5 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1806
+* chore(deps): bump @apollo/server from 4.10.0 to 4.10.1 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1805
+* Update nodejs.yml by @9renpoto in https://github.com/g59/nestjs-plugins/pull/1813
+* chore(deps): bump peter-evans/create-pull-request from 5 to 6 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1792
+* chore(deps): bump codecov/codecov-action from 3 to 4 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1793
+* chore(deps): bump follow-redirects from 1.15.4 to 1.15.6 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1808
+* chore(deps-dev): bump @google-cloud/firestore from 7.3.0 to 7.4.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1809
+* chore(deps): bump the nestjs group with 2 updates by @dependabot in https://github.com/g59/nestjs-plugins/pull/1814
+* chore(deps): bump the nestjs group with 1 update by @dependabot in https://github.com/g59/nestjs-plugins/pull/1817
+* chore(deps-dev): bump @google-cloud/firestore from 7.4.0 to 7.5.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1818
+* chore(deps): bump @apollo/server from 4.10.1 to 4.10.2 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1815
+* chore(deps-dev): bump @google-cloud/storage from 7.8.0 to 7.9.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1811
+* chore(deps): bump express from 4.18.2 to 4.19.2 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1819
+* chore(deps): bump the nestjs group with 2 updates by @dependabot in https://github.com/g59/nestjs-plugins/pull/1821
+* chore(deps): bump @nestjs/config from 3.2.1 to 3.2.2 in the nestjs group by @dependabot in https://github.com/g59/nestjs-plugins/pull/1823
+* chore(deps-dev): bump @google-cloud/firestore from 7.5.0 to 7.6.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1822
+* chore(deps): bump tar from 6.2.0 to 6.2.1 in the npm_and_yarn group by @dependabot in https://github.com/g59/nestjs-plugins/pull/1825
+* chore(deps-dev): bump jest-mock-extended from 3.0.5 to 3.0.6 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1824
+
+## New Contributors
+* @h3mpti made their first contribution in https://github.com/g59/nestjs-plugins/pull/1826
+
+**Full Changelog**: https://github.com/g59/nestjs-plugins/compare/v10.4.0...v10.5.0
 ## v10.4.0 (2024-02-20)
 <!-- Release notes generated using configuration in .github/release.yml at main -->
 
