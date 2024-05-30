@@ -18,10 +18,7 @@
     "clean": "tsc --build --clean",
     "lint": "tsc -p . --noEmit"
   },
-  "keywords": [
-    "nest",
-    "zendesk"
-  ],
+  "keywords": ["nest", "zendesk"],
   "peerDependencies": {
     "node-zendesk": "^5.0.0"
   },

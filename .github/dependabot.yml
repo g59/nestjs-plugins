@@ -7,12 +7,8 @@ updates:
       patterns:
         - "@nestjs*"
   schedule:
-    interval: daily
-    time: "07:00"
-  open-pull-requests-limit: 99
+    interval: weekly
 - package-ecosystem: github-actions
   directory: "/"
   schedule:
-    interval: daily
-    time: "07:00"
-  open-pull-requests-limit: 99
+    interval: weekly
