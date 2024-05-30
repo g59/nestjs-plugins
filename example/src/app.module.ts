@@ -1,4 +1,4 @@
-import { join } from "path";
+import { join } from "node:path";
 import { ApolloDriver } from "@nestjs/apollo";
 import { Module } from "@nestjs/common";
 import { ConfigModule, ConfigService } from "@nestjs/config";

@@ -1,4 +1,4 @@
-import * as path from "path";
+import * as path from "node:path";
 import { Test } from "@nestjs/testing";
 import * as admin from "firebase-admin";
 import { mock } from "jest-mock-extended";
