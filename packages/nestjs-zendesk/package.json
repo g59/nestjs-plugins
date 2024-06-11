@@ -23,6 +23,6 @@
     "node-zendesk": "^5.0.0"
   },
   "devDependencies": {
-    "@nestjs/testing": "^10.3.8"
+    "@nestjs/testing": "^10.3.9"
   }
 }
