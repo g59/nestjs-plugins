@@ -19,7 +19,7 @@
     "@nestjs/testing": "^10.3.9",
     "@types/jest": "^29.5.12",
     "jest-mock-extended": "^3.0.7",
-    "ts-jest": "^29.1.5"
+    "ts-jest": "^29.2.2"
   },
   "jest": {
     "preset": "ts-jest",
