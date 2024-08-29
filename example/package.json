@@ -13,7 +13,7 @@
     "start": "nest start --watch"
   },
   "dependencies": {
-    "@apollo/server": "^4.10.5",
+    "@apollo/server": "^4.11.0",
     "@as-integrations/fastify": "^2.0.0",
     "@nestjs/apollo": "^12.1.0",
     "@nestjs/cli": "^10.3.2",
