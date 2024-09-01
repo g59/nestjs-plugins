@@ -1,3 +1,46 @@
+## v10.5.1 (2024-09-01)
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### Other Changes
+* chore(deps): bump @apollo/server from 4.10.2 to 4.10.4 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1831
+* chore(deps): bump the nestjs group with 2 updates by @dependabot in https://github.com/g59/nestjs-plugins/pull/1830
+* chore(deps-dev): bump @google-cloud/storage from 7.9.0 to 7.10.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1828
+* chore(deps-dev): bump @google-cloud/firestore from 7.6.0 to 7.7.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1836
+* chore(deps-dev): bump jest-mock-extended from 3.0.6 to 3.0.7 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1834
+* chore(deps-dev): bump @types/validator from 13.11.9 to 13.11.10 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1837
+* chore(deps-dev): bump ts-jest from 29.1.2 to 29.1.3 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1839
+* chore(deps-dev): bump @google-cloud/storage from 7.10.0 to 7.11.1 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1840
+* chore(deps-dev): bump ts-jest from 29.1.3 to 29.1.4 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1841
+* chore(.github): weekly update by @9renpoto in https://github.com/g59/nestjs-plugins/pull/1842
+* chore(deps-dev): bump @google-cloud/firestore from 7.7.0 to 7.8.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1848
+* chore(deps-dev): bump @biomejs/biome from 1.7.3 to 1.8.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1845
+* chore(deps): bump the nestjs group with 2 updates by @dependabot in https://github.com/g59/nestjs-plugins/pull/1844
+* chore(deps-dev): bump @google-cloud/storage from 7.11.1 to 7.11.2 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1847
+* chore(deps-dev): bump @grpc/grpc-js from 1.8.21 to 1.8.22 in the npm_and_yarn group by @dependabot in https://github.com/g59/nestjs-plugins/pull/1850
+* chore(deps): bump braces from 3.0.2 to 3.0.3 in the npm_and_yarn group across 1 directory by @dependabot in https://github.com/g59/nestjs-plugins/pull/1851
+* chore(deps): bump uuid from 9.0.1 to 10.0.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1846
+* chore(deps-dev): bump @types/uuid from 9.0.8 to 10.0.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1857
+* chore(deps-dev): bump @biomejs/biome from 1.8.0 to 1.8.2 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1856
+* chore(deps-dev): bump ts-jest from 29.1.4 to 29.1.5 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1853
+* chore(deps-dev): bump @types/validator from 13.11.10 to 13.12.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1854
+* chore(deps): bump ws from 7.5.9 to 7.5.10 in the npm_and_yarn group by @dependabot in https://github.com/g59/nestjs-plugins/pull/1855
+* chore(deps-dev): bump @biomejs/biome from 1.8.2 to 1.8.3 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1858
+* chore(deps-dev): bump @google-cloud/firestore from 7.8.0 to 7.9.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1859
+* chore(deps-dev): bump ts-jest from 29.1.5 to 29.2.2 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1863
+* chore(deps-dev): bump @types/ws from 8.5.10 to 8.5.11 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1862
+* chore(deps-dev): bump ts-jest from 29.2.2 to 29.2.3 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1864
+* chore(deps-dev): bump @google-cloud/storage from 7.11.2 to 7.12.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1865
+* chore(deps): bump fast-xml-parser from 4.3.2 to 4.4.1 in the npm_and_yarn group by @dependabot in https://github.com/g59/nestjs-plugins/pull/1867
+* chore(deps): bump @apollo/server from 4.10.4 to 4.10.5 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1866
+* chore(deps-dev): bump @types/ws from 8.5.11 to 8.5.12 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1870
+* chore(deps): bump @apollo/server from 4.10.5 to 4.11.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1872
+* chore(deps-dev): bump @google-cloud/storage from 7.12.0 to 7.12.1 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1873
+* chore(deps-dev): bump ts-jest from 29.2.3 to 29.2.5 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1876
+* chore(deps): bump micromatch from 4.0.5 to 4.0.8 in the npm_and_yarn group by @dependabot in https://github.com/g59/nestjs-plugins/pull/1877
+
+
+**Full Changelog**: https://github.com/g59/nestjs-plugins/compare/v10.5.0...v10.5.1
 ## v10.5.0 (2024-04-13)
 <!-- Release notes generated using configuration in .github/release.yml at main -->
 
