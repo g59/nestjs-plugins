@@ -17,7 +17,7 @@
     "@9renpoto/tsconfig": "^7.8.0",
     "@biomejs/biome": "^1.8.3",
     "@nestjs/testing": "^10.3.9",
-    "@types/jest": "^29.5.12",
+    "@types/jest": "^29.5.13",
     "jest-mock-extended": "^3.0.7",
     "ts-jest": "^29.2.5"
   },
