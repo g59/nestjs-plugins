@@ -1,3 +1,16 @@
+## v10.6.0 (2024-11-05)
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### Other Changes
+* chore(deps-dev): bump @types/validator from 13.12.0 to 13.12.1 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1880
+* chore(deps-dev): bump @google-cloud/firestore from 7.9.0 to 7.10.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1881
+* chore(deps-dev): bump @types/jest from 29.5.12 to 29.5.13 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1883
+* chore(deps-dev): bump @types/validator from 13.12.1 to 13.12.2 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1887
+* chore(deps-dev): bump @google-cloud/storage from 7.12.1 to 7.13.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1886
+
+
+**Full Changelog**: https://github.com/g59/nestjs-plugins/compare/v10.5.1...v10.6.0
 ## v10.5.1 (2024-09-01)
 <!-- Release notes generated using configuration in .github/release.yml at main -->
 
