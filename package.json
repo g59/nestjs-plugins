@@ -19,6 +19,7 @@
     "@nestjs/testing": "^10.3.9",
     "@types/jest": "^29.5.13",
     "jest-mock-extended": "^3.0.7",
+    "rimraf": "^6.0.1",
     "ts-jest": "^29.2.5"
   },
   "jest": {
