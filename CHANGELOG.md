@@ -1,3 +1,16 @@
+## v10.7.0 (2024-12-17)
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### Other Changes
+* chore: bump v10.6.0 by @github-actions in https://github.com/g59/nestjs-plugins/pull/1868
+* chore(deps): bump @nestjs/cli from 10.4.7 to 10.4.8 in the nestjs group by @dependabot in https://github.com/g59/nestjs-plugins/pull/1908
+* chore(deps): bump the nestjs group with 2 updates by @dependabot in https://github.com/g59/nestjs-plugins/pull/1911
+* chore(deps): bump the nestjs group with 3 updates by @dependabot in https://github.com/g59/nestjs-plugins/pull/1913
+* chore(deps): bump the nestjs group with 3 updates by @dependabot in https://github.com/g59/nestjs-plugins/pull/1915
+
+
+**Full Changelog**: https://github.com/g59/nestjs-plugins/compare/v10.5.2...v10.7.0
 ## v10.6.0 (2024-11-19)
 <!-- Release notes generated using configuration in .github/release.yml at main -->
 
