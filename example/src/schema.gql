@@ -39,16 +39,24 @@ type RecipesEdge {
 type Query {
   node(id: ID!): Node
   recipes(
-    """Paginate before opaque cursor"""
+    """
+    Paginate before opaque cursor
+    """
     before: String
 
-    """Paginate after opaque cursor"""
+    """
+    Paginate after opaque cursor
+    """
     after: String
 
-    """Paginate first"""
+    """
+    Paginate first
+    """
     first: Int
 
-    """Paginate last"""
+    """
+    Paginate last
+    """
     last: Int
     where: RecipeWhereInput
     orderBy: OrderByInput
