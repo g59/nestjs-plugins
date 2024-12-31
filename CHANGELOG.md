@@ -1,3 +1,20 @@
+## v10.7.0 (2024-12-31)
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### Other Changes
+* chore: bump v10.6.0 by @github-actions in https://github.com/g59/nestjs-plugins/pull/1868
+* chore(deps): bump @nestjs/cli from 10.4.7 to 10.4.8 in the nestjs group by @dependabot in https://github.com/g59/nestjs-plugins/pull/1908
+* chore(deps): bump the nestjs group with 2 updates by @dependabot in https://github.com/g59/nestjs-plugins/pull/1911
+* chore(deps): bump the nestjs group with 3 updates by @dependabot in https://github.com/g59/nestjs-plugins/pull/1913
+* chore(deps): bump the nestjs group with 3 updates by @dependabot in https://github.com/g59/nestjs-plugins/pull/1915
+* chore: s/ubuntu-latest/ubuntu-22.04/ by @9renpoto in https://github.com/g59/nestjs-plugins/pull/1916
+* chore(deps): bump the npm_and_yarn group with 2 updates by @dependabot in https://github.com/g59/nestjs-plugins/pull/1912
+* chore(deps-dev): bump @google-cloud/firestore from 7.10.0 to 7.11.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1914
+* chore(deps-dev): bump @google-cloud/storage from 7.13.0 to 7.14.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1909
+
+
+**Full Changelog**: https://github.com/g59/nestjs-plugins/compare/v10.5.2...v10.7.0
 ## v10.6.0 (2024-11-19)
 <!-- Release notes generated using configuration in .github/release.yml at main -->
 
