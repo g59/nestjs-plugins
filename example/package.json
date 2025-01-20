@@ -15,10 +15,10 @@
   "dependencies": {
     "@apollo/server": "^4.11.3",
     "@as-integrations/fastify": "^2.0.0",
-    "@nestjs/apollo": "^12.2.2",
+    "@nestjs/apollo": "^13.0.1",
     "@nestjs/cli": "^10.4.9",
-    "@nestjs/config": "^3.3.0",
-    "@nestjs/platform-fastify": "^10.4.15",
+    "@nestjs/config": "^4.0.0",
+    "@nestjs/platform-fastify": "^11.0.1",
     "nestjs-firebase": "^10.0.0",
     "nestjs-graphql-relay": "^10.0.0",
     "nestjs-slack-webhook": "^10.0.0",
@@ -26,7 +26,7 @@
     "uuid": "^11.0.5"
   },
   "devDependencies": {
-    "@nestjs/testing": "^10.4.15",
+    "@nestjs/testing": "^11.0.1",
     "@types/uuid": "^10.0.0"
   }
 }
