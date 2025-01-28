@@ -1,6 +1,6 @@
 {
   "name": "nestjs-firebase",
-  "version": "10.6.0",
+  "version": "10.7.0",
   "description": "@nestjs with firebase",
   "license": "MIT",
   "homepage": "https://github.com/g59/nestjs-plugins/tree/main/packages/nestjs-firebase",
@@ -10,7 +10,10 @@
     "clean": "tsc --build --clean",
     "lint": "tsc -p . --noEmit"
   },
-  "keywords": ["nest", "firebase"],
+  "keywords": [
+    "nest",
+    "firebase"
+  ],
   "peerDependencies": {
     "@nestjs/common": "^10.0.0",
     "firebase-admin": "^10.0.0 || ^11.0.0 || ^12.0.0"
