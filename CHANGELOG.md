@@ -1,23 +1,3 @@
-## v10.6.0 (2024-11-19)
-<!-- Release notes generated using configuration in .github/release.yml at main -->
-
-## What's Changed
-### Other Changes
-* chore(deps-dev): bump @types/validator from 13.12.0 to 13.12.1 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1880
-* chore(deps-dev): bump @google-cloud/firestore from 7.9.0 to 7.10.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1881
-* chore(deps-dev): bump @types/jest from 29.5.12 to 29.5.13 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1883
-* chore(deps-dev): bump @types/validator from 13.12.1 to 13.12.2 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1887
-* chore(deps-dev): bump @google-cloud/storage from 7.12.1 to 7.13.0 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1886
-* chore(deps): bump uuid from 10.0.0 to 11.0.2 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1897
-* chore(deps-dev): bump @types/ws from 8.5.12 to 8.5.13 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1896
-* feat: add auto approve step by @9renpoto in https://github.com/g59/nestjs-plugins/pull/1904
-* chore(deps): bump @apollo/server from 4.11.0 to 4.11.2 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1900
-* chore(deps): bump codecov/codecov-action from 4 to 5 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1902
-* chore(deps): bump cross-spawn from 7.0.3 to 7.0.6 in the npm_and_yarn group by @dependabot in https://github.com/g59/nestjs-plugins/pull/1905
-* chore(deps): bump uuid from 11.0.2 to 11.0.3 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1899
-
-
-**Full Changelog**: https://github.com/g59/nestjs-plugins/compare/v10.5.1...v10.6.0
 ## v10.5.1 (2024-09-01)
 <!-- Release notes generated using configuration in .github/release.yml at main -->
 
