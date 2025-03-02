@@ -23,7 +23,7 @@
     "nestjs-graphql-relay": "^10.0.0",
     "nestjs-slack-webhook": "^10.0.0",
     "nestjs-zendesk": "^10.0.0",
-    "uuid": "^11.0.5"
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
     "@nestjs/testing": "^10.4.15",
