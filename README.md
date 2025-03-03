@@ -1,6 +1,6 @@
 # nestjs-plugins
 
-![Actions Status](https://github.com/g59/nestjs-plugins/workflows/Node%20CI/badge.svg)
+[![Node CI](https://github.com/g59/nestjs-plugins/actions/workflows/nodejs.yml/badge.svg)](https://github.com/g59/nestjs-plugins/actions/workflows/nodejs.yml)
 [![codecov](https://codecov.io/gh/g59/nestjs-plugins/graph/badge.svg?token=KVABG274X8)](https://codecov.io/gh/g59/nestjs-plugins)
 
 ## Install
