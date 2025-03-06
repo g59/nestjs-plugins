@@ -1,7 +1,10 @@
 {
-  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
   "organizeImports": {
     "enabled": true
+  },
+  "files": {
+    "ignore": ["*.json"]
   },
   "vcs": {
     "enabled": true,

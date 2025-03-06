@@ -15,8 +15,7 @@
   },
   "devDependencies": {
     "@9renpoto/tsconfig": "^7.9.0",
-    "@biomejs/biome": "^1.9.4",
-    "@nestjs/testing": "^10.4.15",
+    "@nestjs/testing": "^11.0.0",
     "@types/jest": "^29.5.14",
     "jest-mock-extended": "^3.0.7",
     "rimraf": "^6.0.1",
@@ -25,8 +24,13 @@
   "jest": {
     "preset": "ts-jest",
     "collectCoverage": true,
-    "collectCoverageFrom": ["packages/*/src/*.ts"],
+    "collectCoverageFrom": [
+      "packages/*/src/*.ts"
+    ],
     "testEnvironment": "node"
   },
-  "workspaces": ["packages/*", "example"]
+  "workspaces": [
+    "packages/*",
+    "example"
+  ]
 }
