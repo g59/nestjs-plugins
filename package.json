@@ -6,7 +6,6 @@
   "engines": {
     "npm": "^10.0.0"
   },
-  "version": "10.0.0",
   "scripts": {
     "build": "npm run build --workspaces",
     "clean": "npm run clean --workspaces",
