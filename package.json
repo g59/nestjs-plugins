@@ -6,7 +6,6 @@
   "engines": {
     "npm": "^10.0.0"
   },
-  "version": "10.0.0",
   "scripts": {
     "build": "npm run build --workspaces",
     "clean": "npm run clean --workspaces",
@@ -15,6 +14,7 @@
   },
   "devDependencies": {
     "@9renpoto/tsconfig": "^7.9.0",
+    "@biomejs/biome": "^1.9.4",
     "@nestjs/testing": "^11.0.0",
     "@types/jest": "^29.5.14",
     "jest-mock-extended": "^3.0.7",

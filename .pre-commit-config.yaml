@@ -1,8 +1,4 @@
 repos:
-  - repo: https://github.com/biomejs/pre-commit
-    rev: "v1.9.4"
-    hooks:
-      - id: biome-check
   - repo: local
     hooks:
       - id: local-biome-check
