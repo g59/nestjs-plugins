@@ -1,3 +1,15 @@
+## v10.7.0 (2025-04-01)
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### Other Changes
+* chore: upgrade nestjs v11 by @9renpoto in https://github.com/g59/nestjs-plugins/pull/1940
+* chore(deps): bump the nestjs group with 2 updates by @dependabot in https://github.com/g59/nestjs-plugins/pull/1942
+* chore(deps-dev): bump @types/validator from 13.12.2 to 13.12.3 by @dependabot in https://github.com/g59/nestjs-plugins/pull/1944
+* chore(deps): bump the nestjs group with 2 updates by @dependabot in https://github.com/g59/nestjs-plugins/pull/1945
+
+
+**Full Changelog**: https://github.com/g59/nestjs-plugins/compare/v10.6.0...v10.7.0
 ## v10.6.0 (2025-03-03)
 <!-- Release notes generated using configuration in .github/release.yml at main -->
 
