@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@types/validator": "^13.12.3",
-    "@types/ws": "^8.5.14",
+    "@types/ws": "^8.18.1",
     "sqlite3": "^5.1.7"
   },
   "types": "lib/index.d.ts"
