@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@9renpoto/tsconfig": "^7.9.0",
-    "@nestjs/testing": "^11.0.13",
+    "@nestjs/testing": "^11.0.16",
     "@types/jest": "^29.5.14",
     "jest-mock-extended": "^3.0.7",
     "rimraf": "^6.0.1",
