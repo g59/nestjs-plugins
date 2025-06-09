@@ -13,7 +13,7 @@
     "start": "nest start --watch"
   },
   "dependencies": {
-    "@apollo/server": "^4.12.1",
+    "@apollo/server": "^4.12.2",
     "@apollographql/graphql-playground-html": "^1.6.29",
     "@as-integrations/fastify": "^2.0.0",
     "@fastify/proxy-addr": "^5.0.0",
