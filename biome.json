@@ -1,10 +1,8 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.2.0/schema.json",
-  "organizeImports": {
-    "enabled": true
-  },
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
   "files": {
-    "ignore": ["*.json"]
+    "includes": ["**", "!**/*.json"]
   },
   "vcs": {
     "enabled": true,
