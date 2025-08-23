@@ -12,7 +12,7 @@ jobs:
         node-version: [lts/*, latest]
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: biomejs/setup-biome@v2
       - run: biome ci .
       - name: Use Node.js ${{ matrix.node-version }}
