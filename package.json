@@ -11,7 +11,7 @@
     "build": "npm run build --workspaces",
     "clean": "npm run clean --workspaces",
     "lint": "npm run lint --workspaces",
-    "test": "dotenv -e example/.env.test jest"
+    "test": "dotenv -e example/.env.test jest && npx @biomejs/biome format --write ."
   },
   "devDependencies": {
     "@9renpoto/tsconfig": "^7.9.0",
