@@ -20,9 +20,9 @@
   },
   "keywords": ["nest", "zendesk"],
   "peerDependencies": {
-    "node-zendesk": "^5.0.0"
+    "node-zendesk": "^6.0.1"
   },
   "devDependencies": {
-    "@nestjs/testing": "^11.1.3"
+    "@nestjs/testing": "^11.1.6"
   }
 }
