@@ -11,7 +11,7 @@ import { getFirebaseAdmin } from "./util";
 
 @Global()
 @Module({})
-// biome-ignore lint/complexity/noStaticOnlyClass: <explanation>
+// biome-ignore lint/complexity/noStaticOnlyClass: NestJS module pattern
 export class FirebaseModule {
   public static forRoot(options: FirebaseModuleOptions): DynamicModule {
     const provider: Provider<FirebaseAdmin> = {
