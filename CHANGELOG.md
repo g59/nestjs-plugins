@@ -1,3 +1,32 @@
+## v10.7.0 (2025-09-02)
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### Other Changes
+* chore: upgrade nestjs v11 by @9renpoto in https://github.com/g59/nestjs-plugins/pull/1940
+* chore(deps): bump the nestjs group with 2 updates by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1942
+* chore(deps-dev): bump @types/validator from 13.12.2 to 13.12.3 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1944
+* chore(deps): bump the nestjs group with 2 updates by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1945
+* chore(deps): bump the nestjs group with 3 updates by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1947
+* chore(deps-dev): bump @types/ws from 8.18.0 to 8.18.1 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1948
+* chore(deps): bump @nestjs/common from 11.0.11 to 11.0.12 in the npm_and_yarn group by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1946
+* chore(deps-dev): bump @google-cloud/storage from 7.15.2 to 7.16.0 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1950
+* chore(deps-dev): bump ts-jest from 29.2.6 to 29.3.2 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1952
+* chore(deps): bump @apollo/server from 4.11.3 to 4.12.0 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1953
+* chore(deps): bump the nestjs group with 3 updates by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1951
+* chore(deps): bump @nestjs/common from 11.0.13 to 11.0.20 in the npm_and_yarn group by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1954
+* chore(deps-dev): bump ts-jest from 29.3.2 to 29.3.4 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1958
+* chore(deps): bump @apollo/server from 4.12.0 to 4.12.1 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1959
+* chore(deps-dev): bump @google-cloud/firestore from 7.11.0 to 7.11.1 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1960
+* chore(deps-dev): bump @types/validator from 13.12.3 to 13.15.1 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1961
+* chore(deps): bump @apollo/server from 4.12.1 to 4.12.2 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1962
+* chore(deps): bump the nestjs group with 3 updates by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1955
+* chore(deps-dev): bump @types/validator from 13.15.1 to 13.15.2 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1965
+* chore(deps-dev): bump ts-jest from 29.3.4 to 29.4.0 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1964
+* feat: Upgrade NestJS and other dependencies by @9renpoto in https://github.com/g59/nestjs-plugins/pull/1971
+
+
+**Full Changelog**: https://github.com/g59/nestjs-plugins/compare/v10.6.0...v10.7.0
 ## v10.6.0 (2025-03-03)
 <!-- Release notes generated using configuration in .github/release.yml at main -->
 
