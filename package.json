@@ -4,7 +4,7 @@
   "repository": "git@github.com:g59/nestjs-plugins.git",
   "author": "g59",
   "engines": {
-    "npm": "^10.0.0"
+    "npm": ">=10"
   },
   "version": "10.0.0",
   "scripts": {
@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@9renpoto/tsconfig": "^7.9.0",
+    "@as-integrations/fastify": "^2.1.1",
     "@nestjs/testing": "^11.1.6",
     "@types/jest": "^30.0.0",
     "dotenv-cli": "^10.0.0",
@@ -28,7 +29,8 @@
     "collectCoverageFrom": [
       "packages/*/src/*.ts"
     ],
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "moduleNameMapper": {}
   },
   "workspaces": [
     "packages/*",
