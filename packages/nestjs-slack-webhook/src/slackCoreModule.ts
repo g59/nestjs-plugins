@@ -12,7 +12,7 @@ import {
 
 @Global()
 @Module({})
-// biome-ignore lint/complexity/noStaticOnlyClass: <explanation>
+// biome-ignore lint/complexity/noStaticOnlyClass: NestJS module
 export class SlackCoreModule {
   public static forRoot(options: SlackOptions): DynamicModule {
     const provider = createSlackProvider(options);

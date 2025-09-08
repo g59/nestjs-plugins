@@ -9,6 +9,13 @@
     "noEmit": true,
     "strictPropertyInitialization": false,
     "target": "ESNext",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "nestjs-firebase": ["packages/nestjs-firebase/src"],
+      "nestjs-graphql-relay": ["packages/nestjs-graphql-relay/src"],
+      "nestjs-slack-webhook": ["packages/nestjs-slack-webhook/src"],
+      "nestjs-zendesk": ["packages/nestjs-zendesk/src"]
+    }
   }
 }

@@ -1,3 +1,4 @@
+import { beforeAll, describe, expect, it } from "@jest/globals";
 import { Test } from "@nestjs/testing";
 import { ZendeskClientOptions } from "node-zendesk";
 import { ZendeskModule } from "./";

@@ -16,8 +16,8 @@
   "devDependencies": {
     "@9renpoto/tsconfig": "^7.9.0",
     "@as-integrations/fastify": "^2.1.1",
+    "@jest/globals": "^29.7.0",
     "@nestjs/testing": "^11.1.6",
-    "@types/jest": "^30.0.0",
     "dotenv-cli": "^10.0.0",
     "jest-mock-extended": "^4.0.0",
     "rimraf": "^6.0.1",
@@ -30,7 +30,12 @@
       "packages/*/src/*.ts"
     ],
     "testEnvironment": "node",
-    "moduleNameMapper": {}
+    "moduleNameMapper": {
+      "^nestjs-firebase$": "<rootDir>/packages/nestjs-firebase/src",
+      "^nestjs-graphql-relay$": "<rootDir>/packages/nestjs-graphql-relay/src",
+      "^nestjs-slack-webhook$": "<rootDir>/packages/nestjs-slack-webhook/src",
+      "^nestjs-zendesk$": "<rootDir>/packages/nestjs-zendesk/src"
+    }
   },
   "workspaces": [
     "packages/*",

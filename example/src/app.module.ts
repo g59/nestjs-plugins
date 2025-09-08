@@ -43,12 +43,24 @@ import { ZendeskModule as ZendeskWrapperModule } from "./zendesk/zendesk.module"
     SlackModule.forRootAsync({
       imports: [ConfigModule],
       inject: [ConfigService],
-      useFactory: (config) => config.get("slack"),
+      useFactory: (config: ConfigService) => {
+        const slackConfig = config.get("slack");
+        if (!slackConfig) {
+          throw new Error("Slack config not found");
+        }
+        return slackConfig;
+      },
     }),
     ZendeskModule.forRootAsync({
       imports: [ConfigModule],
       inject: [ConfigService],
-      useFactory: (config) => config.get("zendesk"),
+      useFactory: (config: ConfigService) => {
+        const zendeskConfig = config.get("zendesk");
+        if (!zendeskConfig) {
+          throw new Error("Zendesk config not found");
+        }
+        return zendeskConfig;
+      },
     }),
     NodeModule,
     RecipesModule,
