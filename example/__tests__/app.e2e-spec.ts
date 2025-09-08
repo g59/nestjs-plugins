@@ -1,10 +1,4 @@
-import {
-  afterEach,
-  beforeAll,
-  describe,
-  expect,
-  it,
-} from "@jest/globals";
+import { afterEach, beforeAll, describe, expect, it } from "@jest/globals";
 import {
   FastifyAdapter,
   NestFastifyApplication,

@@ -52,7 +52,7 @@ function createAsyncProviders(options: ZendeskAsyncOptions): Provider[] {
 
 @Global()
 @Module({})
-// biome-ignore lint/complexity/noStaticOnlyClass: <explanation>
+// biome-ignore lint/complexity/noStaticOnlyClass: NestJS module
 export class ZendeskModule {
   static forRoot(options: zendesk.ZendeskClientOptions): DynamicModule {
     const provider = createProvider(options);
