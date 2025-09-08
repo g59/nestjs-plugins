@@ -1,4 +1,11 @@
 import {
+  afterEach,
+  beforeAll,
+  describe,
+  expect,
+  it,
+} from "@jest/globals";
+import {
   FastifyAdapter,
   NestFastifyApplication,
 } from "@nestjs/platform-fastify";

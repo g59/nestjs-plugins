@@ -1,3 +1,4 @@
+import { describe, expect, it } from "@jest/globals";
 import { getFirebaseAdmin } from "../src/util/getFirebaseAdmin";
 
 describe("getFirebaseAdmin", () => {
