@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@9renpoto/tsconfig": "^7.9.0",
-    "@as-integrations/fastify": "^2.1.1",
+    "@as-integrations/fastify": "^3.0.0",
     "@jest/globals": "^29.7.0",
     "@nestjs/testing": "^11.1.6",
     "dotenv-cli": "^10.0.0",
