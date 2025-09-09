@@ -1,6 +1,6 @@
 {
   "name": "nestjs-graphql-relay",
-  "version": "11.0.0-beta.0",
+  "version": "11.0.0",
   "description": "@nestjs/graphql + graphql-relay + typeorm",
   "license": "MIT",
   "repository": {
@@ -17,7 +17,11 @@
     "clean": "tsc --build --clean",
     "lint": "tsc -p . --noEmit"
   },
-  "keywords": ["nest", "graphql-relay", "typeorm"],
+  "keywords": [
+    "nest",
+    "graphql-relay",
+    "typeorm"
+  ],
   "peerDependencies": {
     "@apollo/gateway": "^2.11.2",
     "@nestjs/graphql": "^13.1.0",
