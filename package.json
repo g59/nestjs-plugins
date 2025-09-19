@@ -14,7 +14,6 @@
     "test": "dotenv -e example/.env.test jest"
   },
   "devDependencies": {
-    "@9renpoto/tsconfig": "^7.9.0",
     "@as-integrations/fastify": "^3.0.0",
     "@jest/globals": "^30.1.2",
     "@nestjs/testing": "^11.1.6",
