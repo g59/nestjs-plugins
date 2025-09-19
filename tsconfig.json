@@ -1,21 +1,38 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "@9renpoto/tsconfig",
   "compilerOptions": {
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "noEmit": true,
-    "strictPropertyInitialization": false,
-    "target": "ESNext",
-    "skipLibCheck": true,
     "baseUrl": ".",
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "module": "commonjs",
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "./lib",
     "paths": {
-      "nestjs-firebase": ["packages/nestjs-firebase/src"],
-      "nestjs-graphql-relay": ["packages/nestjs-graphql-relay/src"],
-      "nestjs-slack-webhook": ["packages/nestjs-slack-webhook/src"],
-      "nestjs-zendesk": ["packages/nestjs-zendesk/src"]
-    }
+      "nestjs-firebase": [
+        "packages/nestjs-firebase/src"
+      ],
+      "nestjs-graphql-relay": [
+        "packages/nestjs-graphql-relay/src"
+      ],
+      "nestjs-slack-webhook": [
+        "packages/nestjs-slack-webhook/src"
+      ],
+      "nestjs-zendesk": [
+        "packages/nestjs-zendesk/src"
+      ]
+    },
+    "removeComments": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "target": "ESNext"
   }
 }
