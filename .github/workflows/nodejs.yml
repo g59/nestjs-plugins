@@ -26,5 +26,8 @@ jobs:
         env:
           SLACK_WEBHOOK_URL: https://example.com
           CI: true
+      - run: npm run bundle-analysis
       - name: Codecov
         uses: codecov/codecov-action@v5
+        with:
+          enable_bundle_analysis: true

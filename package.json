@@ -9,12 +9,14 @@
   "version": "10.0.0",
   "scripts": {
     "build": "npm run build --workspaces",
+    "bundle-analysis": "for pkg in packages/*; do npx @codecov/bundle-analyzer $pkg/lib --bundle-name=$(basename $pkg); done",
     "clean": "npm run clean --workspaces",
     "lint": "npm run lint --workspaces",
     "test": "dotenv -e example/.env.test jest"
   },
   "devDependencies": {
     "@as-integrations/fastify": "^3.0.0",
+    "@codecov/bundle-analyzer": "^1.0.0",
     "@jest/globals": "^30.1.2",
     "@nestjs/testing": "^11.1.6",
     "dotenv-cli": "^10.0.0",
