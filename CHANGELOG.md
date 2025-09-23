@@ -1,3 +1,16 @@
+## v11.1.0 (2025-09-23)
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### Other Changes
+* chore(deps-dev): bump @google-cloud/storage from 7.17.0 to 7.17.1 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1980
+* chore(deps-dev): bump @jest/globals from 29.7.0 to 30.1.2 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1979
+* feat: remove dependency on @9renpoto/tsconfig by @9renpoto in https://github.com/g59/nestjs-plugins/pull/1982
+* chore(deps-dev): bump ts-jest from 29.4.1 to 29.4.4 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1984
+* chore(deps-dev): bump @google-cloud/firestore from 7.11.3 to 7.11.4 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1985
+
+
+**Full Changelog**: https://github.com/g59/nestjs-plugins/compare/v11.0.0...v11.1.0
 ## v11.0.0 (2025-09-09)
 <!-- Release notes generated using configuration in .github/release.yml at main -->
 
