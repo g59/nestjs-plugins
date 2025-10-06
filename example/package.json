@@ -15,7 +15,7 @@
   "dependencies": {
     "@apollographql/graphql-playground-html": "^1.6.29",
     "@fastify/proxy-addr": "^5.1.0",
-    "@nestjs/apollo": "^13.1.0",
+    "@nestjs/apollo": "^13.2.1",
     "@nestjs/cli": "^11.0.10",
     "@nestjs/config": "^4.0.2",
     "@nestjs/platform-fastify": "^11.1.6",
