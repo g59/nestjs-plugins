@@ -14,7 +14,7 @@
     "test": "dotenv -e example/.env.test jest"
   },
   "devDependencies": {
-    "@as-integrations/fastify": "^3.0.0",
+    "@as-integrations/fastify": "^3.1.0",
     "@jest/globals": "^30.2.0",
     "@nestjs/testing": "^11.1.6",
     "dotenv-cli": "^10.0.0",
