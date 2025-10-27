@@ -18,7 +18,7 @@
     "@nestjs/apollo": "^13.2.1",
     "@nestjs/cli": "^11.0.10",
     "@nestjs/config": "^4.0.2",
-    "@nestjs/platform-fastify": "^11.1.6",
+    "@nestjs/platform-fastify": "^11.1.7",
     "lodash.omit": "^4.5.0",
     "nestjs-firebase": "11.0.0-beta.0",
     "nestjs-graphql-relay": "11.0.0-beta.0",
@@ -26,6 +26,6 @@
     "nestjs-zendesk": "11.0.0-beta.0"
   },
   "devDependencies": {
-    "@nestjs/testing": "^11.1.6"
+    "@nestjs/testing": "^11.1.7"
   }
 }
