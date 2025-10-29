@@ -16,7 +16,7 @@ jobs:
       - uses: biomejs/setup-biome@v2
       - run: biome ci .
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
