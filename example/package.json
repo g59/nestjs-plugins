@@ -1,6 +1,6 @@
 {
   "name": "example",
-  "version": "10.7.0",
+  "version": "11.0.0",
   "private": true,
   "description": "nestjs-plugins examples",
   "license": "MIT",
@@ -20,10 +20,10 @@
     "@nestjs/config": "^4.0.2",
     "@nestjs/platform-fastify": "^11.1.7",
     "lodash.omit": "^4.5.0",
-    "nestjs-firebase": "11.0.0-beta.0",
-    "nestjs-graphql-relay": "11.0.0-beta.0",
-    "nestjs-slack-webhook": "11.0.0-beta.0",
-    "nestjs-zendesk": "11.0.0-beta.0"
+    "nestjs-firebase": "11.0.0",
+    "nestjs-graphql-relay": "11.0.0",
+    "nestjs-slack-webhook": "11.0.0",
+    "nestjs-zendesk": "11.0.0"
   },
   "devDependencies": {
     "@nestjs/testing": "^11.1.7"
