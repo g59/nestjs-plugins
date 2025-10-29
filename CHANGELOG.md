@@ -1,3 +1,30 @@
+## v11.1.0 (2025-10-29)
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### Other Changes
+* chore(deps-dev): bump @google-cloud/storage from 7.17.0 to 7.17.1 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1980
+* chore(deps-dev): bump @jest/globals from 29.7.0 to 30.1.2 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1979
+* feat: remove dependency on @9renpoto/tsconfig by @9renpoto in https://github.com/g59/nestjs-plugins/pull/1982
+* chore(deps-dev): bump ts-jest from 29.4.1 to 29.4.4 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1984
+* chore(deps-dev): bump @google-cloud/firestore from 7.11.3 to 7.11.4 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1985
+* Potential fix for code scanning alert no. 12: Workflow does not contain permissions by @9renpoto in https://github.com/g59/nestjs-plugins/pull/1986
+* chore(deps-dev): bump @google-cloud/firestore from 7.11.4 to 7.11.6 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1987
+* chore(deps-dev): bump @jest/globals from 30.1.2 to 30.2.0 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1988
+* chore(deps): bump @fastify/proxy-addr from 5.0.0 to 5.1.0 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1989
+* chore(deps): bump @nestjs/apollo from 13.1.0 to 13.2.1 in the nestjs group by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1991
+* chore(deps-dev): bump ts-jest from 29.4.4 to 29.4.5 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1992
+* chore(deps-dev): bump @google-cloud/storage from 7.17.1 to 7.17.2 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1994
+* chore(deps-dev): bump @as-integrations/fastify from 3.0.0 to 3.1.0 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1993
+* chore(deps): bump the nestjs group with 2 updates by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1996
+* chore: sync example workspace versions by @9renpoto in https://github.com/g59/nestjs-plugins/pull/1998
+* chore(deps): bump the nestjs group with 2 updates by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1999
+* chore(deps-dev): bump @types/validator from 13.15.3 to 13.15.4 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2001
+* chore(deps-dev): bump dotenv-cli from 10.0.0 to 11.0.0 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2000
+* chore(deps): bump actions/setup-node from 5 to 6 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/1995
+
+
+**Full Changelog**: https://github.com/g59/nestjs-plugins/compare/v11.0.0...v11.1.0
 ## v11.0.0 (2025-09-09)
 <!-- Release notes generated using configuration in .github/release.yml at main -->
 
