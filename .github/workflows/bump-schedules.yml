@@ -6,6 +6,8 @@ on:
 
 jobs:
   scheduled_bump:
+    permissions:
+      contents: write
     uses: ./.github/workflows/bump.yml
     secrets: inherit
     with:
