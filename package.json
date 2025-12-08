@@ -20,7 +20,7 @@
     "dotenv-cli": "^11.0.0",
     "jest-mock-extended": "^4.0.0",
     "rimraf": "^6.1.2",
-    "ts-jest": "^29.4.5"
+    "ts-jest": "^29.4.6"
   },
   "jest": {
     "preset": "ts-jest",
