@@ -39,6 +39,5 @@
   "workspaces": [
     "packages/*",
     "example"
-  ],
-  "packageManager": "npm@11.6.2"
+  ]
 }
