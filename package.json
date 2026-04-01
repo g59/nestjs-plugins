@@ -11,7 +11,8 @@
     "build": "npm run build --workspaces",
     "clean": "npm run clean --workspaces",
     "lint": "npm run lint --workspaces",
-    "test": "dotenv -e example/.env.test jest"
+    "rebuild:test-native": "npm rebuild sqlite3 --ignore-scripts=false",
+    "test": "npm run rebuild:test-native && dotenv -e example/.env.test jest"
   },
   "devDependencies": {
     "@as-integrations/fastify": "^3.1.0",
