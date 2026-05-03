@@ -35,7 +35,7 @@ jobs:
           echo "NEW_VERSION=$(cat packages/nestjs-firebase/package.json | jq -r .version)" >> $GITHUB_OUTPUT
 
       - name: Generate release notes
-        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         id: get_release_note
         env:
           NEW_VERSION: ${{steps.get_version.outputs.NEW_VERSION}}
