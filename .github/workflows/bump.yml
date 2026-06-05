@@ -32,7 +32,7 @@ jobs:
       - name: generate new version and save to env variable
         id: get_version
         run: |
-          echo "NEW_VERSION=$(cat packages/nestjs-firebase/package.json | jq -r .version)" >> $GITHUB_OUTPUT
+          echo "NEW_VERSION=$(cat packages/nestjs-firebase/package.json | jq -r .version)" >> "$GITHUB_OUTPUT"
 
       - name: Generate release notes
         uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
