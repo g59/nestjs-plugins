@@ -1,3 +1,65 @@
+## v11.0.2 (2026-06-05)
+<!-- Release notes generated using configuration in .github/release.yml at v11.0.2 -->
+
+## What's Changed
+### Other Changes
+* Potential fix for code scanning alert no. 13: Workflow does not contain permissions by @9renpoto in https://github.com/g59/nestjs-plugins/pull/2004
+* Potential fix for code scanning alert no. 8: Workflow does not contain permissions by @9renpoto in https://github.com/g59/nestjs-plugins/pull/2003
+* Potential fix for code scanning alert no. 1: Workflow does not contain permissions by @9renpoto in https://github.com/g59/nestjs-plugins/pull/2005
+* chore(deps-dev): bump rimraf from 6.0.1 to 6.1.0 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2007
+* chore(deps-dev): bump @google-cloud/firestore from 7.11.6 to 8.0.0 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2008
+* Potential fix for code scanning alert no. 7: Workflow does not contain permissions by @9renpoto in https://github.com/g59/nestjs-plugins/pull/2006
+* chore(deps-dev): bump @google-cloud/storage from 7.17.2 to 7.17.3 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2009
+* chore(deps): bump the nestjs group with 2 updates by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2010
+* chore(deps-dev): bump @types/validator from 13.15.4 to 13.15.9 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2011
+* chore(deps): bump js-yaml from 3.14.1 to 3.14.2 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2012
+* chore(deps): bump @nestjs/cli from 11.0.10 to 11.0.12 in the nestjs group by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2015
+* chore(deps-dev): bump rimraf from 6.1.0 to 6.1.2 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2016
+* chore(deps-dev): bump @types/validator from 13.15.9 to 13.15.10 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2017
+* chore(deps): bump @nestjs/cli from 11.0.12 to 11.0.14 in the nestjs group by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2020
+* chore(deps): bump validator from 13.15.20 to 13.15.23 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2021
+* chore(deps-dev): bump ts-jest from 29.4.5 to 29.4.6 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2022
+* chore(deps): bump @nestjs/apollo from 13.2.1 to 13.2.3 in the nestjs group by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2025
+* 
+added 1086 packages, and audited 1092 packages in 30s
+
+193 packages are looking for funding
+  run `npm fund` for details
+
+31 vulnerabilities (22 moderate, 9 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details. の失敗を  の更新によって修正 by @google-labs-jules[bot] in https://github.com/g59/nestjs-plugins/pull/2026
+* chore(deps): bump peter-evans/create-pull-request from 7 to 8 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2024
+* chore(deps-dev): bump @google-cloud/storage from 7.17.3 to 7.18.0 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2023
+* fix(ci): replace deprecated fail_on_error with fail_level in actionlint workflow by @google-labs-jules[bot] in https://github.com/g59/nestjs-plugins/pull/2027
+* chore(deps): bump actions/checkout from 5 to 6 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2014
+* chore(deps): bump glob from 10.4.5 to 10.5.0 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2018
+* chore(deps): bump the nestjs group with 2 updates by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2028
+* chore(deps): bump the nestjs group with 2 updates by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2029
+* chore(deps-dev): bump @google-cloud/firestore from 8.0.0 to 8.1.0 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2030
+* chore(deps): bump the nestjs group with 3 updates by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2031
+* chore(deps-dev): bump @google-cloud/firestore from 8.1.0 to 8.2.0 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2032
+* chore(deps): bump @isaacs/brace-expansion from 5.0.0 to 5.0.1 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2033
+* chore(deps): bump the nestjs group with 4 updates by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2034
+* chore(deps-dev): bump @google-cloud/storage from 7.18.0 to 7.19.0 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2036
+* chore(deps-dev): bump @google-cloud/firestore from 8.2.0 to 8.3.0 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2035
+* chore(deps-dev): bump rimraf from 6.1.2 to 6.1.3 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2037
+* chore(deps): bump the nestjs group with 2 updates by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2038
+* chore(deps): bump minimatch by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2040
+* chore(deps): bump the nestjs group with 2 updates by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2041
+* chore(deps-dev): bump @jest/globals from 30.2.0 to 30.3.0 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2043
+* chore(deps): bump @apollo/gateway from 2.11.2 to 2.13.2 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2042
+
+## New Contributors
+* @google-labs-jules[bot] made their first contribution in https://github.com/g59/nestjs-plugins/pull/2026
+
+**Full Changelog**: https://github.com/g59/nestjs-plugins/compare/v11.0.1...v11.0.2
 ## v11.0.1 (2025-10-29)
 <!-- Release notes generated using configuration in .github/release.yml at main -->
 
