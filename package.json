@@ -17,7 +17,7 @@
   "devDependencies": {
     "@as-integrations/fastify": "^3.1.0",
     "@jest/globals": "^30.4.1",
-    "@nestjs/testing": "^11.1.23",
+    "@nestjs/testing": "^11.1.24",
     "dotenv-cli": "^11.0.0",
     "jest-mock-extended": "^4.0.1",
     "rimraf": "^6.1.3",
