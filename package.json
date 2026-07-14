@@ -23,6 +23,10 @@
     "rimraf": "^6.1.3",
     "ts-jest": "^29.4.11"
   },
+  "overrides": {
+    "typeorm": "0.3.30",
+    "@nestjs/typeorm": "11.0.0"
+  },
   "jest": {
     "preset": "ts-jest",
     "collectCoverage": true,
@@ -31,6 +35,7 @@
     ],
     "testEnvironment": "node",
     "moduleNameMapper": {
+      "^sqlite3$": "<rootDir>/packages/nestjs-graphql-relay/node_modules/sqlite3",
       "^nestjs-firebase$": "<rootDir>/packages/nestjs-firebase/src",
       "^nestjs-graphql-relay$": "<rootDir>/packages/nestjs-graphql-relay/src",
       "^nestjs-slack-webhook$": "<rootDir>/packages/nestjs-slack-webhook/src",
