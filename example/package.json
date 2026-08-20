@@ -24,8 +24,5 @@
     "nestjs-graphql-relay": "11.0.0",
     "nestjs-slack-webhook": "11.0.0",
     "nestjs-zendesk": "11.0.0"
-  },
-  "devDependencies": {
-    "@nestjs/testing": "^11.1.28"
   }
 }
