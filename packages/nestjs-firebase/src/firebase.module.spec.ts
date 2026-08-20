@@ -2,7 +2,6 @@ import * as path from "node:path";
 import { describe, expect, it, jest } from "@jest/globals";
 import { Test } from "@nestjs/testing";
 import * as admin from "firebase-admin";
-import { mock } from "jest-mock-extended";
 import { FirebaseConstants } from "./firebase.constants";
 import {
   FirebaseAdmin,
@@ -12,7 +11,16 @@ import {
 import { FirebaseModule } from "./firebase.module";
 
 describe("FirebaseModule", () => {
-  jest.spyOn(admin, "initializeApp").mockReturnValue(mock<admin.app.App>());
+  const firebaseApp = {
+    auth: jest.fn(() => ({}) as admin.auth.Auth),
+    database: jest.fn(() => ({}) as admin.database.Database),
+    firestore: jest.fn(() => ({}) as admin.firestore.Firestore),
+    messaging: jest.fn(() => ({}) as admin.messaging.Messaging),
+    remoteConfig: jest.fn(() => ({}) as admin.remoteConfig.RemoteConfig),
+    storage: jest.fn(() => ({}) as admin.storage.Storage),
+  } as unknown as admin.app.App;
+
+  jest.spyOn(admin, "initializeApp").mockReturnValue(firebaseApp);
 
   const googleApplicationCredential = path.join(
     __dirname,
