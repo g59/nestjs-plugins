@@ -34,8 +34,6 @@
     "class-validator": ">=0.14.2"
   },
   "devDependencies": {
-    "@types/validator": "^13.15.10",
-    "@types/ws": "^8.18.1",
     "sqlite3": "^5.1.7"
   },
   "types": "lib/index.d.ts"
