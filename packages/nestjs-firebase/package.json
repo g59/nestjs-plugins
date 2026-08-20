@@ -21,9 +21,5 @@
     "@nestjs/common": "^11.0.0",
     "firebase-admin": "^13.4.0"
   },
-  "devDependencies": {
-    "@google-cloud/firestore": "^8.7.1",
-    "@google-cloud/storage": "^7.21.0"
-  },
   "types": "lib/index.d.ts"
 }
