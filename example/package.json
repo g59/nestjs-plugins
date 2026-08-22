@@ -15,10 +15,10 @@
   "dependencies": {
     "@apollographql/graphql-playground-html": "^1.6.29",
     "@fastify/proxy-addr": "^5.1.0",
-    "@nestjs/apollo": "^13.4.2",
+    "@nestjs/apollo": "^13.4.4",
     "@nestjs/cli": "^11.0.24",
     "@nestjs/config": "^4.0.4",
-    "@nestjs/platform-fastify": "^11.1.28",
+    "@nestjs/platform-fastify": "^11.2.1",
     "lodash.omit": "^4.5.0",
     "nestjs-firebase": "11.0.0",
     "nestjs-graphql-relay": "11.0.0",
