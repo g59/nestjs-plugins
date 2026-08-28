@@ -1,4 +1,5 @@
-import { describe, expect, it } from "@jest/globals";
+import assert from "node:assert/strict";
+import { describe, it } from "node:test";
 import { IncomingWebhook } from "@slack/webhook";
 import { getSlackClient } from "./../src/getSlackClient";
 
@@ -7,7 +8,7 @@ describe("getSlackClient", () => {
 
   it("returns slack client", () => {
     const slackClient = getSlackClient({ url });
-    expect(slackClient).toBeInstanceOf(IncomingWebhook);
+    assert.ok(slackClient instanceof IncomingWebhook);
   });
 
   it("returns slack client with custom options", () => {
@@ -16,6 +17,6 @@ describe("getSlackClient", () => {
       username: "test_user",
     });
 
-    expect(slackClient).toBeInstanceOf(IncomingWebhook);
+    assert.ok(slackClient instanceof IncomingWebhook);
   });
 });

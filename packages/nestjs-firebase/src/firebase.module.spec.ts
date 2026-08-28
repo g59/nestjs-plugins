@@ -1,5 +1,6 @@
+import assert from "node:assert/strict";
 import * as path from "node:path";
-import { afterEach, describe, expect, it } from "@jest/globals";
+import { afterEach, describe, it } from "node:test";
 import { Test } from "@nestjs/testing";
 import * as admin from "firebase-admin";
 import { FirebaseConstants } from "./firebase.constants";
@@ -16,8 +17,8 @@ describe("FirebaseModule", () => {
   });
 
   const googleApplicationCredential = path.join(
-    __dirname,
-    "../../../dummy.firebase.amin.key.json",
+    process.cwd(),
+    "dummy.firebase.amin.key.json",
   );
   class TestService implements FirebaseModuleOptionsFactory {
     createFirebaseModuleOptions(): FirebaseModuleOptions {
@@ -36,7 +37,7 @@ describe("FirebaseModule", () => {
       const firebase = module.get<FirebaseAdmin>(
         FirebaseConstants.FIREBASE_TOKEN,
       );
-      expect(firebase).toBeDefined();
+      assert.ok(firebase);
     });
   });
 
@@ -54,7 +55,7 @@ describe("FirebaseModule", () => {
         const firebase = module.get<FirebaseAdmin>(
           FirebaseConstants.FIREBASE_TOKEN,
         );
-        expect(firebase).toBeDefined();
+        assert.ok(firebase);
       });
     });
     describe("when the `useClass` option is used", () => {
@@ -70,7 +71,7 @@ describe("FirebaseModule", () => {
         const firebase = module.get<FirebaseAdmin>(
           FirebaseConstants.FIREBASE_TOKEN,
         );
-        expect(firebase).toBeDefined();
+        assert.ok(firebase);
       });
     });
   });

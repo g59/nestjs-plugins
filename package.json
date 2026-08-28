@@ -4,37 +4,25 @@
   "repository": "git@github.com:g59/nestjs-plugins.git",
   "author": "g59",
   "engines": {
+    "node": ">=22.10.0",
     "npm": ">=10"
   },
   "version": "10.0.0",
   "scripts": {
     "build": "npm run build --workspaces",
-    "clean": "npm run clean --workspaces",
+    "build:test-dependencies": "npm run build --workspace nestjs-firebase --workspace nestjs-graphql-relay --workspace nestjs-slack-webhook --workspace nestjs-zendesk",
+    "clean": "npm run clean --workspaces && npm run clean:test",
+    "clean:test": "node -e \"const fs = require('node:fs'); for (const path of ['.test-dist', 'example/.test-dist']) fs.rmSync(path, { recursive: true, force: true })\"",
+    "compile:test": "npm run clean:test && tsc -p tsconfig.test.json && tsc -p example/tsconfig.test.json && node -e \"require('node:fs').copyFileSync('dummy.firebase.amin.key.json', 'example/.test-dist/dummy.firebase.amin.key.json')\"",
     "lint": "npm run lint --workspaces",
     "rebuild:test-native": "npm rebuild sqlite3 --ignore-scripts=false",
-    "test": "npm run rebuild:test-native && dotenv -e example/.env.test jest"
+    "test": "npm run rebuild:test-native && npm run build:test-dependencies && npm run compile:test && node --env-file-if-exists=example/.env.test --test --experimental-test-coverage --test-coverage-include=\".test-dist/packages/*/src/*.js\" --test-coverage-exclude=\".test-dist/**/*.spec.js\" --test-coverage-exclude=\".test-dist/**/*.test.js\" \".test-dist/**/*.spec.js\" \".test-dist/**/*.test.js\" \"example/.test-dist/example/**/*-spec.js\" \"example/.test-dist/example/**/*.spec.js\""
   },
   "devDependencies": {
     "@as-integrations/fastify": "^3.1.0",
-    "@jest/globals": "^30.4.1",
     "@nestjs/testing": "^11.2.1",
-    "dotenv-cli": "^11.0.0",
     "rimraf": "^6.1.3",
-    "ts-jest": "^29.4.12"
-  },
-  "jest": {
-    "preset": "ts-jest",
-    "collectCoverage": true,
-    "collectCoverageFrom": [
-      "packages/*/src/*.ts"
-    ],
-    "testEnvironment": "node",
-    "moduleNameMapper": {
-      "^nestjs-firebase$": "<rootDir>/packages/nestjs-firebase/src",
-      "^nestjs-graphql-relay$": "<rootDir>/packages/nestjs-graphql-relay/src",
-      "^nestjs-slack-webhook$": "<rootDir>/packages/nestjs-slack-webhook/src",
-      "^nestjs-zendesk$": "<rootDir>/packages/nestjs-zendesk/src"
-    }
+    "typescript": "^5.9.3"
   },
   "workspaces": [
     "packages/*",

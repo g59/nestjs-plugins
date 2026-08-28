@@ -1,4 +1,5 @@
-import { beforeAll, describe, expect, it } from "@jest/globals";
+import assert from "node:assert/strict";
+import { before, describe, it } from "node:test";
 import { FactoryProvider, Provider } from "@nestjs/common";
 import { Test } from "@nestjs/testing";
 import { ZendeskClientOptions } from "node-zendesk";
@@ -13,7 +14,7 @@ describe("ZendeskModule", () => {
     endpointUri: "http://example.com",
   };
 
-  beforeAll(async () => {
+  before(async () => {
     const moduleFixture = await Test.createTestingModule({
       imports: [ZendeskModule],
     }).compile();
@@ -21,53 +22,53 @@ describe("ZendeskModule", () => {
     module = moduleFixture.get(ZendeskModule);
   });
 
-  it("defined", () => expect(module).toBeDefined());
+  it("defined", () => assert.ok(module));
 
   it("forRoot", () => {
     const res = ZendeskModule.forRoot(options);
 
-    expect(res.exports).toHaveLength(1);
-    expect(res.imports).toBeUndefined();
-    expect(res.module).toBeDefined();
-    expect(res.providers).toHaveLength(1);
+    assert.equal(res.exports?.length, 1);
+    assert.equal(res.imports, undefined);
+    assert.ok(res.module);
+    assert.equal(res.providers?.length, 1);
   });
 
   it("forRootAsync", () => {
     const res = ZendeskModule.forRootAsync({});
-    expect(res.exports).toHaveLength(1);
-    expect(res.imports).toBeUndefined();
-    expect(res.providers).toHaveLength(3);
-    expect(res.module).toBeDefined();
+    assert.equal(res.exports?.length, 1);
+    assert.equal(res.imports, undefined);
+    assert.equal(res.providers?.length, 3);
+    assert.ok(res.module);
 
     const [optionsProvider, classProvider, clientProvider] =
       res.providers as Provider[];
-    expect(optionsProvider).toMatchObject({
-      inject: [],
-      provide: ZENDESK_MODULE,
-    });
-    expect((optionsProvider as FactoryProvider).useFactory).toBeInstanceOf(
-      Function,
+    assert.deepEqual((optionsProvider as FactoryProvider).inject, []);
+    assert.equal((optionsProvider as FactoryProvider).provide, ZENDESK_MODULE);
+    assert.equal(
+      typeof (optionsProvider as FactoryProvider).useFactory,
+      "function",
     );
-    expect(classProvider).toEqual({
+    assert.deepEqual(classProvider, {
       inject: undefined,
       provide: undefined,
       useClass: undefined,
     });
-    expect(clientProvider).toMatchObject({
-      inject: [ZENDESK_MODULE],
-      provide: ZENDESK_TOKEN,
-    });
-    expect((clientProvider as FactoryProvider).useFactory).toBeInstanceOf(
-      Function,
+    assert.deepEqual((clientProvider as FactoryProvider).inject, [
+      ZENDESK_MODULE,
+    ]);
+    assert.equal((clientProvider as FactoryProvider).provide, ZENDESK_TOKEN);
+    assert.equal(
+      typeof (clientProvider as FactoryProvider).useFactory,
+      "function",
     );
-    expect(res.exports).toEqual([clientProvider]);
+    assert.equal(res.exports?.[0], clientProvider);
   });
 
   it("forRootAsync with useFactory", () => {
     const res = ZendeskModule.forRootAsync({ useFactory: () => options });
-    expect(res.exports).toHaveLength(1);
-    expect(res.imports).toBeUndefined();
-    expect(res.module).toBeDefined();
-    expect(res.providers).toHaveLength(2);
+    assert.equal(res.exports?.length, 1);
+    assert.equal(res.imports, undefined);
+    assert.ok(res.module);
+    assert.equal(res.providers?.length, 2);
   });
 });

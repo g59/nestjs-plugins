@@ -1,4 +1,5 @@
-import { beforeEach, describe, expect, it } from "@jest/globals";
+import assert from "node:assert/strict";
+import { beforeEach, describe, it } from "node:test";
 import { Injectable } from "@nestjs/common";
 import { Test, TestingModule } from "@nestjs/testing";
 import { IncomingWebhook } from "@slack/webhook";
@@ -26,8 +27,8 @@ describe("InjectSlack", () => {
   describe("when decorating a class constructor parameter", () => {
     it("should inject the slack client", () => {
       const testService = module.get(TestService);
-      expect(testService).toHaveProperty("slackClient");
-      expect(testService.slackClient).toBeInstanceOf(IncomingWebhook);
+      assert.ok("slackClient" in testService);
+      assert.ok(testService.slackClient instanceof IncomingWebhook);
     });
   });
 });
