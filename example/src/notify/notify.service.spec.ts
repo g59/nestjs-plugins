@@ -1,4 +1,5 @@
-import { beforeEach, describe, expect, it } from "@jest/globals";
+import assert from "node:assert/strict";
+import { beforeEach, describe, it } from "node:test";
 import { Test, TestingModule } from "@nestjs/testing";
 import { createSlackServiceMock } from "../testing/slack";
 import { NotifyService } from "./notify.service";
@@ -17,6 +18,6 @@ describe("NotifyService", () => {
   });
 
   it("should be defined", () => {
-    expect(service).toBeDefined();
+    assert.ok(service);
   });
 });

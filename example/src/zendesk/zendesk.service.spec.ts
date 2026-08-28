@@ -1,4 +1,5 @@
-import { beforeEach, describe, expect, it, jest } from "@jest/globals";
+import assert from "node:assert/strict";
+import { beforeEach, describe, it } from "node:test";
 import { Test, TestingModule } from "@nestjs/testing";
 import { ZENDESK_TOKEN } from "nestjs-zendesk";
 import { ZendeskService } from "./zendesk.service";
@@ -12,7 +13,7 @@ describe("ZendeskService", () => {
         ZendeskService,
         {
           provide: ZENDESK_TOKEN,
-          useFactory: jest.fn(),
+          useFactory: () => undefined,
         },
       ],
     }).compile();
@@ -20,5 +21,5 @@ describe("ZendeskService", () => {
     service = module.get<ZendeskService>(ZendeskService);
   });
 
-  it("should be defined", () => expect(service).toBeDefined());
+  it("should be defined", () => assert.ok(service));
 });

@@ -1,5 +1,6 @@
+import assert from "node:assert/strict";
 import * as path from "node:path";
-import { describe, expect, it, jest } from "@jest/globals";
+import { afterEach, describe, it } from "node:test";
 import { Test } from "@nestjs/testing";
 import * as admin from "firebase-admin";
 import { FirebaseConstants } from "./firebase.constants";
@@ -11,20 +12,13 @@ import {
 import { FirebaseModule } from "./firebase.module";
 
 describe("FirebaseModule", () => {
-  const firebaseApp = {
-    auth: jest.fn(() => ({}) as admin.auth.Auth),
-    database: jest.fn(() => ({}) as admin.database.Database),
-    firestore: jest.fn(() => ({}) as admin.firestore.Firestore),
-    messaging: jest.fn(() => ({}) as admin.messaging.Messaging),
-    remoteConfig: jest.fn(() => ({}) as admin.remoteConfig.RemoteConfig),
-    storage: jest.fn(() => ({}) as admin.storage.Storage),
-  } as unknown as admin.app.App;
-
-  jest.spyOn(admin, "initializeApp").mockReturnValue(firebaseApp);
+  afterEach(async () => {
+    await Promise.all(admin.apps.map((app) => app?.delete()));
+  });
 
   const googleApplicationCredential = path.join(
-    __dirname,
-    "../../../dummy.firebase.amin.key.json",
+    process.cwd(),
+    "dummy.firebase.amin.key.json",
   );
   class TestService implements FirebaseModuleOptionsFactory {
     createFirebaseModuleOptions(): FirebaseModuleOptions {
@@ -43,7 +37,7 @@ describe("FirebaseModule", () => {
       const firebase = module.get<FirebaseAdmin>(
         FirebaseConstants.FIREBASE_TOKEN,
       );
-      expect(firebase).toBeDefined();
+      assert.ok(firebase);
     });
   });
 
@@ -61,7 +55,7 @@ describe("FirebaseModule", () => {
         const firebase = module.get<FirebaseAdmin>(
           FirebaseConstants.FIREBASE_TOKEN,
         );
-        expect(firebase).toBeDefined();
+        assert.ok(firebase);
       });
     });
     describe("when the `useClass` option is used", () => {
@@ -77,7 +71,7 @@ describe("FirebaseModule", () => {
         const firebase = module.get<FirebaseAdmin>(
           FirebaseConstants.FIREBASE_TOKEN,
         );
-        expect(firebase).toBeDefined();
+        assert.ok(firebase);
       });
     });
   });

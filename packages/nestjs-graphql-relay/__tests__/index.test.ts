@@ -1,19 +1,20 @@
-import { afterAll, beforeAll, describe, expect, it } from "@jest/globals";
+import assert from "node:assert/strict";
+import { after, before, describe, it } from "node:test";
 import { Column, DataSource, Entity, PrimaryGeneratedColumn } from "typeorm";
 import { findAndPaginate, getPagingParameters } from "../src";
 
 @Entity()
 class Example {
-  @PrimaryGeneratedColumn()
+  @PrimaryGeneratedColumn({ type: "integer" })
   readonly id: number;
 
-  @Column()
+  @Column({ type: "varchar" })
   readonly name: string;
 }
 
 describe("app", () => {
   let AppDataSource: DataSource;
-  beforeAll(async () => {
+  before(async () => {
     AppDataSource = new DataSource({
       type: "sqlite",
       database: "nestjs-plugins",
@@ -27,20 +28,22 @@ describe("app", () => {
     await AppDataSource.query(`DELETE from ${repo.metadata.tableName}`);
   });
 
-  afterAll(() => AppDataSource.destroy());
+  after(() => AppDataSource.destroy());
 
   it("getPagingParameters", () => {
-    expect(getPagingParameters({})).toEqual({});
-    expect(getPagingParameters({ first: 1 })).toEqual({
+    assert.deepEqual(getPagingParameters({}), {});
+    assert.deepEqual(getPagingParameters({ first: 1 }), {
       limit: 1,
       offset: 0,
     });
-    expect(() =>
-      getPagingParameters({ first: 1, after: "after" }),
-    ).toThrowErrorMatchingInlineSnapshot(`"invalid before query"`);
-    expect(() =>
-      getPagingParameters({ last: 1, before: "before" }),
-    ).toThrowErrorMatchingInlineSnapshot(`"invalid before query"`);
+    assert.throws(
+      () => getPagingParameters({ first: 1, after: "after" }),
+      /invalid before query/,
+    );
+    assert.throws(
+      () => getPagingParameters({ last: 1, before: "before" }),
+      /invalid before query/,
+    );
   });
 
   describe("findAndPaginate", () => {
@@ -52,7 +55,7 @@ describe("app", () => {
         {},
         AppDataSource.getRepository(Example),
       );
-      expect(res).toEqual({
+      assert.deepEqual(res, {
         edges: [],
         pageInfo: {
           endCursor: null,
@@ -83,8 +86,15 @@ describe("app", () => {
         {},
         AppDataSource.getRepository(Example),
       );
-      res.edges.map(({ node }) => expect(node.name).toEqual(name));
-      expect(res.pageInfo).toMatchSnapshot();
+      res.edges.forEach(({ node }) => {
+        assert.equal(node.name, name);
+      });
+      assert.deepEqual(res.pageInfo, {
+        endCursor: "YXJyYXljb25uZWN0aW9uOjA=",
+        hasNextPage: false,
+        hasPreviousPage: false,
+        startCursor: "YXJyYXljb25uZWN0aW9uOjA=",
+      });
     });
   });
 });

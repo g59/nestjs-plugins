@@ -1,4 +1,5 @@
-import { beforeEach, describe, expect, it } from "@jest/globals";
+import assert from "node:assert/strict";
+import { beforeEach, describe, it } from "node:test";
 import { Test, TestingModule } from "@nestjs/testing";
 import { createSlackServiceMock } from "../testing/slack";
 import { NotifyController } from "./notify.controller";
@@ -19,6 +20,6 @@ describe("Notify Controller", () => {
   });
 
   it("should be defined", () => {
-    expect(controller).toBeDefined();
+    assert.ok(controller);
   });
 });

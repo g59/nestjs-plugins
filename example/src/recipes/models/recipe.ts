@@ -3,21 +3,21 @@ import { toGlobalId } from "graphql-relay";
 import { Column, Entity, PrimaryColumn } from "typeorm";
 import { Node } from "../../node/node";
 
-@ObjectType({ implements: Node })
+@ObjectType({ implements: () => [Node] })
 @Entity("recipes")
 export class Recipe implements Node {
-  @PrimaryColumn()
+  @PrimaryColumn({ type: "varchar" })
   id: string;
 
-  @Field()
-  @Column()
+  @Field(() => String)
+  @Column({ type: "varchar" })
   title: string;
 
-  @Field({ nullable: true })
-  @Column({ nullable: true })
+  @Field(() => String, { nullable: true })
+  @Column({ nullable: true, type: "varchar" })
   description?: string;
 
-  @Field()
+  @Field(() => Date)
   creationDate: Date;
 
   @Field(() => [String])

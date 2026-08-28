@@ -1,4 +1,5 @@
-import { describe, expect, it } from "@jest/globals";
+import assert from "node:assert/strict";
+import { describe, it } from "node:test";
 import { Module } from "@nestjs/common";
 import { Test } from "@nestjs/testing";
 import { IncomingWebhook } from "@slack/webhook";
@@ -30,8 +31,8 @@ describe("slackModule", () => {
       }).compile();
 
       const slackClient = module.get<IncomingWebhook>(SLACK_TOKEN);
-      expect(slackClient).toBeDefined();
-      expect(slackClient).toBeInstanceOf(IncomingWebhook);
+      assert.ok(slackClient);
+      assert.ok(slackClient instanceof IncomingWebhook);
     });
   });
 
@@ -46,8 +47,8 @@ describe("slackModule", () => {
       }).compile();
 
       const slackClient = module.get<IncomingWebhook>(SLACK_TOKEN);
-      expect(slackClient).toBeDefined();
-      expect(slackClient).toBeInstanceOf(IncomingWebhook);
+      assert.ok(slackClient);
+      assert.ok(slackClient instanceof IncomingWebhook);
     });
 
     it("provide slack client with `useExisting`", async () => {
@@ -61,8 +62,8 @@ describe("slackModule", () => {
       }).compile();
 
       const slackClient = module.get<IncomingWebhook>(SLACK_TOKEN);
-      expect(slackClient).toBeDefined();
-      expect(slackClient).toBeInstanceOf(IncomingWebhook);
+      assert.ok(slackClient);
+      assert.ok(slackClient instanceof IncomingWebhook);
     });
 
     it("provide slack client with `useClass`", async () => {
@@ -75,8 +76,8 @@ describe("slackModule", () => {
       }).compile();
 
       const slackClient = module.get<IncomingWebhook>(SLACK_TOKEN);
-      expect(slackClient).toBeDefined();
-      expect(slackClient).toBeInstanceOf(IncomingWebhook);
+      assert.ok(slackClient);
+      assert.ok(slackClient instanceof IncomingWebhook);
     });
   });
 });

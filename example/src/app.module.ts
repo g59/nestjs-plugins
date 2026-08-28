@@ -36,7 +36,9 @@ import { ZendeskModule as ZendeskWrapperModule } from "./zendesk/zendesk.module"
     }),
     GraphQLModule.forRoot({
       installSubscriptionHandlers: true,
-      autoSchemaFile: join(__dirname, "./schema.gql"),
+      autoSchemaFile: process.env.NODE_TEST_CONTEXT
+        ? true
+        : join(__dirname, "./schema.gql"),
       playground: true,
       driver: ApolloDriver,
     }),

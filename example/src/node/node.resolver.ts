@@ -1,3 +1,4 @@
+import { Inject } from "@nestjs/common";
 import { Args, ID, Query, Resolver } from "@nestjs/graphql";
 import { fromGlobalId } from "graphql-relay";
 import * as uuid from "uuid";
@@ -6,8 +7,11 @@ import { RecipesService } from "../recipes/recipes.service";
 
 @Resolver()
 export class NodeResolver {
-  constructor(private readonly recipes: RecipesService) {}
+  constructor(
+    @Inject(RecipesService) private readonly recipes: RecipesService,
+  ) {}
 
+  @Reflect.metadata("design:paramtypes", [String])
   @Query(() => Node, { nullable: true })
   async node(@Args({ name: "id", type: () => ID }) relayId: string) {
     const { id, type } = fromGlobalId(relayId);

@@ -1,10 +1,12 @@
-import { Controller, Get } from "@nestjs/common";
+import { Controller, Get, Inject } from "@nestjs/common";
 import { IncomingWebhookSendArguments } from "@slack/webhook";
 import { NotifyService } from "./notify.service";
 
 @Controller("notify")
 export class NotifyController {
-  constructor(private readonly notifyService: NotifyService) {}
+  constructor(
+    @Inject(NotifyService) private readonly notifyService: NotifyService,
+  ) {}
 
   @Get()
   async notifyToSlack() {

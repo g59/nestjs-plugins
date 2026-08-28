@@ -1,4 +1,5 @@
-import { beforeEach, describe, expect, it } from "@jest/globals";
+import assert from "node:assert/strict";
+import { beforeEach, describe, it } from "node:test";
 import { Test, TestingModule } from "@nestjs/testing";
 import { getRepositoryToken } from "@nestjs/typeorm";
 import { Repository } from "typeorm";
@@ -24,5 +25,5 @@ describe("NodeResolver", () => {
     resolver = module.get<NodeResolver>(NodeResolver);
   });
 
-  it("should be defined", () => expect(resolver).toBeDefined());
+  it("should be defined", () => assert.ok(resolver));
 });
