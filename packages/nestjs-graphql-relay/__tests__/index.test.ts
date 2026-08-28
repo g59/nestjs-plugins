@@ -5,10 +5,10 @@ import { findAndPaginate, getPagingParameters } from "../src";
 
 @Entity()
 class Example {
-  @PrimaryGeneratedColumn()
+  @PrimaryGeneratedColumn({ type: "integer" })
   readonly id: number;
 
-  @Column()
+  @Column({ type: "varchar" })
   readonly name: string;
 }
 

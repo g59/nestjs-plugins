@@ -10,18 +10,16 @@
   "version": "10.0.0",
   "scripts": {
     "build": "npm run build --workspaces",
-    "build:test-dependencies": "npm run build --workspace nestjs-firebase --workspace nestjs-graphql-relay --workspace nestjs-slack-webhook --workspace nestjs-zendesk",
-    "clean": "npm run clean --workspaces && npm run clean:test",
-    "clean:test": "node -e \"const fs = require('node:fs'); for (const path of ['.test-dist', 'example/.test-dist']) fs.rmSync(path, { recursive: true, force: true })\"",
-    "compile:test": "npm run clean:test && tsc -p tsconfig.test.json && tsc -p example/tsconfig.test.json && node -e \"require('node:fs').copyFileSync('dummy.firebase.amin.key.json', 'example/.test-dist/dummy.firebase.amin.key.json')\"",
+    "clean": "npm run clean --workspaces",
     "lint": "npm run lint --workspaces",
     "rebuild:test-native": "npm rebuild sqlite3 --ignore-scripts=false",
-    "test": "npm run rebuild:test-native && npm run build:test-dependencies && npm run compile:test && node --env-file-if-exists=example/.env.test --test --experimental-test-coverage --test-coverage-include=\".test-dist/packages/*/src/*.js\" --test-coverage-exclude=\".test-dist/**/*.spec.js\" --test-coverage-exclude=\".test-dist/**/*.test.js\" \".test-dist/**/*.spec.js\" \".test-dist/**/*.test.js\" \"example/.test-dist/example/**/*-spec.js\" \"example/.test-dist/example/**/*.spec.js\""
+    "test": "npm run rebuild:test-native && node --import tsx --env-file-if-exists=example/.env.test --test --experimental-test-coverage --test-coverage-include=\"packages/*/src/*.ts\" --test-coverage-exclude=\"packages/**/*.spec.ts\" --test-coverage-exclude=\"packages/**/*.test.ts\" \"packages/**/*.spec.ts\" \"packages/**/*.test.ts\" \"example/**/*-spec.ts\" \"example/**/*.spec.ts\""
   },
   "devDependencies": {
     "@as-integrations/fastify": "^3.1.0",
     "@nestjs/testing": "^11.2.1",
     "rimraf": "^6.1.3",
+    "tsx": "^4.23.12",
     "typescript": "^5.9.3"
   },
   "workspaces": [
