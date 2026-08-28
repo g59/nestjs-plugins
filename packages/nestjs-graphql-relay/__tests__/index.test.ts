@@ -35,12 +35,12 @@ describe("app", () => {
       limit: 1,
       offset: 0,
     });
-    expect(() =>
-      getPagingParameters({ first: 1, after: "after" }),
-    ).toThrowErrorMatchingInlineSnapshot(`"invalid before query"`);
-    expect(() =>
-      getPagingParameters({ last: 1, before: "before" }),
-    ).toThrowErrorMatchingInlineSnapshot(`"invalid before query"`);
+    expect(() => getPagingParameters({ first: 1, after: "after" })).toThrow(
+      "invalid before query",
+    );
+    expect(() => getPagingParameters({ last: 1, before: "before" })).toThrow(
+      "invalid before query",
+    );
   });
 
   describe("findAndPaginate", () => {
@@ -84,7 +84,12 @@ describe("app", () => {
         AppDataSource.getRepository(Example),
       );
       res.edges.map(({ node }) => expect(node.name).toEqual(name));
-      expect(res.pageInfo).toMatchSnapshot();
+      expect(res.pageInfo).toEqual({
+        endCursor: "YXJyYXljb25uZWN0aW9uOjA=",
+        hasNextPage: false,
+        hasPreviousPage: false,
+        startCursor: "YXJyYXljb25uZWN0aW9uOjA=",
+      });
     });
   });
 });
