@@ -24,7 +24,13 @@ jobs:
       - run: npm ci
       - run: npm run build
       - name: Codecov Bundle Analysis
-        run: npx @codecov/bundle-analyzer example/dist --bundle-name=nestjs-plugins-example --upload-token="$CODECOV_TOKEN" --ignore-patterns '**/*.map' '**/*.d.ts' '**/*.spec.js'
+        run: |
+          for package_dir in packages/*; do
+            npx @codecov/bundle-analyzer "$package_dir/lib" \
+              --bundle-name="${package_dir##*/}" \
+              --upload-token="$CODECOV_TOKEN" \
+              --ignore-patterns '**/*.map' '**/*.d.ts' '**/*.spec.js'
+          done
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       - run: npm run lint
