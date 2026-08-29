@@ -28,6 +28,7 @@ lib-cov
 # Coverage directory used by tools like istanbul
 coverage
 *.lcov
+*.junit.xml
 
 # nyc test coverage
 .nyc_output
@@ -112,4 +113,3 @@ dist
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
-
