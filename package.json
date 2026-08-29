@@ -13,7 +13,7 @@
     "clean": "npm run clean --workspaces",
     "lint": "npm run lint --workspaces",
     "rebuild:test-native": "npm rebuild sqlite3 --ignore-scripts=false",
-    "test": "npm run rebuild:test-native && node --import tsx --env-file-if-exists=example/.env.test --test --experimental-test-coverage --test-coverage-include=\"packages/*/src/*.ts\" --test-coverage-exclude=\"packages/**/*.spec.ts\" --test-coverage-exclude=\"packages/**/*.test.ts\" \"packages/**/*.spec.ts\" \"packages/**/*.test.ts\" \"example/**/*-spec.ts\" \"example/**/*.spec.ts\""
+    "test": "npm run rebuild:test-native && node --import tsx --env-file-if-exists=example/.env.test --test --experimental-test-coverage --test-coverage-include=\"packages/*/src/*.ts\" --test-coverage-exclude=\"packages/**/*.spec.ts\" --test-coverage-exclude=\"packages/**/*.test.ts\" --test-reporter=spec --test-reporter-destination=stdout --test-reporter=lcov --test-reporter-destination=coverage.lcov \"packages/**/*.spec.ts\" \"packages/**/*.test.ts\" \"example/**/*-spec.ts\" \"example/**/*.spec.ts\""
   },
   "devDependencies": {
     "@as-integrations/fastify": "^3.1.0",
