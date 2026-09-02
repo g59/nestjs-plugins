@@ -1,7 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    "baseUrl": ".",
     "declaration": true,
     "emitDecoratorMetadata": true,
     "esModuleInterop": true,
@@ -16,16 +15,16 @@
     "outDir": "./lib",
     "paths": {
       "nestjs-firebase": [
-        "packages/nestjs-firebase/src"
+        "./packages/nestjs-firebase/src"
       ],
       "nestjs-graphql-relay": [
-        "packages/nestjs-graphql-relay/src"
+        "./packages/nestjs-graphql-relay/src"
       ],
       "nestjs-slack-webhook": [
-        "packages/nestjs-slack-webhook/src"
+        "./packages/nestjs-slack-webhook/src"
       ],
       "nestjs-zendesk": [
-        "packages/nestjs-zendesk/src"
+        "./packages/nestjs-zendesk/src"
       ]
     },
     "removeComments": true,
@@ -33,6 +32,7 @@
     "sourceMap": true,
     "strict": true,
     "strictPropertyInitialization": false,
-    "target": "ESNext"
+    "target": "ESNext",
+    "types": ["node"]
   }
 }

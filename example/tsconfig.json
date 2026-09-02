@@ -4,8 +4,9 @@
     "declaration": true,
     "noEmit": false,
     "outDir": "./dist",
+    "rootDir": "..",
     "removeComments": true,
     "sourceMap": true
   },
-  "exclude": ["__tests__/*", "*.spec.ts"]
+  "exclude": ["__tests__/*", "*.spec.ts", "dist"]
 }
