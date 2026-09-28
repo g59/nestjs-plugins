@@ -13,6 +13,7 @@
     "url": "https://github.com/g59/nestjs-plugins/issues"
   },
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "npm run clean && tsc -p .",
     "clean": "tsc --build --clean",

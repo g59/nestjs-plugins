@@ -1,8 +1,4 @@
-import type {
-  FactoryProvider,
-  ModuleMetadata,
-  Type,
-} from "@nestjs/common/interfaces";
+import type { FactoryProvider, ModuleMetadata, Type } from "@nestjs/common";
 import type { ZendeskClientOptions } from "node-zendesk";
 
 export interface ZendeskOptionsFactory {

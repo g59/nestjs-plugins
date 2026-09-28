@@ -39,7 +39,7 @@ import { ZendeskModule as ZendeskWrapperModule } from "./zendesk/zendesk.module"
       autoSchemaFile: process.env.NODE_TEST_CONTEXT
         ? true
         : join(__dirname, "./schema.gql"),
-      playground: true,
+      graphiql: true,
       driver: ApolloDriver,
     }),
     SlackModule.forRootAsync({

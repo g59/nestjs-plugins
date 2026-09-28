@@ -1,8 +1,4 @@
-import type { Type } from "@nestjs/common";
-import type {
-  FactoryProvider,
-  ModuleMetadata,
-} from "@nestjs/common/interfaces";
+import type { FactoryProvider, ModuleMetadata, Type } from "@nestjs/common";
 import * as firebaseAdmin from "firebase-admin";
 import { AppOptions } from "firebase-admin";
 

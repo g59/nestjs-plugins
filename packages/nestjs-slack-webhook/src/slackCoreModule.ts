@@ -1,5 +1,10 @@
-import { DynamicModule, Global, Module, Provider } from "@nestjs/common";
-import { ClassProvider } from "@nestjs/common/interfaces";
+import {
+  ClassProvider,
+  DynamicModule,
+  Global,
+  Module,
+  Provider,
+} from "@nestjs/common";
 import { IncomingWebhook } from "@slack/webhook";
 import { createSlackProvider } from "./createSlackProvider";
 import { getSlackClient } from "./getSlackClient";
