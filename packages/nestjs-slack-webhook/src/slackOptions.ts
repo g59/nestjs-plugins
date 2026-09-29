@@ -1,8 +1,4 @@
-import type {
-  FactoryProvider,
-  ModuleMetadata,
-  Type,
-} from "@nestjs/common/interfaces";
+import type { FactoryProvider, ModuleMetadata, Type } from "@nestjs/common";
 import { IncomingWebhookDefaultArguments } from "@slack/webhook";
 
 export interface SlackOptions extends IncomingWebhookDefaultArguments {

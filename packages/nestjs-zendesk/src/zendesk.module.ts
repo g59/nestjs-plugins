@@ -1,5 +1,5 @@
+import type { ClassProvider } from "@nestjs/common";
 import { DynamicModule, Global, Module, Provider } from "@nestjs/common";
-import type { ClassProvider } from "@nestjs/common/interfaces";
 import * as zendesk from "node-zendesk";
 import { ZENDESK_MODULE, ZENDESK_TOKEN } from "./zendesk.constants";
 import type {

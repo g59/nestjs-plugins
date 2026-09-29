@@ -13,16 +13,16 @@
     "start": "nest start --watch"
   },
   "dependencies": {
-    "@apollographql/graphql-playground-html": "^1.6.29",
     "@fastify/proxy-addr": "^5.1.1",
-    "@nestjs/apollo": "^13.4.5",
-    "@nestjs/cli": "^11.0.24",
-    "@nestjs/config": "^4.0.4",
-    "@nestjs/platform-fastify": "^11.2.1",
+    "@nestjs/apollo": "^14.0.3",
+    "@nestjs/cli": "^12.0.8",
+    "@nestjs/config": "^12.0.1",
+    "@nestjs/platform-fastify": "^12.0.3",
     "lodash.omit": "^4.5.0",
     "nestjs-firebase": "*",
     "nestjs-graphql-relay": "*",
     "nestjs-slack-webhook": "*",
-    "nestjs-zendesk": "*"
+    "nestjs-zendesk": "*",
+    "typeorm": "^0.3.0"
   }
 }
