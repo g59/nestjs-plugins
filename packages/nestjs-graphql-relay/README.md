@@ -1,44 +1,51 @@
 # nestjs-graphql-relay
 
-![Actions Status](https://github.com/g59/nestjs-plugins/workflows/Node%20CI/badge.svg)
 [![npm version](https://badge.fury.io/js/nestjs-graphql-relay.svg)](https://badge.fury.io/js/nestjs-graphql-relay)
+[![CI](https://github.com/g59/nestjs-plugins/actions/workflows/nodejs.yml/badge.svg)](https://github.com/g59/nestjs-plugins/actions/workflows/nodejs.yml)
 
-Nest.js + typeorm + graphql-relay inspired
-[nestjs-graphql-relay](https://github.com/kazekyo/nestjs-graphql-relay)
+Relay connection pagination helpers for NestJS GraphQL and TypeORM.
 
 ## Install
 
-```
-npm install nestjs-graphql-relay
+```sh
+npm install nestjs-graphql-relay @nestjs/graphql @nestjs/typeorm @apollo/gateway graphql-relay typeorm class-validator ts-morph
 ```
 
 ## Usage
 
-[example resolver](https://github.com/g59/nestjs-plugins/blob/main/example/src/recipes/recipes.resolver.ts)
+Use `findAndPaginate` with a TypeORM repository and Relay connection arguments:
 
 ```typescript
-@ObjectType({ isAbstract: true })
-abstract class RecipesEdge implements Relay.Edge<Recipe> {
-  @Field(() => Recipe)
-  readonly node: Recipe;
+import { Injectable } from "@nestjs/common";
+import { InjectRepository } from "@nestjs/typeorm";
+import { ConnectionArgs, findAndPaginate } from "nestjs-graphql-relay";
+import { Repository } from "typeorm";
+import { Recipe } from "./recipe.entity";
 
-  @Field()
-  readonly cursor: Relay.ConnectionCursor;
-}
+@Injectable()
+export class RecipesService {
+  constructor(
+    @InjectRepository(Recipe)
+    private readonly recipes: Repository<Recipe>,
+  ) {}
 
-@ObjectType()
-export class RecipesConnection implements Relay.Connection<Recipe> {
-  @Field()
-  readonly pageInfo: PageInfo;
-
-  @Field(() => [RecipesEdge])
-  readonly edges: Array<Relay.Edge<Recipe>>;
+  findAll(args: ConnectionArgs) {
+    return findAndPaginate({}, args, this.recipes);
+  }
 }
 ```
 
+Pass `ConnectionArgs` from a GraphQL resolver argument decorated with `@Args()`.
+
+## API
+
+- `ConnectionArgs` provides Relay cursor pagination arguments.
+- `findAndPaginate(condition, args, repository)` returns a Relay connection with edges and page information.
+- `getPagingParameters(args)` and `OrderByInput` are available for custom pagination queries.
+
 ## Contributing
 
-PRs accepted.
+Issues and pull requests are welcome at [g59/nestjs-plugins](https://github.com/g59/nestjs-plugins).
 
 ## License
 
