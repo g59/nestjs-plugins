@@ -20,9 +20,9 @@
     "@nestjs/config": "^4.0.4",
     "@nestjs/platform-fastify": "^11.2.1",
     "lodash.omit": "^4.5.0",
-    "nestjs-firebase": "11.0.0",
-    "nestjs-graphql-relay": "11.0.0",
-    "nestjs-slack-webhook": "11.0.0",
-    "nestjs-zendesk": "11.0.0"
+    "nestjs-firebase": "*",
+    "nestjs-graphql-relay": "*",
+    "nestjs-slack-webhook": "*",
+    "nestjs-zendesk": "*"
   }
 }

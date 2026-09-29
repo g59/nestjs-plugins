@@ -15,7 +15,7 @@ on:
   workflow_call:
     inputs:
       semver:
-        description: The image_name to build for.
+        description: Which SemVer component to bump.
         required: true
         type: string
 jobs:
@@ -27,14 +27,35 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
-      - run: npm version ${{ inputs.semver }} --no-git-tag-version --workspaces
+      - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
+        with:
+          node-version: lts/*
 
-      - name: generate new version and save to env variable
+      - name: Bump workspace versions and lockfile
+        env:
+          SEMVER: ${{ inputs.semver }}
+        run: |
+          case "$SEMVER" in
+            major|minor|patch) ;;
+            *) echo "Unsupported SemVer component: $SEMVER" >&2; exit 1 ;;
+          esac
+          npm version "$SEMVER" --no-git-tag-version --workspaces
+          npm install --package-lock-only --ignore-scripts
+
+      - name: Get new version
         id: get_version
         run: |
-          echo "NEW_VERSION=$(cat packages/nestjs-firebase/package.json | jq -r .version)" >> "$GITHUB_OUTPUT"
+          node <<'NODE'
+          const fs = require('node:fs');
+          const names = ['nestjs-firebase', 'nestjs-graphql-relay', 'nestjs-slack-webhook', 'nestjs-zendesk'];
+          const versions = names.map((name) => JSON.parse(fs.readFileSync(`packages/${name}/package.json`, 'utf8')).version);
+          if (new Set(versions).size !== 1) {
+            throw new Error(`Workspace versions differ: ${versions.join(', ')}`);
+          }
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `NEW_VERSION=${versions[0]}\n`);
+          NODE
 
-      - name: Generate release notes
+      - name: Generate release notes and update changelog
         uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         id: get_release_note
         env:
@@ -50,16 +71,11 @@ jobs:
                 tag_name: `v${process.env.NEW_VERSION}`,
               }
             );
+            const fs = require('node:fs');
+            const date = new Date().toISOString().slice(0, 10);
+            const section = `## v${process.env.NEW_VERSION} (${date})\n${notes.data.body.trim()}\n\n`;
+            fs.writeFileSync('CHANGELOG.md', section + fs.readFileSync('CHANGELOG.md', 'utf8'));
             return notes.data.body;
-
-      - run: |
-          cat << EOF >> new
-          ## v${{ steps.get_version.outputs.NEW_VERSION }} ($(date '+%Y-%m-%d'))
-          ${{ steps.get_release_note.outputs.result }}
-          EOF
-      - run: cat new ./CHANGELOG.md > temp
-      - run: mv temp ./CHANGELOG.md
-      - run: rm new
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
