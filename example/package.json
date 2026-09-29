@@ -1,6 +1,6 @@
 {
   "name": "example",
-  "version": "11.0.3",
+  "version": "12.0.0",
   "private": true,
   "description": "nestjs-plugins examples",
   "license": "MIT",

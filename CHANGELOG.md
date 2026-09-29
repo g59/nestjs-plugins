@@ -1,3 +1,18 @@
+## v12.0.0 (2026-09-29)
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### :boom: Type: Breaking Change
+* Support NestJS 12 across workspaces by @9renpoto in https://github.com/g59/nestjs-plugins/pull/2153
+* Upgrade Firebase Admin peer dependency to 14 by @9renpoto in https://github.com/g59/nestjs-plugins/pull/2155
+### Other Changes
+* docs: update package readmes by @9renpoto in https://github.com/g59/nestjs-plugins/pull/2159
+* chore(deps): bump ip-address from 10.5.0 to 10.7.2 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2157
+* chore: update dependency target by @9renpoto in https://github.com/g59/nestjs-plugins/pull/2160
+
+
+**Full Changelog**: https://github.com/g59/nestjs-plugins/compare/v11.0.3...v12.0.0
+
 ## v11.0.3 (2026-09-29)
 <!-- Release notes generated using configuration in .github/release.yml at main -->
 

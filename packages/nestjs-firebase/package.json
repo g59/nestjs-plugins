@@ -1,6 +1,6 @@
 {
   "name": "nestjs-firebase",
-  "version": "11.0.3",
+  "version": "12.0.0",
   "description": "@nestjs with firebase",
   "license": "MIT",
   "homepage": "https://github.com/g59/nestjs-plugins/tree/main/packages/nestjs-firebase",
