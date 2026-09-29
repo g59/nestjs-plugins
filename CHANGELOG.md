@@ -1,3 +1,67 @@
+## v11.0.3 (2026-09-29)
+<!-- Release notes generated using configuration in .github/release.yml at main -->
+
+## What's Changed
+### Other Changes
+* chore(deps): bump the nestjs group with 2 updates by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2096
+* chore(deps): bump actions/checkout from 6.0.2 to 6.0.3 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2098
+* chore(deps): bump codecov/codecov-action from 6.0.1 to 7.0.0 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2097
+* chore(deps): bump form-data by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2099
+* chore(deps): bump the nestjs group with 3 updates by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2100
+* chore(deps): bump typeorm from 0.3.26 to 0.3.30 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2102
+* chore(deps): bump the nestjs group with 2 updates by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2104
+* chore(deps): bump actions/checkout from 6.0.3 to 7.0.0 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2103
+* chore(deps-dev): bump @google-cloud/storage from 7.19.0 to 7.21.0 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2101
+* chore(deps): bump websocket-driver from 0.7.4 to 0.7.5 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2106
+* chore(deps): bump the nestjs group with 3 updates by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2107
+* chore(deps): bump axios from 1.16.0 to 1.18.1 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2108
+* fix: declare tslib as a runtime dependency by @9renpoto in https://github.com/g59/nestjs-plugins/pull/2109
+* chore(deps): bump fast-uri from 3.1.2 to 3.1.4 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2110
+* chore(deps): bump typeorm from 0.3.30 to 0.3.31 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2111
+* chore(deps): bump actions/checkout from 7.0.0 to 7.0.1 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2113
+* chore(deps-dev): bump ts-jest from 29.4.11 to 29.4.12 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2115
+* chore(deps-dev): bump @google-cloud/firestore from 8.6.0 to 8.7.0 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2116
+* chore(deps): bump reviewdog/action-actionlint from 1.72.0 to 1.73.0 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2114
+* chore(deps): bump fast-uri from 3.1.4 to 3.1.5 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2117
+* chore(deps): bump ip-address from 10.2.0 to 10.5.0 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2118
+* chore(deps): bump reviewdog/action-actionlint from 1.73.0 to 1.73.1 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2119
+* chore(deps-dev): bump @google-cloud/firestore from 8.7.0 to 8.7.1 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2120
+* chore(firebase): remove redundant Google Cloud dev dependencies by @9renpoto in https://github.com/g59/nestjs-plugins/pull/2121
+* chore(graphql-relay): remove redundant type dependencies by @9renpoto in https://github.com/g59/nestjs-plugins/pull/2122
+* chore(test): centralize NestJS testing dependency by @9renpoto in https://github.com/g59/nestjs-plugins/pull/2123
+* test(firebase): remove jest-mock-extended dependency by @9renpoto in https://github.com/g59/nestjs-plugins/pull/2124
+* chore(deps): bump reviewdog/action-actionlint from 1.73.1 to 1.73.2 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2125
+* chore(deps): bump the nestjs group with 3 updates by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2126
+* test: replace Jest with the Node.js test runner by @9renpoto in https://github.com/g59/nestjs-plugins/pull/2127
+* fix(ci): restore Codecov coverage upload by @9renpoto in https://github.com/g59/nestjs-plugins/pull/2128
+* ci: add Codecov bundle and test analytics by @9renpoto in https://github.com/g59/nestjs-plugins/pull/2129
+* fix(ci): track Codecov bundles by package by @9renpoto in https://github.com/g59/nestjs-plugins/pull/2130
+* chore(deps): bump @nestjs/apollo from 13.4.4 to 13.4.5 in the nestjs group by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2131
+* chore(deps): bump fast-uri from 3.1.5 to 3.1.7 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2134
+* chore(deps): bump @grpc/grpc-js from 1.14.0 to 1.14.4 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2135
+* chore(deps): bump browserslist from 4.28.1 to 4.28.8 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2137
+* fix(build): support TypeScript 7 by @9renpoto in https://github.com/g59/nestjs-plugins/pull/2133
+* chore(deps): bump actions/setup-node from 6.4.0 to 7.0.0 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2112
+* ci: add zizmor security analysis by @9renpoto in https://github.com/g59/nestjs-plugins/pull/2138
+* chore(deps): bump fflate from 0.8.2 to 0.8.3 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2139
+* chore(deps-dev): bump @types/node from 22.20.1 to 26.4.0 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2141
+* chore(deps): bump protobufjs from 7.5.8 to 7.6.6 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2142
+* chore(deps): bump zizmorcore/zizmor-action from 0.6.2 to 0.6.3 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2143
+* chore(deps): bump reviewdog/action-actionlint from 1.73.2 to 1.73.4 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2145
+* chore(deps-dev): bump tsx from 4.23.12 to 4.23.13 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2146
+* chore(deps-dev): bump @types/node from 26.4.0 to 26.4.1 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2144
+* chore(deps): bump zizmorcore/zizmor-action from 0.6.3 to 0.6.4 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2147
+* chore(deps-dev): bump @types/node from 26.4.1 to 26.5.1 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2148
+* chore(deps): bump @fastify/proxy-addr from 5.1.0 to 5.1.1 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2152
+* chore(deps): bump reviewdog/action-actionlint from 1.73.4 to 1.76.0 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2149
+* chore(deps-dev): bump @types/node from 26.5.1 to 26.6.2 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2151
+* chore(deps): bump codecov/codecov-action from 7.0.0 to 7.1.1 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2150
+* chore(deps): bump js-yaml from 4.1.1 to 4.3.2 by @dependabot[bot] in https://github.com/g59/nestjs-plugins/pull/2136
+* Keep bump versions and changelog in sync by @9renpoto in https://github.com/g59/nestjs-plugins/pull/2154
+
+
+**Full Changelog**: https://github.com/g59/nestjs-plugins/compare/v11.0.2...v11.0.3
+
 ## v11.0.2 (2026-06-05)
 <!-- Release notes generated using configuration in .github/release.yml at v11.0.2 -->
 
