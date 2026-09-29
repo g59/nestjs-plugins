@@ -1,9 +1,14 @@
 import type { FactoryProvider, ModuleMetadata, Type } from "@nestjs/common";
-import * as firebaseAdmin from "firebase-admin";
-import { AppOptions } from "firebase-admin";
+import type { AppOptions, ServiceAccount } from "firebase-admin/app";
+import type { Auth } from "firebase-admin/auth";
+import type { Database } from "firebase-admin/database";
+import type { Firestore } from "firebase-admin/firestore";
+import type { Messaging } from "firebase-admin/messaging";
+import type { RemoteConfig } from "firebase-admin/remote-config";
+import type { Storage } from "firebase-admin/storage";
 
 export type FirebaseModuleOptions = {
-  googleApplicationCredential?: string | firebaseAdmin.ServiceAccount;
+  googleApplicationCredential?: string | ServiceAccount;
 } & Omit<AppOptions, "credential">;
 
 export type FirebaseModuleAsyncOptions = {
@@ -22,10 +27,10 @@ export interface FirebaseModuleOptionsFactory {
 }
 
 export interface FirebaseAdmin {
-  auth: firebaseAdmin.auth.Auth;
-  messaging: firebaseAdmin.messaging.Messaging;
-  firestore: firebaseAdmin.firestore.Firestore;
-  database?: firebaseAdmin.database.Database;
-  storage: firebaseAdmin.storage.Storage;
-  remoteConfig: firebaseAdmin.remoteConfig.RemoteConfig;
+  auth: Auth;
+  messaging: Messaging;
+  firestore: Firestore;
+  database?: Database;
+  storage: Storage;
+  remoteConfig: RemoteConfig;
 }

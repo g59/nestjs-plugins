@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import * as path from "node:path";
 import { afterEach, describe, it } from "node:test";
 import { Test } from "@nestjs/testing";
-import * as admin from "firebase-admin";
+import { deleteApp, getApps } from "firebase-admin/app";
 import { FirebaseConstants } from "./firebase.constants";
 import {
   FirebaseAdmin,
@@ -13,7 +13,7 @@ import { FirebaseModule } from "./firebase.module";
 
 describe("FirebaseModule", () => {
   afterEach(async () => {
-    await Promise.all(admin.apps.map((app) => app?.delete()));
+    await Promise.all(getApps().map(deleteApp));
   });
 
   const googleApplicationCredential = path.join(

@@ -19,7 +19,7 @@
   },
   "peerDependencies": {
     "@nestjs/common": ">=12.0.0",
-    "firebase-admin": "^13.4.0"
+    "firebase-admin": ">=14.0.0"
   },
   "types": "lib/index.d.ts"
 }
