@@ -17,7 +17,7 @@
     "@nestjs/apollo": "^14.0.3",
     "@nestjs/cli": "^12.0.8",
     "@nestjs/config": "^12.0.1",
-    "@nestjs/platform-fastify": "^12.0.3",
+    "@nestjs/platform-fastify": "^12.1.2",
     "lodash.omit": "^4.5.0",
     "nestjs-firebase": "*",
     "nestjs-graphql-relay": "*",
