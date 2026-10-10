@@ -23,6 +23,6 @@
     "nestjs-graphql-relay": "*",
     "nestjs-slack-webhook": "*",
     "nestjs-zendesk": "*",
-    "typeorm": "^0.3.0"
+    "typeorm": "^1.1.1"
   }
 }

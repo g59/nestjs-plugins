@@ -23,7 +23,7 @@
     "@types/node": "^26.6.2",
     "rimraf": "^6.1.3",
     "tsx": "^4.23.13",
-    "typeorm": "^0.3.0",
+    "typeorm": "^1.1.1",
     "typescript": "^6.0.3"
   },
   "workspaces": [
