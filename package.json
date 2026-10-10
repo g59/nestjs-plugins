@@ -16,7 +16,7 @@
     "test": "npm run rebuild:test-native && node --import tsx --env-file-if-exists=example/.env.test --test --experimental-test-coverage --test-coverage-include=\"packages/*/src/*.ts\" --test-coverage-exclude=\"packages/**/*.spec.ts\" --test-coverage-exclude=\"packages/**/*.test.ts\" --test-reporter=spec --test-reporter-destination=stdout --test-reporter=lcov --test-reporter-destination=coverage.lcov --test-reporter=junit --test-reporter-destination=test-results.junit.xml \"packages/**/*.spec.ts\" \"packages/**/*.test.ts\" \"example/**/*-spec.ts\" \"example/**/*.spec.ts\""
   },
   "devDependencies": {
-    "@apollo/gateway": "2.13.2",
+    "@apollo/gateway": "2.14.4",
     "@as-integrations/fastify": "^3.1.0",
     "@codecov/bundle-analyzer": "^2.0.1",
     "@nestjs/testing": "^12.1.2",
