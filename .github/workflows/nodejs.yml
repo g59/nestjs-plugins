@@ -4,6 +4,8 @@ permissions:
 
 on:
   push:
+    branches: [main]
+  pull_request:
 
 jobs:
   build:
@@ -15,6 +17,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
       - uses: biomejs/setup-biome@4c91541eaada48f67d7dbd7833600ce162b68f51 # v2.7.1
       - run: biome ci .
       - name: Use Node.js ${{ matrix.node-version }}
@@ -23,34 +27,53 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       - run: npm run build
-      - name: Codecov Bundle Analysis
-        run: |
-          for package_dir in packages/*; do
-            npx @codecov/bundle-analyzer "$package_dir/lib" \
-              --bundle-name="${package_dir##*/}" \
-              --upload-token="$CODECOV_TOKEN" \
-              --ignore-patterns '**/*.map' '**/*.d.ts' '**/*.spec.js'
-          done
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       - run: npm run lint
       - run: npm test
         env:
           SLACK_WEBHOOK_URL: https://example.com
           CI: true
-      - name: Codecov
-        uses: codecov/codecov-action@303a32d7a59b442fa8d48b6a1cc6825c09c847a5 # v7.1.1
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
         with:
-          disable_search: true
-          fail_ci_if_error: true
-          files: ./coverage.lcov
-          token: ${{ secrets.CODECOV_TOKEN }}
-      - name: Codecov Test Analytics
-        if: ${{ !cancelled() }}
-        uses: codecov/codecov-action@303a32d7a59b442fa8d48b6a1cc6825c09c847a5 # v7.1.1
+          name: coverage
+          path: lcov.info
+          if-no-files-found: error
+
+  coverage:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: read
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          disable_search: true
-          fail_ci_if_error: true
-          files: ./test-results.junit.xml
-          report_type: test_results
-          token: ${{ secrets.CODECOV_TOKEN }}
+          persist-credentials: false
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8
+        with:
+          name: coverage
+      - uses: k1LoW/octocov-action@a167dc0dee441b7ffc45e1b862ab55ec0d87f278 # v1.5.2
+        with:
+          version: v0.83.3
+          checksum: 8d6576580d151e785474f193d740f63cb91b70ac767d402410fcd7f187a34202
+      - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        with:
+          path: coverage
+
+  pages:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: coverage
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    concurrency:
+      group: pages
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy coverage badge
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
