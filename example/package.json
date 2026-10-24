@@ -13,7 +13,7 @@
     "start": "nest start --watch"
   },
   "dependencies": {
-    "@fastify/proxy-addr": "^5.1.1",
+    "@fastify/proxy-addr": "^5.1.2",
     "@nestjs/apollo": "^14.0.3",
     "@nestjs/cli": "^12.0.8",
     "@nestjs/config": "^12.0.1",
