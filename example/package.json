@@ -14,10 +14,10 @@
   },
   "dependencies": {
     "@fastify/proxy-addr": "^5.1.2",
-    "@nestjs/apollo": "^14.0.3",
-    "@nestjs/cli": "^12.0.10",
+    "@nestjs/apollo": "^14.1.1",
+    "@nestjs/cli": "^12.0.11",
     "@nestjs/config": "^12.0.1",
-    "@nestjs/platform-fastify": "^12.2.0",
+    "@nestjs/platform-fastify": "^12.3.2",
     "lodash.omit": "^4.5.0",
     "nestjs-firebase": "*",
     "nestjs-graphql-relay": "*",
