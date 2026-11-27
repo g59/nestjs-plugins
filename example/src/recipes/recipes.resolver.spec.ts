@@ -1,9 +1,6 @@
 import assert from "node:assert/strict";
 import { beforeEach, describe, it } from "node:test";
 import { Test, TestingModule } from "@nestjs/testing";
-import { getRepositoryToken } from "@nestjs/typeorm";
-import { Repository } from "typeorm";
-import { Recipe } from "./models/recipe";
 import { RecipesResolver } from "./recipes.resolver";
 import { RecipesService } from "./recipes.service";
 
@@ -12,14 +9,7 @@ describe("RecipesResolver", () => {
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      providers: [
-        RecipesResolver,
-        RecipesService,
-        {
-          provide: getRepositoryToken(Recipe),
-          useClass: Repository,
-        },
-      ],
+      providers: [RecipesResolver, { provide: RecipesService, useValue: {} }],
     }).compile();
 
     resolver = module.get<RecipesResolver>(RecipesResolver);

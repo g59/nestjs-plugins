@@ -5,6 +5,8 @@
 
 ## Install
 
+Use Node.js 22.13 or later. The example uses Node.js's built-in SQLite module.
+
 ```sh
 npm install
 ```

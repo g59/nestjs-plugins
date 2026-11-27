@@ -1,5 +1,4 @@
 import * as Relay from "graphql-relay";
-import { FindManyOptions, ObjectLiteral, Repository } from "typeorm";
 import { ConnectionArgs } from "./connectionArgs";
 
 export * from "./orderBy.input";
@@ -73,20 +72,18 @@ export function getPagingParameters(args: ConnectionArgs) {
   }
 }
 
-export async function findAndPaginate<T extends ObjectLiteral>(
-  condition: FindManyOptions<T>,
+export async function findAndPaginate<T>(
   connArgs: ConnectionArgs,
-  repository: Repository<T>,
+  loadPage: (page: {
+    offset?: number;
+    limit?: number;
+  }) => Promise<{ nodes: readonly T[]; totalCount: number }>,
 ) {
-  const { limit, offset } = getPagingParameters(connArgs);
-  const [entities, count] = await repository.findAndCount({
-    ...condition,
-    skip: offset,
-    take: limit,
-  });
+  const page = getPagingParameters(connArgs);
+  const { nodes, totalCount } = await loadPage(page);
 
-  return Relay.connectionFromArraySlice(entities, connArgs, {
-    arrayLength: count,
-    sliceStart: offset || 0,
+  return Relay.connectionFromArraySlice(nodes, connArgs, {
+    arrayLength: totalCount,
+    sliceStart: page.offset ?? 0,
   });
 }

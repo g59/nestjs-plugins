@@ -36,6 +36,6 @@ export class RecipesResolver {
     @Args({ type: () => RecipesConnectionArgs })
     { where, orderBy, ...args }: RecipesConnectionArgs,
   ): Promise<RecipesConnection> {
-    return this.recipesService.find(where, undefined, args);
+    return this.recipesService.find(where, args);
   }
 }

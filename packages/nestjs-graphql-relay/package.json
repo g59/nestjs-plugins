@@ -1,7 +1,7 @@
 {
   "name": "nestjs-graphql-relay",
   "version": "12.0.0",
-  "description": "@nestjs/graphql + graphql-relay + typeorm",
+  "description": "Relay connection pagination helpers for NestJS GraphQL",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -19,8 +19,7 @@
   },
   "keywords": [
     "nest",
-    "graphql-relay",
-    "typeorm"
+    "graphql-relay"
   ],
   "dependencies": {
     "tslib": "2.9.1"
@@ -28,13 +27,9 @@
   "peerDependencies": {
     "@apollo/gateway": "^2.0.0",
     "@nestjs/graphql": "^14.0.0",
-    "@nestjs/typeorm": "^12.0.0",
     "graphql-relay": "^0.11.0",
     "ts-morph": "^28.0.0",
     "class-validator": "^0.15.0"
-  },
-  "devDependencies": {
-    "sqlite3": "^5.1.7"
   },
   "types": "lib/index.d.ts"
 }

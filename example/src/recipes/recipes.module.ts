@@ -1,11 +1,20 @@
+import { DatabaseSync } from "node:sqlite";
 import { Module } from "@nestjs/common";
-import { TypeOrmModule } from "@nestjs/typeorm";
-import { Recipe } from "./models/recipe";
 import { RecipesResolver } from "./recipes.resolver";
 import { RecipesService } from "./recipes.service";
 
 @Module({
-  imports: [TypeOrmModule.forFeature([Recipe])],
-  providers: [RecipesResolver, RecipesService],
+  providers: [
+    {
+      provide: DatabaseSync,
+      useFactory: () =>
+        new DatabaseSync(
+          process.env.NODE_TEST_CONTEXT ? ":memory:" : "nestjs-plugins-test",
+        ),
+    },
+    RecipesResolver,
+    RecipesService,
+  ],
+  exports: [RecipesService],
 })
 export class RecipesModule {}

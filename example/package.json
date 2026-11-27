@@ -22,7 +22,6 @@
     "nestjs-firebase": "*",
     "nestjs-graphql-relay": "*",
     "nestjs-slack-webhook": "*",
-    "nestjs-zendesk": "*",
-    "typeorm": "^0.3.0"
+    "nestjs-zendesk": "*"
   }
 }

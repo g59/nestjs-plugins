@@ -1,36 +1,10 @@
 import assert from "node:assert/strict";
-import { after, before, describe, it } from "node:test";
-import { Column, DataSource, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { describe, it } from "node:test";
+import { offsetToCursor } from "graphql-relay";
 import { findAndPaginate, getPagingParameters } from "../src";
 
-@Entity()
-class Example {
-  @PrimaryGeneratedColumn({ type: "integer" })
-  readonly id: number;
-
-  @Column({ type: "varchar" })
-  readonly name: string;
-}
-
-describe("app", () => {
-  let AppDataSource: DataSource;
-  before(async () => {
-    AppDataSource = new DataSource({
-      type: "sqlite",
-      database: "nestjs-plugins",
-      synchronize: true,
-      entities: [Example],
-    });
-
-    await AppDataSource.initialize();
-
-    const repo = AppDataSource.getRepository(Example);
-    await AppDataSource.query(`DELETE from ${repo.metadata.tableName}`);
-  });
-
-  after(() => AppDataSource.destroy());
-
-  it("getPagingParameters", () => {
+describe("getPagingParameters", () => {
+  it("handles omitted arguments and rejects invalid cursors", () => {
     assert.deepEqual(getPagingParameters({}), {});
     assert.deepEqual(getPagingParameters({ first: 1 }), {
       limit: 1,
@@ -45,56 +19,54 @@ describe("app", () => {
       /invalid before query/,
     );
   });
+});
 
-  describe("findAndPaginate", () => {
-    it("empty", async () => {
-      const res = await findAndPaginate(
-        {
-          where: { name: "undefined" },
-        },
-        {},
-        AppDataSource.getRepository(Example),
-      );
-      assert.deepEqual(res, {
-        edges: [],
-        pageInfo: {
-          endCursor: null,
-          hasNextPage: false,
-          hasPreviousPage: false,
-          startCursor: null,
-        },
-      });
+describe("findAndPaginate", () => {
+  it("returns an empty connection for an empty result", async () => {
+    const result = await findAndPaginate({}, async (page) => {
+      assert.deepEqual(page, {});
+      return { nodes: [], totalCount: 0 };
     });
-
-    it("find", async () => {
-      const name = "name";
-      await AppDataSource.query(
-        `INSERT INTO ${
-          AppDataSource.getRepository(Example).metadata.tableName
-        } ("name") VALUES ("random name")`,
-      );
-      await AppDataSource.query(
-        `INSERT INTO ${
-          AppDataSource.getRepository(Example).metadata.tableName
-        } ("name") VALUES ("${name}")`,
-      );
-
-      const res = await findAndPaginate(
-        {
-          where: { name },
-        },
-        {},
-        AppDataSource.getRepository(Example),
-      );
-      res.edges.forEach(({ node }) => {
-        assert.equal(node.name, name);
-      });
-      assert.deepEqual(res.pageInfo, {
-        endCursor: "YXJyYXljb25uZWN0aW9uOjA=",
+    assert.deepEqual(result, {
+      edges: [],
+      pageInfo: {
+        endCursor: null,
         hasNextPage: false,
         hasPreviousPage: false,
-        startCursor: "YXJyYXljb25uZWN0aW9uOjA=",
-      });
+        startCursor: null,
+      },
     });
+  });
+
+  const nodes = [{ id: "a" }, { id: "b" }, { id: "c" }, { id: "d" }];
+  const expectedEdges = [
+    { node: nodes[1], cursor: offsetToCursor(1) },
+    { node: nodes[2], cursor: offsetToCursor(2) },
+  ];
+
+  it("loads a forward page and uses the total count for page info", async () => {
+    const result = await findAndPaginate(
+      { first: 2, after: offsetToCursor(0) },
+      async (page) => {
+        assert.deepEqual(page, { limit: 2, offset: 1 });
+        return { nodes: nodes.slice(1, 3), totalCount: nodes.length };
+      },
+    );
+    assert.deepEqual(result.edges, expectedEdges);
+    assert.equal(result.pageInfo.startCursor, offsetToCursor(1));
+    assert.equal(result.pageInfo.endCursor, offsetToCursor(2));
+    assert.equal(result.pageInfo.hasNextPage, true);
+  });
+
+  it("loads a backward page in the same order as a forward page", async () => {
+    const result = await findAndPaginate(
+      { last: 2, before: offsetToCursor(3) },
+      async (page) => {
+        assert.deepEqual(page, { limit: 2, offset: 1 });
+        return { nodes: nodes.slice(1, 3), totalCount: nodes.length };
+      },
+    );
+    assert.deepEqual(result.edges, expectedEdges);
+    assert.equal(result.pageInfo.hasPreviousPage, true);
   });
 });

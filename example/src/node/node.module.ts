@@ -1,11 +1,9 @@
 import { Module } from "@nestjs/common";
-import { TypeOrmModule } from "@nestjs/typeorm";
-import { Recipe } from "../recipes/models/recipe";
-import { RecipesService } from "../recipes/recipes.service";
+import { RecipesModule } from "../recipes/recipes.module";
 import { NodeResolver } from "./node.resolver";
 
 @Module({
-  imports: [TypeOrmModule.forFeature([Recipe])],
-  providers: [NodeResolver, RecipesService],
+  imports: [RecipesModule],
+  providers: [NodeResolver],
 })
 export class NodeModule {}

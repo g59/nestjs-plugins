@@ -3,7 +3,6 @@ import { ApolloDriver } from "@nestjs/apollo";
 import { Module } from "@nestjs/common";
 import { ConfigModule, ConfigService } from "@nestjs/config";
 import { GraphQLModule } from "@nestjs/graphql";
-import { TypeOrmModule } from "@nestjs/typeorm";
 import { FirebaseModule } from "nestjs-firebase";
 import { SlackModule } from "nestjs-slack-webhook";
 import { ZendeskModule } from "nestjs-zendesk";
@@ -21,12 +20,6 @@ import { ZendeskModule as ZendeskWrapperModule } from "./zendesk/zendesk.module"
     ConfigModule.forRoot({
       ignoreEnvFile: true,
       load: [slackConfig, zendeskConfig],
-    }),
-    TypeOrmModule.forRoot({
-      type: "sqlite",
-      database: "nestjs-plugins-test",
-      entities: [join(__dirname, "./recipes/models/recipe.[t|j]s")],
-      synchronize: true,
     }),
     FirebaseModule.forRoot({
       googleApplicationCredential: join(
