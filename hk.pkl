@@ -1,0 +1,10 @@
+amends "package://github.com/jdx/hk/releases/download/v2.7.1/hk@2.7.1#/Config.pkl"
+
+// Local checks are provided by the user's hk configuration.
+hooks {
+    ["pre-commit"] {
+        fix = true
+        stage = true
+        stash = "git"
+    }
+}
